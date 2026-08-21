@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Edward Hwang — Software, Systems, AI/ML, Mobile</title>
+  <desc id="desc">Computational editorial banner for Edward Hwang's GitHub profile.</desc>
+  <rect width="1200" height="360" fill="#0b0d0e"/>
+  <line x1="56" y1="58" x2="1144" y2="58" stroke="#394044" stroke-width="1"/>
+  <line x1="56" y1="300" x2="1144" y2="300" stroke="#394044" stroke-width="1"/>
+  <line x1="884" y1="58" x2="884" y2="300" stroke="#394044" stroke-width="1"/>
+  <circle cx="1130" cy="78" r="5" fill="#72c9c3"/>
+  <text x="56" y="104" fill="#8d999d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="2">EDWARDH-JEDI / PROFILE INDEX</text>
+  <text x="56" y="196" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="74" letter-spacing="-2">EDWARD HWANG</text>
+  <text x="60" y="240" fill="#a8b0b2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" letter-spacing="1.2">SOFTWARE  /  SYSTEMS  /  AI·ML  /  MOBILE</text>
+  <text x="914" y="112" fill="#72c9c3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">SYDNEY, AU</text>
+  <text x="914" y="152" fill="#a8b0b2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">BUILDING</text>
+  <text x="914" y="180" fill="#f2f0e9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">PRODUCTS</text>
+  <text x="914" y="204" fill="#f2f0e9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">ML SYSTEMS</text>
+  <text x="914" y="228" fill="#f2f0e9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">LOCAL AI</text>
+  <text x="914" y="270" fill="#8d999d" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">2026 / ACTIVE</text>
+  <text x="56" y="329" fill="#687276" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">ENGINEERING WORK, WITH EVIDENCE.</text>
+</svg>
