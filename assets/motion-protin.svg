@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Protin miniature social sports flow</title>
+  <desc id="desc">Individual activity becomes discovery, matching, and a small group sports session.</desc>
+  <style>
+    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.s{font-family:Inter,Arial,Helvetica,sans-serif}
+    .wave{stroke:#78d0c8;stroke-width:1.4;stroke-dasharray:4 10;animation:wave 4.2s linear infinite}.walk1{animation:walk 6.2s ease-in-out infinite}.walk2{animation:walk 6.8s ease-in-out .8s infinite}.walk3{animation:walk 7.1s ease-in-out 1.6s infinite}.pulse{animation:pulse 3s ease-in-out infinite}
+    @keyframes wave{to{stroke-dashoffset:-56}}@keyframes walk{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.wave,.walk1,.walk2,.walk3,.pulse{animation:none}}
+  </style>
+  <rect width="1200" height="360" rx="10" fill="#0a0d0e"/>
+  <path d="M38 54H1162M38 316H1162" stroke="#30383b"/>
+  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">FS—01 / PROTIN / SOCIAL SPORTS FLOW</text>
+  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">ACTIVITY → DISCOVERY → MATCH → GROUP</text>
+  <g transform="translate(145 112)" class="walk1"><circle cx="0" cy="0" r="10" fill="none" stroke="#9ca6a9"/><path d="M0 11v34m0-21-15 8m15-8 16 10M0 45-13 70M0 45l14 25" stroke="#9ca6a9" fill="none" stroke-linecap="round"/><circle cx="22" cy="28" r="7" fill="none" stroke="#657174"/><text x="0" y="95" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">TRAIN</text></g>
+  <path d="M205 185H382" class="wave" fill="none"/>
+  <g transform="translate(450 105)"><rect x="-58" y="-18" width="116" height="128" rx="8" fill="#101517" stroke="#3c474a"/><circle cx="0" cy="10" r="24" fill="none" stroke="#78d0c8"/><path d="M-12 10h24M0-2v24" stroke="#78d0c8"/><text x="0" y="74" text-anchor="middle" class="m" fill="#f1efe8" font-size="10">DISCOVER</text><text x="0" y="92" text-anchor="middle" class="m" fill="#8e999c" font-size="9">people / sessions</text></g>
+  <path d="M508 185H676" class="wave" fill="none"/>
+  <g transform="translate(735 118)"><circle cx="-34" cy="0" r="9" fill="none" stroke="#9ca6a9"/><path d="M-34 10v30m0-18-12 8m12-8 12 8m-12 10-11 21m11-21 11 21" stroke="#9ca6a9" fill="none"/><circle cx="34" cy="0" r="9" fill="none" stroke="#9ca6a9"/><path d="M34 10v30m0-18-12 8m12-8 12 8m-12 10-11 21m11-21 11 21" stroke="#9ca6a9" fill="none"/><path d="M-16 14H16" stroke="#78d0c8" class="pulse"/><text x="0" y="92" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">MATCH</text></g>
+  <path d="M795 185H955" class="wave" fill="none"/>
+  <g transform="translate(1035 120)"><g class="walk2" transform="translate(-40 5)"><circle r="8" fill="none" stroke="#9ca6a9"/><path d="M0 9v26m0-15-11 8m11-8 11 8M0 35-9 54M0 35l9 19" stroke="#9ca6a9" fill="none"/></g><g class="walk3" transform="translate(0 -3)"><circle r="8" fill="none" stroke="#9ca6a9"/><path d="M0 9v26m0-15-11 8m11-8 11 8M0 35-9 54M0 35l9 19" stroke="#9ca6a9" fill="none"/></g><g class="walk1" transform="translate(40 7)"><circle r="8" fill="none" stroke="#9ca6a9"/><path d="M0 9v26m0-15-11 8m11-8 11 8M0 35-9 54M0 35l9 19" stroke="#9ca6a9" fill="none"/></g><path d="M-58 72H58" stroke="#3c474a"/><circle cx="0" cy="72" r="5" fill="#78d0c8" class="pulse"/><text x="0" y="102" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">GROUP SESSION</text></g>
+  <text x="38" y="340" class="m" fill="#657174" font-size="9">SOCIAL SPORTS DISCOVERY, NOT A FITNESS AD · ASYNCHRONOUS HUMAN MICRO-MOTION · NO FAKE USAGE METRICS.</text>
+</svg>
