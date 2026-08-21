@@ -26,12 +26,12 @@ MAX_LATEST = 3
 MAX_COMMITS_PER_REPO = 40
 
 CATEGORY_RULES = [
-    ("TEST / QUALITY", ("test", "pytest", "lint", "typecheck", "coverage", "quality")),
+    ("TEST / QUALITY", ("test", "pytest", "lint", "typecheck", "coverage", "quality", "ruff")),
     ("ML / EVALUATION", ("model", "train", "eval", "evaluation", "calibrat", "predict", "xgboost", "brier", "log loss")),
+    ("SYSTEMS / OPS", ("deploy", "docker", "linux", "workflow", "action", " ci ", "server", "infra")),
     ("FIX / RELIABILITY", ("fix", "bug", "reliab", "crash", "error", "recover", "safety")),
     ("ARCHITECTURE", ("refactor", "architect", "persist", "migration", "storage", "schema", "pipeline")),
-    ("SYSTEMS / OPS", ("deploy", "docker", "linux", "workflow", "action", "ci", "server", "infra")),
-    ("PRODUCT / FEATURE", ("feat", "feature", "implement", "add ", "ui", "ux", "screen", "flow")),
+    ("PRODUCT / FEATURE", ("feat", "feature", "implement", "add ", " ui ", " ux ", "screen", "flow")),
     ("DOCS / EVIDENCE", ("docs", "readme", "portfolio", "evidence", "document")),
 ]
 
@@ -67,6 +67,14 @@ def display_date(value: str) -> str:
     if not parsed:
         return "—"
     return parsed.astimezone(LOCAL_TZ).strftime("%d %b").upper()
+
+
+def item_display_date(item: dict) -> str:
+    return clean(str(item.get("display_date") or item.get("date") or "—"), 16).upper()
+
+
+def plural_changes(count: int) -> str:
+    return f"{count} change" if count == 1 else f"{count} changes"
 
 
 def classify(message: str) -> str:
@@ -165,8 +173,7 @@ def recent_commits(repo_name: str, since: dt.datetime):
             or commit.get("author", {}).get("date")
             or ""
         )
-        parsed = parse_date(date_value)
-        if not parsed:
+        if not parse_date(date_value):
             continue
         commits.append({
             "repo": repo_name,
@@ -281,7 +288,7 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     latest_parts = []
     for idx, item in enumerate(latest_items[:MAX_LATEST]):
         y = 118 + idx * 96
-        latest_parts.append(f'<text x="790" y="{y}" class="m" fill="#78d0c8" font-size="10">{escape(item.get("date") or item.get("display_date") or "—")}</text>')
+        latest_parts.append(f'<text x="790" y="{y}" class="m" fill="#78d0c8" font-size="10">{escape(item_display_date(item))}</text>')
         latest_parts.append(f'<text x="866" y="{y}" class="m" fill="#f1efe8" font-size="12">{escape(item["repo"])}</text>')
         latest_parts.append(f'<text x="1158" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="9">{escape(item.get("category", "ENGINEERING"))}</text>')
         lines = split_svg_text(item["summary"], 43)
@@ -329,41 +336,59 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
 
 def render_weekly_svg(summary, latest_items, source: str, generated: str, now_local: dt.datetime):
     weekly = summary["weekly"]
-    weekly_repo_counts = summary["weekly_repo_counts"]
-    weekly_category_counts = summary["weekly_category_counts"]
     week_num = now_local.isocalendar().week
+    has_weekly = bool(weekly)
 
-    top_categories = weekly_category_counts.most_common(3) or summary["category_counts"].most_common(3)
-    top_repos = weekly_repo_counts.most_common(4) or summary["repo_counts"].most_common(4)
+    if has_weekly:
+        category_counts = summary["weekly_category_counts"]
+        repo_counts = summary["weekly_repo_counts"]
+        left_header = "FOCUS AREAS"
+        middle_header = "ACTIVE REPOSITORIES"
+        focus_footer = category_counts.most_common(1)[0][0] if category_counts else "ENGINEERING"
+    else:
+        category_counts = summary["category_counts"]
+        repo_counts = summary["repo_counts"]
+        left_header = "30-DAY CONTEXT"
+        middle_header = "RECENT REPOSITORIES"
+        focus_footer = "NO PUBLIC CHANGE THIS WEEK"
+
+    top_categories = category_counts.most_common(3)
+    top_repos = repo_counts.most_common(4)
 
     max_category = max([count for _, count in top_categories], default=1)
     category_parts = []
-    for idx, (category, count) in enumerate(top_categories):
-        y = 150 + idx * 58
-        line_w = 290 * (count / max_category)
-        category_parts.extend([
-            f'<text x="58" y="{y}" class="m" fill="#dfe2de" font-size="11">{escape(category)}</text>',
-            f'<text x="420" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="10">{count}</text>',
-            f'<line x1="58" y1="{y+18}" x2="420" y2="{y+18}" stroke="#20282b" stroke-width="4"/>',
-            f'<line x1="58" y1="{y+18}" x2="{58+line_w:.1f}" y2="{y+18}" stroke="#78d0c8" stroke-width="4"/>',
-        ])
+    if top_categories:
+        for idx, (category, count) in enumerate(top_categories):
+            y = 150 + idx * 58
+            line_w = 290 * (count / max_category)
+            category_parts.extend([
+                f'<text x="58" y="{y}" class="m" fill="#dfe2de" font-size="11">{escape(category)}</text>',
+                f'<text x="420" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="10">{count}</text>',
+                f'<line x1="58" y1="{y+18}" x2="420" y2="{y+18}" stroke="#20282b" stroke-width="4"/>',
+                f'<line x1="58" y1="{y+18}" x2="{58+line_w:.1f}" y2="{y+18}" stroke="#78d0c8" stroke-width="4"/>',
+            ])
+    else:
+        category_parts.append('<text x="58" y="160" class="m" fill="#8e999c" font-size="11">No public activity in the 30-day window.</text>')
 
     repo_parts = []
-    for idx, (repo, count) in enumerate(top_repos):
-        y = 149 + idx * 42
-        repo_parts.extend([
-            f'<text x="528" y="{y}" class="m" fill="#f1efe8" font-size="11">{escape(repo)}</text>',
-            f'<text x="828" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="10">{count} changes</text>',
-        ])
-        if idx < len(top_repos) - 1:
-            repo_parts.append(f'<line x1="528" y1="{y+15}" x2="828" y2="{y+15}" stroke="#20282b"/>')
+    if top_repos:
+        for idx, (repo, count) in enumerate(top_repos):
+            y = 149 + idx * 42
+            repo_parts.extend([
+                f'<text x="528" y="{y}" class="m" fill="#f1efe8" font-size="11">{escape(repo)}</text>',
+                f'<text x="828" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="10">{escape(plural_changes(count))}</text>',
+            ])
+            if idx < len(top_repos) - 1:
+                repo_parts.append(f'<line x1="528" y1="{y+15}" x2="828" y2="{y+15}" stroke="#20282b"/>')
+    else:
+        repo_parts.append('<text x="528" y="160" class="m" fill="#8e999c" font-size="11">No recent public repositories.</text>')
 
     latest = latest_items[0] if latest_items else None
     if latest:
         latest_lines = split_svg_text(latest["summary"], 37)
         second_line = f'<text x="900" y="197" class="m" fill="#f1efe8" font-size="12">{escape(latest_lines[1])}</text>' if len(latest_lines) > 1 else ""
         latest_block = f'''
-    <text x="900" y="145" class="m" fill="#78d0c8" font-size="10">{escape(latest.get("date") or latest.get("display_date") or "—")} / {escape(latest["repo"])}</text>
+    <text x="900" y="145" class="m" fill="#78d0c8" font-size="10">{escape(item_display_date(latest))} / {escape(latest["repo"])}</text>
     <text x="900" y="177" class="m" fill="#f1efe8" font-size="12">{escape(latest_lines[0])}</text>
     {second_line}
     <text x="900" y="232" class="m" fill="#657174" font-size="9">{escape(latest.get("category", "ENGINEERING"))}</text>
@@ -371,8 +396,12 @@ def render_weekly_svg(summary, latest_items, source: str, generated: str, now_lo
     else:
         latest_block = '<text x="900" y="165" class="m" fill="#8e999c" font-size="11">No public-safe signal yet.</text>'
 
-    focus = top_categories[0][0] if top_categories else "NO PUBLIC SIGNAL"
-    active_repos = len(weekly_repo_counts) if weekly_repo_counts else len(summary["repo_counts"])
+    if not has_weekly:
+        empty_week_note = '<text x="58" y="285" class="m" fill="#8e999c" font-size="10">NO PUBLIC REPOSITORY CHANGES RECORDED SINCE MONDAY · CONTEXT BELOW USES THE LAST 30 DAYS.</text>'
+    else:
+        empty_week_note = ""
+
+    active_repos = len(summary["weekly_repo_counts"])
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
   <title id="title">Edward Hwang weekly engineering focus</title>
@@ -380,21 +409,22 @@ def render_weekly_svg(summary, latest_items, source: str, generated: str, now_lo
   <style>.m{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}</style>
   <rect width="1200" height="350" rx="10" fill="#0a0d0e"/>
   <path d="M38 54H1162M38 304H1162" stroke="#30383b"/>
-  <line x1="468" y1="84" x2="468" y2="284" stroke="#30383b"/>
-  <line x1="862" y1="84" x2="862" y2="284" stroke="#30383b"/>
+  <line x1="468" y1="84" x2="468" y2="270" stroke="#30383b"/>
+  <line x1="862" y1="84" x2="862" y2="270" stroke="#30383b"/>
   <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">WEEK / {week_num:02d} · ENGINEERING FOCUS</text>
   <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">PUBLIC SIGNAL / {escape(source)}</text>
-  <text x="58" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">FOCUS AREAS</text>
+  <text x="58" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">{left_header}</text>
   {''.join(category_parts)}
-  <text x="528" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">ACTIVE REPOSITORIES</text>
+  <text x="528" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">{middle_header}</text>
   {''.join(repo_parts)}
   <text x="900" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">LATEST SIGNAL</text>
   {latest_block}
+  {empty_week_note}
   <text x="58" y="330" class="m" fill="#78d0c8" font-size="11">{len(weekly):02d}</text>
   <text x="88" y="330" class="m" fill="#657174" font-size="9">PUBLIC CHANGES THIS WEEK</text>
   <text x="330" y="330" class="m" fill="#78d0c8" font-size="11">{active_repos:02d}</text>
-  <text x="360" y="330" class="m" fill="#657174" font-size="9">ACTIVE REPOS</text>
-  <text x="548" y="330" class="m" fill="#78d0c8" font-size="11">{escape(focus)}</text>
+  <text x="360" y="330" class="m" fill="#657174" font-size="9">ACTIVE REPOS THIS WEEK</text>
+  <text x="548" y="330" class="m" fill="#78d0c8" font-size="10">{escape(focus_footer)}</text>
   <text x="1162" y="330" text-anchor="end" class="m" fill="#657174" font-size="9">UPDATED {escape(generated)}</text>
 </svg>
 '''
