@@ -1,59 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
   <title id="title">Edward engineering landscape</title>
-  <desc id="desc">Pseudo-3D engineering landscape linking public systems, project domains, and GitHub Brain as a future system core.</desc>
+  <desc id="desc">Pseudo-3D engineering landscape linking selected systems and GitHub Brain as a future system core.</desc>
   <style>
-    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.s{font-family:Inter,Arial,Helvetica,sans-serif}
-    .pulse{animation:pulse 3.4s ease-in-out infinite}.dash{stroke-dasharray:5 9;animation:dash 6s linear infinite}.float1{animation:float 7s ease-in-out infinite}.float2{animation:float 8s ease-in-out 1.2s infinite}.float3{animation:float 7.4s ease-in-out 2s infinite}
-    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}@keyframes dash{to{stroke-dashoffset:-56}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
-    @media(prefers-reduced-motion:reduce){.pulse,.dash,.float1,.float2,.float3{animation:none}}
+    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.pulse{animation:pulse 3.4s ease-in-out infinite}.dash{stroke-dasharray:5 9;animation:dash 6s linear infinite}
+    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}@keyframes dash{to{stroke-dashoffset:-56}}
+    @media(prefers-reduced-motion:reduce){.pulse,.dash{animation:none}}
   </style>
-  <rect width="1200" height="520" rx="10" fill="#0a0d0e"/>
-  <path d="M38 54H1162M38 470H1162" stroke="#30383b"/>
-  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">ENGINEERING LANDSCAPE / PSEUDO-3D TEASER</text>
-  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">STATIC SURFACE → FUTURE THREE.JS WORLD</text>
-  <g transform="translate(80 90)">
-    <path d="M520 20 940 220 520 420 100 220z" fill="#0e1315" stroke="#2f383b"/>
-    <path d="M100 220 520 420M940 220 520 420M520 20 520 420" stroke="#20282b"/>
-    <g stroke="#273034" fill="none">
-      <path d="M220 178 520 320 816 176"/>
-      <path d="M270 250 520 370 760 248"/>
+  <rect width="900" height="420" rx="8" fill="#0a0d0e"/>
+  <path d="M28 48H872M28 376H872" stroke="#30383b"/>
+  <text x="28" y="30" class="m" fill="#778286" font-size="11" letter-spacing="1.6">ENGINEERING LANDSCAPE / PSEUDO-3D TEASER</text>
+  <text x="872" y="30" text-anchor="end" class="m" fill="#78d0c8" font-size="9">README SNAPSHOT → THREE.JS WORLD</text>
+
+  <g transform="translate(70 68)">
+    <path d="M380 0 700 154 380 308 60 154z" fill="#0e1315" stroke="#2f383b"/>
+    <path d="M60 154 380 308M700 154 380 308M380 0 380 308" stroke="#20282b"/>
+    <path d="M148 126 380 238 612 126M185 181 380 276 575 181" stroke="#273034" fill="none"/>
+
+    <g transform="translate(125 118)">
+      <path d="M0 0 66-31 132 0 66 31z" fill="#11181a" stroke="#3d494d"/>
+      <path d="M14-2 66-25 118-2 66 23z" fill="#151d20" stroke="#78d0c8"/>
+      <path d="M66-25v48M14-2v20l52 25 52-25V-2" fill="none" stroke="#3f4a4e"/>
+      <text x="66" y="50" text-anchor="middle" class="m" fill="#78d0c8" font-size="8.5">AIML—01</text>
+      <text x="66" y="66" text-anchor="middle" class="m" fill="#e2e4df" font-size="9.5">AFL PREDICT</text>
+      <text x="66" y="81" text-anchor="middle" class="m" fill="#657174" font-size="8">ML / EVALUATION</text>
     </g>
-    <g class="float1" transform="translate(220 170)">
-      <path d="M0 0 90-42 180 0 90 42z" fill="#11181a" stroke="#3d494d"/>
-      <path d="M18-2 90-35 162-2 90 31z" fill="#151d20" stroke="#78d0c8"/>
-      <path d="M90-35v66M18-2v26l72 35 72-35V-2" fill="none" stroke="#3f4a4e"/>
-      <text x="90" y="68" text-anchor="middle" class="m" fill="#78d0c8" font-size="10">AIML—01</text>
-      <text x="90" y="86" text-anchor="middle" class="m" fill="#e2e4df" font-size="11">AFL PREDICT</text>
-      <text x="90" y="102" text-anchor="middle" class="m" fill="#657174" font-size="9">ML / EVALUATION</text>
+
+    <g transform="translate(502 116)">
+      <path d="M0 0 66-31 132 0 66 31z" fill="#11181a" stroke="#3d494d"/>
+      <path d="M14-2 66-25 118-2 66 23z" fill="#151d20" stroke="#78d0c8"/>
+      <path d="M66-25v48M14-2v20l52 25 52-25V-2" fill="none" stroke="#3f4a4e"/>
+      <text x="66" y="50" text-anchor="middle" class="m" fill="#78d0c8" font-size="8.5">APP—01</text>
+      <text x="66" y="66" text-anchor="middle" class="m" fill="#e2e4df" font-size="9.5">WARDROBE</text>
+      <text x="66" y="81" text-anchor="middle" class="m" fill="#657174" font-size="8">PRODUCT / LOCAL-FIRST</text>
     </g>
-    <g class="float2" transform="translate(680 165)">
-      <path d="M0 0 90-42 180 0 90 42z" fill="#11181a" stroke="#3d494d"/>
-      <path d="M18-2 90-35 162-2 90 31z" fill="#151d20" stroke="#78d0c8"/>
-      <path d="M90-35v66M18-2v26l72 35 72-35V-2" fill="none" stroke="#3f4a4e"/>
-      <text x="90" y="68" text-anchor="middle" class="m" fill="#78d0c8" font-size="10">APP—01</text>
-      <text x="90" y="86" text-anchor="middle" class="m" fill="#e2e4df" font-size="11">WARDROBE</text>
-      <text x="90" y="102" text-anchor="middle" class="m" fill="#657174" font-size="9">PRODUCT / LOCAL-FIRST</text>
+
+    <g transform="translate(314 222)">
+      <path d="M0 0 66-31 132 0 66 31z" fill="#11181a" stroke="#3d494d"/>
+      <path d="M14-2 66-25 118-2 66 23z" fill="#151d20" stroke="#78d0c8"/>
+      <path d="M66-25v48M14-2v20l52 25 52-25V-2" fill="none" stroke="#3f4a4e"/>
+      <text x="66" y="50" text-anchor="middle" class="m" fill="#78d0c8" font-size="8.5">FS—01</text>
+      <text x="66" y="66" text-anchor="middle" class="m" fill="#e2e4df" font-size="9.5">PROTIN</text>
+      <text x="66" y="81" text-anchor="middle" class="m" fill="#657174" font-size="8">BACKEND / MOBILE</text>
     </g>
-    <g class="float3" transform="translate(445 292)">
-      <path d="M0 0 90-42 180 0 90 42z" fill="#11181a" stroke="#3d494d"/>
-      <path d="M18-2 90-35 162-2 90 31z" fill="#151d20" stroke="#78d0c8"/>
-      <path d="M90-35v66M18-2v26l72 35 72-35V-2" fill="none" stroke="#3f4a4e"/>
-      <text x="90" y="68" text-anchor="middle" class="m" fill="#78d0c8" font-size="10">FS—01</text>
-      <text x="90" y="86" text-anchor="middle" class="m" fill="#e2e4df" font-size="11">PROTIN</text>
-      <text x="90" y="102" text-anchor="middle" class="m" fill="#657174" font-size="9">BACKEND / MOBILE</text>
+
+    <g transform="translate(337 56)">
+      <path d="M43 0 86 22 86 70 43 92 0 70 0 22z" fill="#101719" stroke="#78d0c8"/>
+      <path d="M43 0v92M0 22l86 48M86 22 0 70" stroke="#3f4a4e" fill="none"/>
+      <circle cx="43" cy="46" r="6" fill="#78d0c8" class="pulse"/>
+      <text x="43" y="111" text-anchor="middle" class="m" fill="#78d0c8" font-size="8.5">AI—01 / GITHUB BRAIN</text>
+      <text x="43" y="126" text-anchor="middle" class="m" fill="#657174" font-size="8">FUTURE SYSTEM CORE</text>
     </g>
-    <g transform="translate(465 88)">
-      <path d="M55 0 110 28 110 90 55 118 0 90 0 28z" fill="#101719" stroke="#78d0c8"/>
-      <path d="M55 0v118M0 28l110 62M110 28 0 90" stroke="#3f4a4e" fill="none"/>
-      <circle cx="55" cy="59" r="7" fill="#78d0c8" class="pulse"/>
-      <text x="55" y="144" text-anchor="middle" class="m" fill="#78d0c8" font-size="10">AI—01 / GITHUB BRAIN</text>
-      <text x="55" y="161" text-anchor="middle" class="m" fill="#657174" font-size="9">FUTURE SYSTEM CORE</text>
-    </g>
+
     <g fill="none" stroke="#78d0c8" class="dash">
-      <path d="M520 205C430 195 365 188 310 185"/>
-      <path d="M520 205C610 195 675 188 770 180"/>
-      <path d="M520 205C525 250 530 285 535 320"/>
+      <path d="M380 162C320 154 270 149 191 145"/>
+      <path d="M380 162C445 154 500 149 568 143"/>
+      <path d="M380 162C380 195 380 221 380 247"/>
     </g>
   </g>
-  <text x="38" y="495" class="m" fill="#657174" font-size="9">THE README SHOWS A PSEUDO-3D SNAPSHOT. THE DEVELOPER HUB VERSION SHOULD BECOME REAL THREE.JS WITH HOVER, CLICK, ROTATE, MOBILE FALLBACK, AND REDUCED-MOTION SUPPORT.</text>
+
+  <text x="28" y="400" class="m" fill="#657174" font-size="8.3">GITHUB = RESPONSIVE SVG SNAPSHOT · DEVELOPER HUB = FUTURE INTERACTIVE THREE.JS EXPERIENCE.</text>
 </svg>
