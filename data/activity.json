@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21 19:31 AEST",
-  "fingerprint": "ec86608d6c9de511e4cd2fd7c8273fcc2bf2d49710bb3292b23fcd3e10615c8b",
+  "generated_at": "2026-08-21 19:34 AEST",
+  "fingerprint": "1e837908b33e9a4baef4a6d5f5081b96e5717c4e24a4f5c5dbf02c0b6ccfc9cd",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -8,7 +8,7 @@
     {
       "repo": "Protin",
       "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
-      "category": "FIX / RELIABILITY",
+      "category": "TEST / QUALITY",
       "date": "2026-08-14T10:36:13Z",
       "display_date": "14 AUG",
       "sha": "6c4fa8e829",
@@ -28,7 +28,7 @@
     {
       "repo": "Protin",
       "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
-      "category": "FIX / RELIABILITY",
+      "category": "TEST / QUALITY",
       "date": "2026-08-14T10:36:13Z",
       "display_date": "14 AUG",
       "sha": "6c4fa8e829",
@@ -49,7 +49,7 @@
     "wadrobe": 1
   },
   "category_counts": {
-    "FIX / RELIABILITY": 1,
+    "TEST / QUALITY": 1,
     "ENGINEERING": 1
   },
   "weekly_repo_counts": {},
