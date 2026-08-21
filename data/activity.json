@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21 19:34 AEST",
-  "fingerprint": "1e837908b33e9a4baef4a6d5f5081b96e5717c4e24a4f5c5dbf02c0b6ccfc9cd",
+  "generated_at": "2026-08-21 23:13 AEST",
+  "fingerprint": "275ca1a1b452a490b538efb423b92e5742123b297d53916821ac54c06346e72f",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -55,15 +55,15 @@
   "weekly_repo_counts": {},
   "weekly_category_counts": {},
   "repo_meta": {
+    "wadrobe": {
+      "pushed_at": "2026-08-21T10:54:49Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/wadrobe"
+    },
     "Protin": {
       "pushed_at": "2026-08-19T08:45:59Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Protin"
-    },
-    "wadrobe": {
-      "pushed_at": "2026-08-13T09:32:44Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/wadrobe"
     },
     "AFL_predict": {
       "pushed_at": "2026-08-13T09:32:38Z",
