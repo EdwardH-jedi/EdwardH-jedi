@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">AFL Predict miniature model flow</title>
+  <desc id="desc">Predictive models send independent outputs into a weighted ensemble, which produces a final prediction before outcome checking.</desc>
+  <style>
+    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.s{font-family:Inter,Arial,Helvetica,sans-serif}
+    .flow{stroke:#78d0c8;stroke-width:1.5;stroke-dasharray:4 9;animation:flow 3.8s linear infinite}.pulse{animation:pulse 3s ease-in-out infinite}.bob1{animation:bob 5.8s ease-in-out infinite}.bob2{animation:bob 6.6s ease-in-out .8s infinite}.bob3{animation:bob 6.1s ease-in-out 1.4s infinite}.bob4{animation:bob 7s ease-in-out 2.1s infinite}
+    @keyframes flow{to{stroke-dashoffset:-52}}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+    @media(prefers-reduced-motion:reduce){.flow,.pulse,.bob1,.bob2,.bob3,.bob4{animation:none}}
+  </style>
+  <rect width="1200" height="360" rx="10" fill="#0a0d0e"/>
+  <path d="M38 54H1162M38 316H1162" stroke="#30383b"/>
+  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">AIML—01 / AFL PREDICT / MODEL FLOW</text>
+  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">PREDICTORS → ENSEMBLE → OUTCOME CHECK</text>
+  <g class="m" font-size="10" text-anchor="middle">
+    <g class="bob1" transform="translate(145 98)"><circle cx="0" cy="0" r="10" fill="none" stroke="#98a3a6"/><path d="M0 11v35m0-22-15 11m15-11 16 9M0 46-13 70M0 46l14 24" fill="none" stroke="#98a3a6" stroke-linecap="round"/><text x="0" y="92" fill="#e5e6e1">ELO</text></g>
+    <g class="bob2" transform="translate(335 98)"><circle cx="0" cy="0" r="10" fill="none" stroke="#98a3a6"/><path d="M0 11v35m0-22-14 8m14-8 15 12M0 46-12 70M0 46l13 24" fill="none" stroke="#98a3a6" stroke-linecap="round"/><text x="0" y="92" fill="#e5e6e1">LOGISTIC</text></g>
+    <g class="bob3" transform="translate(525 98)"><circle cx="0" cy="0" r="10" fill="none" stroke="#98a3a6"/><path d="M0 11v35m0-22-16 10m16-10 16 9M0 46-13 70M0 46l14 24" fill="none" stroke="#98a3a6" stroke-linecap="round"/><text x="0" y="92" fill="#e5e6e1">XGBOOST</text></g>
+    <g class="bob4" transform="translate(715 98)"><circle cx="0" cy="0" r="10" fill="none" stroke="#98a3a6"/><path d="M0 11v35m0-22-13 12m13-12 17 7M0 46-11 70M0 46l13 24" fill="none" stroke="#98a3a6" stroke-linecap="round"/><text x="0" y="92" fill="#e5e6e1">POISSON</text></g>
+  </g>
+  <g fill="none"><path d="M145 198C245 230 520 230 780 222" class="flow"/><path d="M335 198C430 220 595 220 780 222" class="flow"/><path d="M525 198C610 210 685 216 780 222" class="flow"/><path d="M715 198C746 204 760 213 780 222" class="flow"/></g>
+  <g transform="translate(842 222)"><rect x="-62" y="-35" width="124" height="70" rx="7" fill="#101517" stroke="#78d0c8"/><text x="0" y="-4" text-anchor="middle" class="s" fill="#f1efe8" font-size="16" font-weight="700">ENSEMBLE</text><text x="0" y="17" text-anchor="middle" class="m" fill="#8d989b" font-size="9">WEIGHTED COMBINATION</text></g>
+  <path d="M906 222H1010" class="flow" fill="none"/>
+  <g transform="translate(1080 222)"><circle r="39" fill="#101517" stroke="#3c474a"/><circle r="6" fill="#78d0c8" class="pulse"/><text x="0" y="58" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">FINAL PREDICTION</text></g>
+  <text x="38" y="340" class="m" fill="#657174" font-size="9">MODELS ARE PREDICTORS, NOT AGENTS · NO DISPLAYED PROBABILITIES OR WEIGHTS ARE INVENTED.</text>
+</svg>
