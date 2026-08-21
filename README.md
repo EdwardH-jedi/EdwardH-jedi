@@ -46,7 +46,35 @@ When GitHub Brain is connected, only evidence explicitly marked `public_safe: tr
 
 ---
 
-### `03 / CURRENT SYSTEMS`
+### `03 / LIVING SYSTEMS`
+
+The profile and Developer Hub share the same **Computational Editorial × Human Micro-Motion** language. These are miniature process diagrams, not decorative GIFs.
+
+<p align="center">
+  <img src="./assets/motion-afl.svg" width="100%" alt="AFL Predict model flow miniature motion" />
+</p>
+
+<p align="center">
+  <img src="./assets/motion-wardrobe.svg" width="100%" alt="Wardrobe product flow miniature motion" />
+</p>
+
+<p align="center">
+  <img src="./assets/motion-protin.svg" width="100%" alt="Protin social sports flow miniature motion" />
+</p>
+
+---
+
+### `04 / ENGINEERING LANDSCAPE`
+
+<p align="center">
+  <img src="./assets/engineering-landscape.svg" width="100%" alt="Pseudo-3D engineering landscape teaser" />
+</p>
+
+This is the GitHub-safe teaser for a future **interactive Three.js engineering landscape** in the Developer Hub. The README remains a restrained SVG surface; the browser version will handle orbit, hover/focus, click-through project navigation, mobile fallback, and reduced-motion behavior.
+
+---
+
+### `05 / CURRENT SYSTEMS`
 
 | Ref | System | Scope | Surface |
 |---|---|---|---|
@@ -59,7 +87,7 @@ When GitHub Brain is connected, only evidence explicitly marked `public_safe: tr
 
 ---
 
-### `04 / ENGINEERING MAP`
+### `06 / ENGINEERING MAP`
 
 <p align="center">
   <img src="./assets/system-map.svg" width="100%" alt="Evidence-based engineering system map" />
@@ -69,7 +97,7 @@ No fake percentages. The map connects domains to projects where that work is imp
 
 ---
 
-### `05 / SELECTED WORK`
+### `07 / SELECTED WORK`
 
 **[`AFL_predict`](https://github.com/EdwardH-jedi/AFL_predict) — Automated Sports Analytics & Model Evaluation**  
 `Python` `FastAPI` `XGBoost` `scikit-learn` `SQLAlchemy` `Alembic`
@@ -93,7 +121,7 @@ Local-first route recording, background location updates, walk history, dog prof
 
 ---
 
-### `06 / ASK MY GITHUB`
+### `08 / ASK MY GITHUB`
 
 ```text
 > Which projects use FastAPI?
@@ -111,7 +139,7 @@ The actual interactive chat will live in the Developer Hub. This README stays a 
 ---
 
 <details>
-<summary><b>07 / EXPERIENCE + EDUCATION</b></summary>
+<summary><b>09 / EXPERIENCE + EDUCATION</b></summary>
 
 <br/>
 
@@ -140,7 +168,7 @@ High School Diploma · `2017 — 2022`
 </details>
 
 <details>
-<summary><b>08 / ENGINEERING RANGE</b></summary>
+<summary><b>10 / ENGINEERING RANGE</b></summary>
 
 <br/>
 
@@ -157,7 +185,7 @@ HARDWARE       Arduino · sensor systems · industrial IoT
 </details>
 
 <details>
-<summary><b>09 / EARLIER ENGINEERING + LEADERSHIP</b></summary>
+<summary><b>11 / EARLIER ENGINEERING + LEADERSHIP</b></summary>
 
 <br/>
 
@@ -178,7 +206,7 @@ Built a touchless hardware/software prototype using Arduino C, motion sensors, a
 
 ---
 
-### `10 / PROFILE PIPELINE`
+### `12 / PROFILE PIPELINE`
 
 ```text
 OWNED PUBLIC REPOSITORIES
@@ -205,6 +233,8 @@ PROFILE / DEVELOPER HUB
 ```
 
 The renderer checks for changes every six hours but only commits regenerated assets when the underlying public signal changes.
+
+Design and Three.js handoff contracts live in [`docs/DESIGN.md`](./docs/DESIGN.md) and [`docs/ENGINEERING_LANDSCAPE_SPEC.md`](./docs/ENGINEERING_LANDSCAPE_SPEC.md).
 
 <p align="center">
   <sub>EDWARD (SOON HYUN) HWANG · SYDNEY, AUSTRALIA · ENGINEERING WORK, WITH EVIDENCE.</sub>
