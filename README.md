@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Edward Hwang — Software, Systems, AI/ML, Mobile" />
+  <img src="./hero.svg" width="100%" alt="Edward Hwang — Software, Systems, AI/ML, Mobile" />
 </p>
 
 <p align="center">
