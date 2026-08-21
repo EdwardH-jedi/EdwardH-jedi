@@ -1,28 +1,84 @@
 {
-  "generated_at": "2026-08-21T09:05:00Z",
-  "source": "PUBLIC GITHUB FALLBACK",
+  "generated_at": "2026-08-21 19:31 AEST",
+  "fingerprint": "ec86608d6c9de511e4cd2fd7c8273fcc2bf2d49710bb3292b23fcd3e10615c8b",
+  "window_days": 30,
   "public_safe": true,
-  "items": [
+  "source": "PUBLIC GITHUB",
+  "commits": [
     {
       "repo": "Protin",
-      "summary": "public repository activity",
-      "category": "PUBLIC REPO",
-      "date": "19 AUG",
-      "url": "https://github.com/EdwardH-jedi/Protin"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "public repository activity",
-      "category": "PUBLIC REPO",
-      "date": "13 AUG",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict"
+      "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-08-14T10:36:13Z",
+      "display_date": "14 AUG",
+      "sha": "6c4fa8e829",
+      "url": "https://github.com/EdwardH-jedi/Protin/commit/6c4fa8e82940e81e6902d2374771091157b7ff5f"
     },
     {
       "repo": "wadrobe",
-      "summary": "public repository activity",
-      "category": "PUBLIC REPO",
-      "date": "13 AUG",
-      "url": "https://github.com/EdwardH-jedi/wadrobe"
+      "summary": "push everything",
+      "category": "ENGINEERING",
+      "date": "2026-07-27T05:55:05Z",
+      "display_date": "27 JUL",
+      "sha": "319b67304c",
+      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/319b67304c6a29a9427080c6765cb278a48a0116"
     }
-  ]
+  ],
+  "latest": [
+    {
+      "repo": "Protin",
+      "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-08-14T10:36:13Z",
+      "display_date": "14 AUG",
+      "sha": "6c4fa8e829",
+      "url": "https://github.com/EdwardH-jedi/Protin/commit/6c4fa8e82940e81e6902d2374771091157b7ff5f"
+    },
+    {
+      "repo": "wadrobe",
+      "summary": "push everything",
+      "category": "ENGINEERING",
+      "date": "2026-07-27T05:55:05Z",
+      "display_date": "27 JUL",
+      "sha": "319b67304c",
+      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/319b67304c6a29a9427080c6765cb278a48a0116"
+    }
+  ],
+  "repo_counts": {
+    "Protin": 1,
+    "wadrobe": 1
+  },
+  "category_counts": {
+    "FIX / RELIABILITY": 1,
+    "ENGINEERING": 1
+  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
+  "repo_meta": {
+    "Protin": {
+      "pushed_at": "2026-08-19T08:45:59Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Protin"
+    },
+    "wadrobe": {
+      "pushed_at": "2026-08-13T09:32:44Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/wadrobe"
+    },
+    "AFL_predict": {
+      "pushed_at": "2026-08-13T09:32:38Z",
+      "language": "Python",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict"
+    },
+    "soonpermario": {
+      "pushed_at": "2026-06-11T04:56:44Z",
+      "language": "JavaScript",
+      "url": "https://github.com/EdwardH-jedi/soonpermario"
+    },
+    "league_togo": {
+      "pushed_at": "2026-05-26T01:46:50Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/league_togo"
+    }
+  }
 }
