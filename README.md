@@ -3,111 +3,130 @@
 </p>
 
 <p align="center">
-  <a href="mailto:edwardhwang1223@gmail.com">Email</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/soon-hyun-hwang-7212a42b7">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/EdwardH-jedi">GitHub</a>
+  <a href="mailto:edwardhwang1223@gmail.com">EMAIL</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/soon-hyun-hwang-7212a42b7">LINKEDIN</a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/EdwardH-jedi?tab=repositories">REPOSITORIES</a>
 </p>
 
 ---
 
-### `00 / PROFILE`
+### `00 / CONTROL PANEL`
 
-Final-year **Computer Science** student at the **University of Sydney**, based in Sydney.
+Final-year **Computer Science** student at the **University of Sydney**, based in Sydney. I work across backend systems, mobile products, data/ML pipelines, local-first software, and experimental interfaces.
 
-I build across backend systems, mobile products, data/ML pipelines, local-first software, and experimental interfaces. My experience spans industrial IoT deployment, REST API debugging, Linux/Docker operations, computer-vision validation, full-stack product development, and ML evaluation.
+`TARGET / GRADUATE SOFTWARE ENGINEERING · BACKEND / SYSTEMS · AI/ML INFRASTRUCTURE`
 
-**Target:** Graduate Software Engineering · Backend / Systems · AI/ML Infrastructure
+The profile is designed as the public control surface for my engineering work: curated claims stay human-owned, public GitHub activity is refreshed automatically, and the next layer is **GitHub Brain** — a local-first evidence engine that can index repositories, answer questions about my work, and propose profile/portfolio updates without turning private source into public evidence.
 
 ---
 
-### `01 / CURRENTLY BUILDING`
+### `01 / LIVE PUBLIC ACTIVITY`
 
-| Ref | System | What it is | State |
+<p align="center">
+  <img src="./assets/activity.svg" width="100%" alt="Recent public engineering activity" />
+</p>
+
+The activity plate is generated from **public repositories only**. Until GitHub Brain is connected, it falls back to public GitHub commit metadata. The Brain integration contract requires an explicit `public_safe: true` gate before enriched summaries can appear here.
+
+---
+
+### `02 / CURRENT SYSTEMS`
+
+| Ref | System | Scope | Surface |
 |---|---|---|---|
-| `SYS-01` | **Edward Developer Hub** | Technical project index and engineering case-study hub built with Next.js | `ACTIVE` |
-| `AI-01` | **GitHub Brain** | Local-first AI layer for indexing repositories, answering evidence-backed questions, and proposing portfolio updates | `BUILDING` |
-| `R&D-01` | **PanSegAI** | University team capstone exploring medical-image segmentation | `ACADEMIC / IN PROGRESS` |
+| `SYS—01` | **Edward Developer Hub** | Next.js technical portfolio and engineering case-study system | `PRIVATE BUILD` |
+| `AI—01` | **GitHub Brain** | Local-first repository intelligence, evidence-aware RAG, portfolio maintenance | `BUILDING` |
+| `AIML—01` | **AFL Predict** | Sports analytics, model evaluation, calibration, backtesting | [`PUBLIC`](https://github.com/EdwardH-jedi/AFL_predict) |
+| `APP—01` | **Wardrobe** | Local-first wardrobe archive + scoped proxy-3D experiment | [`PUBLIC`](https://github.com/EdwardH-jedi/wadrobe) |
+| `FS—01` | **Protin** | Social sports mobile platform + asynchronous backend | [`PUBLIC`](https://github.com/EdwardH-jedi/Protin) |
+| `R&D—01` | **PanSegAI** | University team capstone exploring medical-image segmentation | `ACADEMIC / IN PROGRESS` |
 
 ---
 
-### `02 / SELECTED SYSTEMS`
+### `03 / ENGINEERING MAP`
 
-#### [`AFL_predict`](https://github.com/EdwardH-jedi/AFL_predict)
-**Automated sports analytics & model-evaluation platform**  
+<p align="center">
+  <img src="./assets/system-map.svg" width="100%" alt="Evidence-based engineering system map" />
+</p>
+
+No skill percentages. The map connects domains to projects where that work is actually implemented or explicitly scoped.
+
+---
+
+### `04 / SELECTED WORK`
+
+**[`AFL_predict`](https://github.com/EdwardH-jedi/AFL_predict) — Automated Sports Analytics & Model Evaluation**  
 `Python` `FastAPI` `XGBoost` `scikit-learn` `SQLAlchemy` `Alembic`
 
-A paper-trading research system spanning data ingestion, temporal feature engineering, model training and calibration, backtesting, recommendations, API endpoints, and reproducible evaluation.
+Paper-trading research system spanning data ingestion, temporal feature engineering, multiple predictive models, calibration, backtesting, recommendations, API endpoints, and reproducible evaluation.
 
----
-
-#### [`wadrobe`](https://github.com/EdwardH-jedi/wadrobe)
-**Local-first digital wardrobe**  
-`React` `TypeScript` `IndexedDB` `Three.js` `FastAPI`
-
-A wardrobe archive focused on local persistence, garment-image preparation, outfit composition, and a deliberately scoped experimental proxy-3D pipeline.
-
----
-
-#### **SportsGang / Protin**
-**Full-stack mobile sports platform**  
+**[`Protin`](https://github.com/EdwardH-jedi/Protin) — Social Sports Platform**  
 `React Native` `Expo` `TypeScript` `FastAPI` `PostgreSQL` `Redis` `Docker`
 
-Built mobile product flows and an asynchronous backend around discovery, matching, bookings, account lifecycle, database migrations, health checks, and automated testing.
+Full-stack mobile product for discovering training partners and organising sports sessions, with asynchronous APIs, migrations, account lifecycle work, health checks, and automated tests.
+
+**[`wadrobe`](https://github.com/EdwardH-jedi/wadrobe) — Local-First Digital Wardrobe**  
+`React` `TypeScript` `IndexedDB` `Three.js` `FastAPI`
+
+Wardrobe archive focused on local persistence, garment-image preparation, outfit composition, and a deliberately scoped experimental proxy-3D pipeline.
+
+**Walkroo — Privacy-First Dog-Walking Tracker**  
+`React Native` `Expo` `TypeScript` `iOS Location Services` · `LOCAL EVIDENCE`
+
+Local-first route recording, background location updates, walk history, dog profiles, and private location annotations. Public source evidence is intentionally not claimed while the project has no recruiter-visible remote.
 
 ---
 
-#### **Walkroo**
-**Privacy-first dog-walking tracker**  
-`React Native` `Expo` `TypeScript` `iOS Location Services`
+### `05 / ASK MY GITHUB`
 
-Local-first route recording with background location updates, walk history, dog profiles, and private location annotations.
+```text
+> Which projects use FastAPI?
+> How does AFL Predict evaluate its models?
+> What did Edward build with Three.js?
+> Which repositories demonstrate local-first architecture?
+> Show the public evidence for a portfolio claim.
+```
+
+**GitHub Brain is being built as the intelligence layer behind these questions.**  
+The public interface will live in the Developer Hub; this README only exposes the profile surface and public-safe generated artifacts.
 
 ---
 
-#### **Career Quest**
-**Interactive resume game**  
-`HTML5 Canvas` `JavaScript` `Node.js`
+<details>
+<summary><b>06 / EXPERIENCE + EDUCATION</b></summary>
 
-Turned education and engineering milestones into a browser platformer, with a headless smoke-test bot that validates the game flow.
+<br/>
 
----
-
-### `03 / EXPERIENCE`
-
-#### `2025.12 — 2026.02` · Computer Vision & Field Deployment Intern — **Sensorway**
-**On-site deployment: EcoPro, Hungary**
+**Computer Vision & Field Deployment Intern — Sensorway**  
+`DEC 2025 — FEB 2026 · ON-SITE / ECOPRO, HUNGARY`
 
 - Deployed and configured approximately **750 smart sensors** across an industrial site.
 - Worked across PID middleware, SQL database layers, Dockerised services, and a real-time monitoring interface.
-- Validated end-to-end sensor → middleware → database data flow and diagnosed connectivity / data-quality issues.
-- Reproduced and triaged REST API defects, documented edge cases, and coordinated backend fixes in Linux environments.
-- Supported a computer-vision anomaly-detection initiative through video-case validation and test refinement.
+- Validated sensor → middleware → database flow and diagnosed connectivity/data-quality issues during live rollout.
+- Reproduced and triaged REST API defects and supported computer-vision anomaly-detection validation.
 
-#### `2021.06 — 2021.08` · Research Lab Intern — **Seoul National University**
-**Materials Science & Engineering · Seoul, South Korea**
+**Research Lab Intern — Seoul National University, Materials Science & Engineering**  
+`JUN 2021 — AUG 2021 · SEOUL`
 
 - Supported structured data collection, analysis, experimental documentation, and collaborative interpretation.
-- Completed an assigned capstone project ahead of schedule using a disciplined research workflow.
-
----
-
-### `04 / EDUCATION`
+- Completed an assigned capstone project ahead of schedule.
 
 **University of Sydney**  
-Bachelor of Advanced Computing — Computer Science  
-`2022 — 2026 expected`
+Bachelor of Advanced Computing — Computer Science · `2022 — 2026 EXPECTED`
 
-Relevant study includes systems programming, algorithms & data structures, databases, AI, computer vision, software engineering, and object-oriented programming.
+Relevant study: systems programming, algorithms & data structures, databases, AI, computer vision, software engineering, object-oriented programming.
 
 **St Johnsbury Academy Jeju**  
-High School Diploma  
-`2017 — 2022`
+High School Diploma · `2017 — 2022`
 
----
+</details>
 
-### `05 / ENGINEERING RANGE`
+<details>
+<summary><b>07 / ENGINEERING RANGE</b></summary>
+
+<br/>
 
 ```text
 LANGUAGES      Python · TypeScript/JavaScript · C · C++ · Java · SQL · Bash
@@ -119,39 +138,54 @@ ML             XGBoost · scikit-learn · feature engineering · calibration · 
 HARDWARE       Arduino · sensor systems · industrial IoT
 ```
 
----
+</details>
 
-### `06 / EARLIER ENGINEERING, ENTREPRENEURSHIP & LEADERSHIP`
+<details>
+<summary><b>08 / EARLIER ENGINEERING + LEADERSHIP</b></summary>
+
+<br/>
 
 **Ara Company — CEO & Co-founder** · `2020 — 2022`  
 Led product conceptualisation and team coordination, filed a patent application, and won the **Grand Prize — 2020 Samsung Enterprise Competition / Startup Support Program**.
 
 **Contactless Coffee Machine — Embedded Systems Capstone** · `2021 — 2022`  
-Built a touchless hardware/software prototype using Arduino C, motion sensors, and ultrasonic sensing during COVID-era contact-reduction work.
+Built a touchless hardware/software prototype using Arduino C, motion sensors, and ultrasonic sensing.
 
 **Selected recognition**
+
 - Grand Prize — 2020 Samsung Enterprise Competition
 - Bronze Prize — 2019 Prudential Voluntary Work Competition
 - Jeju Provincial Park President's Commendation — 2019–2022
 - Korea Youth Volunteer Federation Commendation — 2019–2022
-- Founding member of a community-service organisation running monthly local outreach programs — 2019–present
+
+</details>
 
 ---
 
-### `07 / LANGUAGES`
+### `09 / PROFILE PIPELINE`
 
-`Korean — Native` · `English — Fluent / professional` · `Spanish — DELE A2`
+```text
+PUBLIC GITHUB REPOS
+        ↓
+DAILY ACTIVITY RENDERER
+        ↓
+assets/activity.svg
+        ↓
+GITHUB PROFILE
 
----
+future enrichment:
 
-### `08 / PRINCIPLE`
+GITHUB BRAIN (local / evidence-aware)
+        ↓
+public-safe summary proposal
+        ↓
+public_safe gate
+        ↓
+PROFILE / DEVELOPER HUB
+```
 
-> Build the system. Test the claim. Show the evidence.
-
-I prefer repositories that explain not only **what was built**, but also architecture, tests, limitations, and what remains experimental.
-
----
+The automation intentionally uses the **public user repository surface** for its fallback feed. Private repositories are not eligible for automatic public activity rendering.
 
 <p align="center">
-  <sub>Edward (Soon Hyun) Hwang · Sydney, Australia</sub>
+  <sub>EDWARD (SOON HYUN) HWANG · SYDNEY, AUSTRALIA · ENGINEERING WORK, WITH EVIDENCE.</sub>
 </p>
