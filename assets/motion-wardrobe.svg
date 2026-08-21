@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Wardrobe miniature product flow</title>
+  <desc id="desc">A garment moves from capture into a local archive, outfit composition, and an explicitly experimental proxy-3D stage.</desc>
+  <style>
+    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.s{font-family:Inter,Arial,Helvetica,sans-serif}
+    .flow{stroke:#78d0c8;stroke-width:1.5;stroke-dasharray:5 10;animation:flow 4.4s linear infinite}.float{animation:float 6.4s ease-in-out infinite}.float2{animation:float 7.2s ease-in-out 1.2s infinite}.pulse{animation:pulse 3.2s ease-in-out infinite}
+    @keyframes flow{to{stroke-dashoffset:-60}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @media(prefers-reduced-motion:reduce){.flow,.float,.float2,.pulse{animation:none}}
+  </style>
+  <rect width="1200" height="360" rx="10" fill="#0a0d0e"/>
+  <path d="M38 54H1162M38 316H1162" stroke="#30383b"/>
+  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">APP—01 / WARDROBE / PRODUCT FLOW</text>
+  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">CAPTURE → ARCHIVE → COMPOSE → PROXY 3D</text>
+  <g transform="translate(98 110)" class="float"><path d="M0 0h120M20 0v105M100 0v105" stroke="#3b464a" fill="none"/><path d="M43 21c5-8 12-12 17-12s12 4 17 12l18 18-16 13-8-10v58H49V42l-8 10-16-13z" fill="none" stroke="#9ca6a9" stroke-linejoin="round"/><text x="60" y="132" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">GARMENT</text></g>
+  <path d="M240 195H378" class="flow" fill="none"/>
+  <g transform="translate(430 98)"><rect width="180" height="180" rx="8" fill="#101517" stroke="#3c474a"/><rect x="22" y="22" width="136" height="92" rx="4" fill="none" stroke="#657174"/><path d="M73 46c4-7 10-10 17-10s13 3 17 10l15 15-12 11-7-8v38H77V64l-7 8-12-11z" fill="none" stroke="#9ca6a9"/><text x="22" y="142" class="m" fill="#78d0c8" font-size="9">LOCAL ARCHIVE</text><text x="22" y="162" class="m" fill="#8e999c" font-size="9">metadata + image</text></g>
+  <path d="M610 188H736" class="flow" fill="none"/>
+  <g transform="translate(770 100)" class="float2"><rect width="160" height="176" rx="8" fill="#101517" stroke="#3c474a"/><path d="M55 28h50l15 18-14 12-7-8v38H61V50l-7 8-14-12z" fill="none" stroke="#9ca6a9"/><path d="M55 104h50l10 42H45z" fill="none" stroke="#657174"/><text x="80" y="164" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">OUTFIT</text></g>
+  <path d="M930 188H1032" class="flow" fill="none"/>
+  <g transform="translate(1082 188)"><path d="M0-58 45-32 45 20 0 46-45 20-45-32z" fill="#101517" stroke="#78d0c8"/><path d="M0-58v104M-45-32 45 20M45-32-45 20" stroke="#3f4a4e" fill="none"/><circle r="5" fill="#78d0c8" class="pulse"/><text x="0" y="75" text-anchor="middle" class="m" fill="#dfe2de" font-size="10">PROXY 3D / EXP.</text></g>
+  <text x="38" y="340" class="m" fill="#657174" font-size="9">LOCAL-FIRST PRODUCT FLOW · PROXY 3D IS EXPERIMENTAL, NOT BODY FITTING, CLOTH SIMULATION, OR VIRTUAL TRY-ON.</text>
+</svg>
