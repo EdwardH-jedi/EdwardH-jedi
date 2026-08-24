@@ -12,8 +12,9 @@
     @keyframes compose{
       0%,12%  {transform:translate(0,0);opacity:1}
       28%     {transform:translate(10px,-16px)}
-      54%,74% {transform:translate(133px,4px);opacity:1}
-      82%,92% {transform:translate(133px,4px);opacity:0}
+      54%,76% {transform:translate(133px,4px);opacity:1}
+      84%,91% {transform:translate(133px,4px);opacity:0}
+      92%,95% {transform:translate(0,0);opacity:0}
       98%,100%{transform:translate(0,0);opacity:1}
     }
     @keyframes checked{0%,56%{opacity:0}64%,88%{opacity:1}95%,100%{opacity:0}}

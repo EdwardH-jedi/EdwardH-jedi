@@ -92,7 +92,7 @@ touched once are not listed.
 ### `06 / SYSTEMS`
 
 <p align="center">
-  <img src="./assets/signal-strip.svg" width="100%" alt="Public engineering signal strip: the current state, its meaning, and the commit and repository counts behind it over the last 30 days. Private repositories are excluded." />
+  <img src="./assets/signal-strip.svg" width="540" alt="Public engineering signal strip: the current state, its meaning, and the commit and repository counts behind it over the last 30 days. Private repositories are excluded." />
 </p>
 
 `PROFILE SIGNAL` · `PUBLIC` — generated daily by [a workflow in this repository](.github/workflows/profile-activity.yml)
@@ -101,11 +101,9 @@ state is a fixed threshold on commit count — `SHIPPING` ≥ 12, `BUILDING` ≥
 `FIXING` ≥ 3, otherwise `QUIET`. No model decides it, and `QUIET` is a real
 state: most weeks the work is in private repositories a public signal cannot see.
 
-`GITHUB BRAIN` · `LOCAL / WIP` — a local index over my own repositories: SQLite,
-local embeddings, and retrieval gated by an explicit per-repository policy, so
-private source can never reach a public answer. Answers cite the file and commit
-they came from. It runs on my machine only — there is nothing here to run, and
-it is not a hosted service.
+`GITHUB BRAIN` · `LOCAL / WIP` — the reason this profile can cite a file and a
+commit for each claim. It runs on my machine, not here, and every repository it
+reads carries an explicit policy for what may leave it.
 
 ---
 

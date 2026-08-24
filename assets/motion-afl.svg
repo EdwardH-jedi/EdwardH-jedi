@@ -8,13 +8,16 @@
     .acc{fill:none;stroke:#78d0c8;stroke-linecap:round;stroke-linejoin:round}
     /* Ball crosses, confidence fills behind it, verdict lands. Nothing else moves. */
     .ball{animation:kick 7s cubic-bezier(.4,0,.5,1) infinite}
-    .conf{transform-origin:14px 0;animation:fill 7s cubic-bezier(.4,0,.5,1) infinite}
+    /* fill-box anchors the scale to the bar's own left edge; the default
+       view-box origin resolves against the viewport, not the element. */
+    .conf{transform-box:fill-box;transform-origin:left center;animation:fill 7s cubic-bezier(.4,0,.5,1) infinite}
     .verdict{opacity:0;animation:settle 7s linear infinite}
     @keyframes kick{
       0%,8%   {transform:translate(0,0);opacity:1}
       32%     {transform:translate(38px,-24px)}
-      56%,72% {transform:translate(76px,0);opacity:1}
-      80%,92% {transform:translate(76px,0);opacity:0}
+      56%,74% {transform:translate(76px,0);opacity:1}
+      82%,90% {transform:translate(76px,0);opacity:0}
+      91%,94% {transform:translate(0,0);opacity:0}
       98%,100%{transform:translate(0,0);opacity:1}
     }
     @keyframes fill{0%,8%{transform:scaleX(.05)}56%,88%{transform:scaleX(1)}96%,100%{transform:scaleX(.05)}}

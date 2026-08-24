@@ -181,7 +181,10 @@ def recent_commits(repo_name: str, since: dt.datetime):
             f"/repos/{parse.quote(USERNAME)}/{parse.quote(repo_name)}/commits?{query}"
         )
     except (HTTPError, URLError, TimeoutError, json.JSONDecodeError):
-        return []
+        # Propagate: an empty list here is indistinguishable from a genuinely
+        # quiet repository, and swallowing it lets a transient outage publish a
+        # false QUIET. main() catches this and leaves the last good signal.
+        raise
 
     commits = []
     for raw in payload:
@@ -310,29 +313,25 @@ def render_signal_strip(summary, commits, source: str, generated: str) -> str:
     matches how much they actually tell a reader.
     """
     repos = len(summary["repo_counts"])
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 64" width="900" height="64" role="img" aria-label="Public engineering signal: state {escape(summary["state"])}, {len(commits)} commits across {repos} public repositories in the last 30 days. Private repositories are excluded.">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 68" width="540" height="68" role="img" aria-label="Public engineering signal: state {escape(summary["state"])}, {len(commits)} commits across {repos} public repositories in the last 30 days. Private repositories are excluded.">
   <title>Public engineering signal</title>
   <style>.m{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}</style>
-  <rect width="900" height="64" rx="6" fill="#0a0d0e"/>
-  <rect x="14" y="14" width="3" height="36" rx="1.5" fill="#78d0c8"/>
+  <rect width="540" height="68" rx="6" fill="#0a0d0e"/>
+  <rect x="14" y="15" width="3" height="38" rx="1.5" fill="#78d0c8"/>
   <text class="m" x="30" y="28" font-size="9" letter-spacing="1.4" fill="#8b9498">PUBLIC SIGNAL / LAST {WINDOW_DAYS} DAYS</text>
-  <text class="m" x="30" y="45" font-size="11" letter-spacing="1.2" fill="#f1efe8">{escape(summary["state"])}</text>
-  <text class="m" x="96" y="45" font-size="9" letter-spacing="0.6" fill="#8b9498">{escape(summary["state_meaning"])}</text>
-  <text class="m" x="886" y="28" text-anchor="end" font-size="9" letter-spacing="1.1" fill="#78d0c8">{len(commits)} COMMITS / {repos} REPOS</text>
-  <text class="m" x="886" y="45" text-anchor="end" font-size="8" letter-spacing="1" fill="#8b9498">{escape(source)} · {escape(generated)}</text>
+  <text class="m" x="30" y="46" font-size="11" letter-spacing="1.2" fill="#f1efe8">{escape(summary["state"])}</text>
+  <text class="m" x="30" y="60" font-size="9" letter-spacing="0.6" fill="#8b9498">{escape(summary["state_meaning"])}</text>
+  <text class="m" x="526" y="28" text-anchor="end" font-size="9" letter-spacing="1.1" fill="#78d0c8">{len(commits)} COMMITS / {repos} REPOS</text>
+  <text class="m" x="526" y="60" text-anchor="end" font-size="8" letter-spacing="1" fill="#8b9498">{escape(source)} · {escape(generated)}</text>
 </svg>
 '''
 
 
 def stable_generated_at(core_payload: dict, now_local: dt.datetime):
-    # The rendered day is included: dot positions are day-relative, so a new day
-    # legitimately changes the plate even when the commit set has not. Without
-    # this the fingerprint would claim nothing changed while the SVG had.
-    canonical = json.dumps(
-        {**core_payload, "rendered_on": now_local.date().isoformat()},
-        sort_keys=True,
-        separators=(",", ":"),
-    )
+    # No day-relative geometry remains in the strip, so the date is deliberately
+    # not part of the fingerprint: an unchanged commit set must produce an
+    # unchanged file and therefore no commit.
+    canonical = json.dumps(core_payload, sort_keys=True, separators=(",", ":"))
     fingerprint = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
     previous = {}
     path = DATA / "activity.json"
