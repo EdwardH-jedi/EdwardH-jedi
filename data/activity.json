@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24 14:36 AEST",
-  "fingerprint": "888a3bc9e12fb3fd1d43f3712a2d598224c08578f572f5daac5bbf38635e7aa4",
+  "generated_at": "2026-08-24 14:55 AEST",
+  "fingerprint": "32206837ba6477e11fa768fcfef4e9e359fcc88a377b47339aa9a484cca0b3bc",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -82,5 +82,5 @@
     }
   },
   "state": "QUIET",
-  "state_meaning": "little public activity \u2014 current work is not public"
+  "state_meaning": "few public commits in this window"
 }

@@ -24,7 +24,7 @@ the evidence in the repository rather than in the description.
 ### `02 / SYSTEM MAP`
 
 <p align="center">
-  <img src="./assets/system-map.svg" width="100%" alt="Six systems with their type, surface and current state" />
+  <img src="./assets/system-map.svg" width="100%" alt="System map: BYTE (native macOS, unpublished), Wardrobe (local-first, public, building), AFL Predict (research, public, verifying), Protin (full-stack, public, active), Developer Hub (portfolio, private), GitHub Brain (local intelligence, unpublished)." />
 </p>
 
 Six systems, with what each one is and where it can actually be read. `UNPUBLISHED`
@@ -38,15 +38,17 @@ recruiter cannot open is worse than no link.
 | System | Type | Evidence you can check | State |
 |---|---|---|---|
 | [**Protin**](https://github.com/EdwardH-jedi/Protin) | Full-stack mobile platform | 487 files · **82 test files** · Alembic migrations · Docker · CI workflow · React Native/Expo + FastAPI + PostgreSQL + Redis | `ACTIVE` |
-| [**Wardrobe**](https://github.com/EdwardH-jedi/wadrobe) | Local-first product | 204 files · **62 test files** · IndexedDB → localStorage → memory fallback chain · pure TS domain layer ported to Swift · FastAPI proxy-3D spike | `BUILDING` |
-| [**AFL Predict**](https://github.com/EdwardH-jedi/AFL_predict) | Research system | 303 files · **26 test files** · **9 Alembic migrations** · stage-per-directory pipeline · calibrated ensemble (XGBoost + logistic + Poisson GLM) · documented backtesting method | `VERIFYING` |
+| [**Wardrobe**](https://github.com/EdwardH-jedi/wadrobe) | Local-first product | 204 files · **62 test files** · IndexedDB → localStorage → memory fallback chain · framework-free TS domain layer · FastAPI proxy-3D service | `BUILDING` |
+| [**AFL Predict**](https://github.com/EdwardH-jedi/AFL_predict) | Research system | 303 files · **26 test files** · **8 Alembic migrations** · stage-per-directory pipeline · calibrated ensemble over XGBoost, logistic, Poisson and Elo baselines · documented backtesting method | `VERIFYING` |
 | **BYTE** | Native macOS organism | **5,275 Swift LOC** · 37 source files · **12 test files** · menu-bar app + local companion · no accounts, no telemetry | `LOCAL BUILD` |
 | **Developer Hub** | Portfolio surface | Next.js 16 · zero client components · 20 tests · WCAG AA verified | `PRIVATE BUILD` |
 | **GitHub Brain** | Local intelligence layer | SQLite + local embeddings · policy-gated retrieval · evidence-cited answers | `LOCAL BUILD` |
 
-Counts are file counts and lines of code from the repositories themselves, not
-performance claims. AFL Predict reads `VERIFYING` because its own README says the
-tree is not merge-ready — model quality is not claimed here.
+Counts are files, test files, migrations and lines of code on each repository's
+default branch, read on **2026-08-24** — a snapshot, not a live number, and not a
+performance claim. "Test files" counts files under test directories, including
+fixtures and helpers. AFL Predict reads `VERIFYING` because its own README says
+the tree is not merge-ready; model quality is not claimed here.
 
 **PanSegAI** — a University of Sydney team capstone on pancreas MRI segmentation — is
 in progress in a private group repository. The baseline work to date is the team's,
@@ -64,15 +66,17 @@ AI / DATA        XGBoost · scikit-learn · statsmodels · feature engineering �
 INFRASTRUCTURE   Docker · GitHub Actions · pytest · Vitest · SQLite
 ```
 
-Each line is supported by a repository above. Technologies I have touched once are
-not listed.
+Every line except `NATIVE SYSTEMS` is supported by a repository linked above.
+`NATIVE SYSTEMS` rests on BYTE, which is not published yet — listed because it is
+what I am building, not because you can currently check it. Technologies I have
+touched once are not listed.
 
 ---
 
 ### `05 / SIGNAL`
 
 <p align="center">
-  <img src="./assets/activity.svg" width="100%" alt="Thirty-day public engineering signal" />
+  <img src="./assets/activity.svg" width="100%" alt="Public engineering signal: state QUIET — few public commits in the last 30 days across Protin and Wardrobe. Private repositories are excluded." />
 </p>
 
 Generated daily by [a workflow in this repository](.github/workflows/profile-activity.yml)

@@ -9,18 +9,18 @@
       .rule   { stroke: #21262d; stroke-width: 1; }
       .spine  { stroke: #30363d; stroke-width: 1; }
       .label  { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
-                font-size: 11px; letter-spacing: 0.14em; fill: #6e7681; }
+                font-size: 11px; letter-spacing: 0.14em; fill: #8b9498; }
       .name   { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
                 font-size: 17px; letter-spacing: 0.06em; fill: #e6edf3; }
       .type   { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
                 font-size: 11px; letter-spacing: 0.10em; fill: #8b949e; }
       .state  { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
                 font-size: 11px; letter-spacing: 0.12em; fill: #7ee2d0; }
-      .quiet  { fill: #6e7681; }
+      .quiet  { fill: #8b9498; }
       .node   { fill: none; stroke: #7ee2d0; stroke-width: 1.2; }
       .nodeq  { fill: none; stroke: #484f58; stroke-width: 1.2; }
       .head   { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
-                font-size: 11px; letter-spacing: 0.18em; fill: #6e7681; }
+                font-size: 11px; letter-spacing: 0.18em; fill: #8b9498; }
     </style>
   </defs>
 

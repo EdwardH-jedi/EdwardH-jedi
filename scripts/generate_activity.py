@@ -73,10 +73,6 @@ def item_display_date(item: dict) -> str:
     return clean(str(item.get("display_date") or item.get("date") or "—"), 16).upper()
 
 
-def plural_changes(count: int) -> str:
-    return f"{count} change" if count == 1 else f"{count} changes"
-
-
 def classify(message: str) -> str:
     lowered = f" {message.lower()} "
     for category, needles in CATEGORY_RULES:
@@ -152,6 +148,31 @@ def public_repositories():
     return result
 
 
+# Edward commits under two GitHub accounts. The signal counts commits authored
+# by either, and nobody else's — a collaborator's commit on one of these
+# repositories is not evidence of Edward's activity.
+OWNED_AUTHOR_LOGINS = frozenset(
+    login.strip().lower()
+    for login in os.environ.get(
+        "PROFILE_AUTHOR_LOGINS", "EdwardH-jedi,edwardhwang1223-crypto"
+    ).split(",")
+    if login.strip()
+)
+
+
+def authored_by_owner(raw: dict) -> bool:
+    """True when GitHub attributes the commit to one of the owner's accounts.
+
+    Commits with no linked account are excluded: without a login there is no
+    way to tell the owner's work from a contributor's.
+    """
+    author = raw.get("author")
+    if not isinstance(author, dict):
+        return False
+    login = author.get("login")
+    return isinstance(login, str) and login.lower() in OWNED_AUTHOR_LOGINS
+
+
 def recent_commits(repo_name: str, since: dt.datetime):
     since_iso = since.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z")
     query = parse.urlencode({"since": since_iso, "per_page": MAX_COMMITS_PER_REPO})
@@ -164,6 +185,8 @@ def recent_commits(repo_name: str, since: dt.datetime):
 
     commits = []
     for raw in payload:
+        if not authored_by_owner(raw):
+            continue
         commit = raw.get("commit", {})
         message = (commit.get("message") or "").splitlines()[0]
         if not meaningful(message):
@@ -211,17 +234,17 @@ def collect_public_activity(now_utc: dt.datetime):
 
 # Engineering state, derived only from owned public commits in the window.
 #
-# The thresholds are deliberate and deterministic — no model, no inference about
-# what Edward is "doing". When public activity is thin the state is QUIET, which
-# is the honest reading: most work in a given week may be happening in private
-# repositories that this signal cannot and should not see.
+# The thresholds are deliberate and deterministic — no model, and no inference
+# about what Edward is "doing". The signal reports only what it can observe:
+# commits authored by the owner on their own public repositories. It says
+# nothing about private work, because it cannot see any.
 STATE_RULES = (
     # (minimum commits in window, state, one-line meaning)
     (12, "SHIPPING", "sustained public commit activity across repositories"),
     (6, "BUILDING", "steady public commits in the window"),
-    (3, "FIXING", "small, focused public changes"),
-    (1, "QUIET", "little public activity — current work is not public"),
-    (0, "QUIET", "no public commits in the window"),
+    (3, "FIXING", "a few focused public changes"),
+    (1, "QUIET", "few public commits in this window"),
+    (0, "QUIET", "no public commits in this window"),
 )
 
 
@@ -285,6 +308,7 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     chart_w = chart_x1 - chart_x0
     chart_y0, lane_gap = 112, 56
     since = now_utc - dt.timedelta(days=WINDOW_DAYS)
+    today = now_utc.date()
 
     lane_parts = []
     top_repos = summary["top_repos"][:MAX_REPOS]
@@ -295,14 +319,16 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     for idx, repo in enumerate(top_repos):
         y = chart_y0 + idx * lane_gap
         lane_parts.append(f'<text x="42" y="{y+4}" class="m" fill="#e8e8e3" font-size="12">{escape(repo)}</text>')
-        lane_parts.append(f'<text x="151" y="{y+4}" text-anchor="end" class="m" fill="#657174" font-size="10">{len(by_repo[repo])}</text>')
+        lane_parts.append(f'<text x="151" y="{y+4}" text-anchor="end" class="m" fill="#8b9498" font-size="10">{len(by_repo[repo])}</text>')
         lane_parts.append(f'<line x1="{chart_x0}" y1="{y}" x2="{chart_x1}" y2="{y}" stroke="#273034"/>')
 
         repo_items = sorted(by_repo[repo], key=lambda item: parse_date(item["date"]) or since)
         for c_idx, item in enumerate(repo_items):
             when = parse_date(item["date"]) or since
-            fraction = (when - since).total_seconds() / max((now_utc - since).total_seconds(), 1)
-            fraction = max(0.0, min(1.0, fraction))
+            # Whole-day resolution: identical output for repeated runs on the
+            # same day, so the workflow's diff gate actually holds.
+            days_ago = (today - when.date()).days
+            fraction = (WINDOW_DAYS - min(max(days_ago, 0), WINDOW_DAYS)) / WINDOW_DAYS
             x = chart_x0 + fraction * chart_w
             cls = "dot hot" if c_idx == len(repo_items) - 1 else "dot"
             lane_parts.append(
@@ -317,7 +343,7 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
         y = 118 + idx * 96
         latest_parts.append(f'<text x="790" y="{y}" class="m" fill="#78d0c8" font-size="10">{escape(item_display_date(item))}</text>')
         latest_parts.append(f'<text x="866" y="{y}" class="m" fill="#f1efe8" font-size="12">{escape(item["repo"])}</text>')
-        latest_parts.append(f'<text x="1158" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="9">{escape(item.get("category", "ENGINEERING"))}</text>')
+        latest_parts.append(f'<text x="1158" y="{y}" text-anchor="end" class="m" fill="#8b9498" font-size="9">{escape(item.get("category", "ENGINEERING"))}</text>')
         lines = split_svg_text(item["summary"], 43)
         latest_parts.append(f'<text x="790" y="{y+24}" class="m" fill="#9aa5a8" font-size="10">{escape(lines[0])}</text>')
         if len(lines) > 1:
@@ -344,7 +370,7 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
         fraction = (WINDOW_DAYS - days_ago) / WINDOW_DAYS
         x = chart_x0 + fraction * chart_w
         tick_parts.append(f'<line x1="{x:.1f}" y1="104" x2="{x:.1f}" y2="{tick_bottom}" stroke="#171d1f"/>')
-        tick_parts.append(f'<text x="{x:.1f}" y="70" text-anchor="middle" class="m" fill="#5f6b6e" font-size="9">{label}</text>')
+        tick_parts.append(f'<text x="{x:.1f}" y="70" text-anchor="middle" class="m" fill="#8b9498" font-size="9">{label}</text>')
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{height}" viewBox="0 0 1200 {height}" role="img" aria-labelledby="title desc">
   <title id="title">Edward Hwang live public engineering signal</title>
@@ -361,20 +387,27 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
   <line x1="760" y1="104" x2="760" y2="{divider_bottom}" stroke="#30383b"/>
   <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">LIVE ENGINEERING SIGNAL / LAST 30 DAYS</text>
   <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">STATE / {escape(summary["state"])} &#183; {escape(source)}</text>
-  <text x="38" y="52" class="m" fill="#657174" font-size="9" letter-spacing="1.2">{escape(summary["state_meaning"].upper())}</text>
-  <text x="42" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">REPOSITORY</text>
-  <text x="790" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
+  <text x="38" y="52" class="m" fill="#8b9498" font-size="9" letter-spacing="1.2">{escape(summary["state_meaning"].upper())}</text>
+  <text x="42" y="92" class="m" fill="#8b9498" font-size="9" letter-spacing="1.4">REPOSITORY</text>
+  <text x="790" y="92" class="m" fill="#8b9498" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
   {''.join(tick_parts)}
   {''.join(lane_parts)}
   {''.join(latest_parts)}
-  <text x="38" y="{footer_y}" class="m" fill="#657174" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
+  <text x="38" y="{footer_y}" class="m" fill="#8b9498" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
   <circle cx="1152" cy="{footer_y - 3}" r="4" fill="#78d0c8" class="hot"/>
 </svg>
 '''
 
 
 def stable_generated_at(core_payload: dict, now_local: dt.datetime):
-    canonical = json.dumps(core_payload, sort_keys=True, separators=(",", ":"))
+    # The rendered day is included: dot positions are day-relative, so a new day
+    # legitimately changes the plate even when the commit set has not. Without
+    # this the fingerprint would claim nothing changed while the SVG had.
+    canonical = json.dumps(
+        {**core_payload, "rendered_on": now_local.date().isoformat()},
+        sort_keys=True,
+        separators=(",", ":"),
+    )
     fingerprint = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
     previous = {}
     path = DATA / "activity.json"
@@ -400,8 +433,13 @@ def main():
 
     try:
         commits, repo_meta = collect_public_activity(now_utc)
-    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError):
-        commits, repo_meta = [], {}
+    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as error:
+        # Fail closed. An empty result from a transient GitHub failure is
+        # indistinguishable from a genuinely quiet window, and writing it would
+        # publish a fabricated QUIET state and commit it to main. Leave the last
+        # good signal in place instead.
+        print(f"GitHub request failed ({error}); leaving the existing signal untouched.")
+        return 1
 
     summary = summarize(commits, now_local)
     brain_items = load_brain_items()
@@ -440,7 +478,8 @@ def main():
         f"Rendered {len(commits)} public commit signal(s) over {WINDOW_DAYS} days, "
         f"{len(summary['repo_counts'])} active repo(s), state={summary['state']}, source={source}."
     )
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
