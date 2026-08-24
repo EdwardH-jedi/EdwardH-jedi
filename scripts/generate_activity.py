@@ -328,14 +328,25 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     if not latest_parts:
         latest_parts.append('<text x="790" y="140" class="m" fill="#8e999c" font-size="11">No public-safe latest signal.</text>')
 
+    # The plate sizes to its content. A fixed height left a large void on a
+    # quiet window, which read as neglect rather than as a small signal.
+    lanes_bottom = chart_y0 + max(len(top_repos) - 1, 0) * lane_gap + 40
+    latest_bottom = 118 + max(len(latest_items[:MAX_LATEST]) - 1, 0) * 96 + 78
+    content_bottom = max(lanes_bottom, latest_bottom, 200)
+    rule_y = content_bottom + 16
+    footer_y = rule_y + 30
+    height = footer_y + 30
+    divider_bottom = content_bottom
+    tick_bottom = content_bottom
+
     tick_parts = []
     for days_ago, label in ((30, "30D AGO"), (20, "20D"), (10, "10D"), (0, "NOW")):
         fraction = (WINDOW_DAYS - days_ago) / WINDOW_DAYS
         x = chart_x0 + fraction * chart_w
-        tick_parts.append(f'<line x1="{x:.1f}" y1="82" x2="{x:.1f}" y2="390" stroke="#171d1f"/>')
+        tick_parts.append(f'<line x1="{x:.1f}" y1="104" x2="{x:.1f}" y2="{tick_bottom}" stroke="#171d1f"/>')
         tick_parts.append(f'<text x="{x:.1f}" y="70" text-anchor="middle" class="m" fill="#5f6b6e" font-size="9">{label}</text>')
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{height}" viewBox="0 0 1200 {height}" role="img" aria-labelledby="title desc">
   <title id="title">Edward Hwang live public engineering signal</title>
   <desc id="desc">Thirty-day public GitHub activity timeline and latest meaningful public work.</desc>
   <style>
@@ -345,18 +356,19 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     @keyframes pulse{{0%,100%{{opacity:.42}}50%{{opacity:1}}}}
     @media (prefers-reduced-motion:reduce){{.hot{{animation:none;opacity:1}}}}
   </style>
-  <rect width="1200" height="470" rx="10" fill="#0a0d0e"/>
-  <path d="M38 54H1162M38 410H1162" stroke="#30383b"/>
-  <line x1="760" y1="72" x2="760" y2="390" stroke="#30383b"/>
+  <rect width="1200" height="{height}" rx="10" fill="#0a0d0e"/>
+  <path d="M38 62H1162M38 {rule_y}H1162" stroke="#30383b"/>
+  <line x1="760" y1="104" x2="760" y2="{divider_bottom}" stroke="#30383b"/>
   <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">LIVE ENGINEERING SIGNAL / LAST 30 DAYS</text>
-  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">SOURCE / {escape(source)}</text>
-  <text x="42" y="74" class="m" fill="#657174" font-size="9" letter-spacing="1.4">PUBLIC REPOSITORY ACTIVITY</text>
-  <text x="790" y="74" class="m" fill="#657174" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
+  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">STATE / {escape(summary["state"])} &#183; {escape(source)}</text>
+  <text x="38" y="52" class="m" fill="#657174" font-size="9" letter-spacing="1.2">{escape(summary["state_meaning"].upper())}</text>
+  <text x="42" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">REPOSITORY</text>
+  <text x="790" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
   {''.join(tick_parts)}
   {''.join(lane_parts)}
   {''.join(latest_parts)}
-  <text x="38" y="440" class="m" fill="#657174" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
-  <circle cx="1152" cy="437" r="4" fill="#78d0c8" class="hot"/>
+  <text x="38" y="{footer_y}" class="m" fill="#657174" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
+  <circle cx="1152" cy="{footer_y - 3}" r="4" fill="#78d0c8" class="hot"/>
 </svg>
 '''
 
