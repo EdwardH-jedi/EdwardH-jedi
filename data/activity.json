@@ -1,10 +1,46 @@
 {
-  "generated_at": "2026-08-24 14:55 AEST",
-  "fingerprint": "32206837ba6477e11fa768fcfef4e9e359fcc88a377b47339aa9a484cca0b3bc",
+  "generated_at": "2026-08-24 19:56 AEST",
+  "fingerprint": "d25269da7c047bd76ea8f8472d63b9e0ece6311e0a84c16526aa35fbd747a6ca",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "wadrobe",
+      "summary": "docs: normalise the meta description to Wardrobe",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-24T08:22:59Z",
+      "display_date": "24 AUG",
+      "sha": "703983a746",
+      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/703983a746793c93ce3aeae7dee5ebfd424fdd13"
+    },
+    {
+      "repo": "Protin",
+      "summary": "docs: discovery filters by sport, not by location",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-24T08:22:43Z",
+      "display_date": "24 AUG",
+      "sha": "416ed775dc",
+      "url": "https://github.com/EdwardH-jedi/Protin/commit/416ed775dcfbc8efdfc79e3aac1a7dae484c0e5e"
+    },
+    {
+      "repo": "wadrobe",
+      "summary": "docs/ui: use one public product name \u2014 Wardrobe",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-24T08:13:12Z",
+      "display_date": "24 AUG",
+      "sha": "081569faf9",
+      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/081569faf95c2c57b99cbc17d290cbfa09b86979"
+    },
+    {
+      "repo": "Protin",
+      "summary": "docs: describe the product the repository actually implements",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-08-24T08:08:02Z",
+      "display_date": "24 AUG",
+      "sha": "31ed6bdc70",
+      "url": "https://github.com/EdwardH-jedi/Protin/commit/31ed6bdc70bd03f810e0db3621f96b9c4ba21e35"
+    },
     {
       "repo": "Protin",
       "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
@@ -26,44 +62,61 @@
   ],
   "latest": [
     {
+      "repo": "wadrobe",
+      "summary": "docs: normalise the meta description to Wardrobe",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-24T08:22:59Z",
+      "display_date": "24 AUG",
+      "sha": "703983a746",
+      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/703983a746793c93ce3aeae7dee5ebfd424fdd13"
+    },
+    {
       "repo": "Protin",
-      "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
-      "category": "TEST / QUALITY",
-      "date": "2026-08-14T10:36:13Z",
-      "display_date": "14 AUG",
-      "sha": "6c4fa8e829",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/6c4fa8e82940e81e6902d2374771091157b7ff5f"
+      "summary": "docs: discovery filters by sport, not by location",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-24T08:22:43Z",
+      "display_date": "24 AUG",
+      "sha": "416ed775dc",
+      "url": "https://github.com/EdwardH-jedi/Protin/commit/416ed775dcfbc8efdfc79e3aac1a7dae484c0e5e"
     },
     {
       "repo": "wadrobe",
-      "summary": "push everything",
-      "category": "ENGINEERING",
-      "date": "2026-07-27T05:55:05Z",
-      "display_date": "27 JUL",
-      "sha": "319b67304c",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/319b67304c6a29a9427080c6765cb278a48a0116"
+      "summary": "docs/ui: use one public product name \u2014 Wardrobe",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-24T08:13:12Z",
+      "display_date": "24 AUG",
+      "sha": "081569faf9",
+      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/081569faf95c2c57b99cbc17d290cbfa09b86979"
     }
   ],
   "repo_counts": {
-    "Protin": 1,
-    "wadrobe": 1
+    "wadrobe": 3,
+    "Protin": 3
   },
   "category_counts": {
+    "DOCS / EVIDENCE": 3,
+    "PRODUCT / FEATURE": 1,
     "TEST / QUALITY": 1,
     "ENGINEERING": 1
   },
-  "weekly_repo_counts": {},
-  "weekly_category_counts": {},
+  "weekly_repo_counts": {
+    "wadrobe": 2,
+    "Protin": 2
+  },
+  "weekly_category_counts": {
+    "DOCS / EVIDENCE": 3,
+    "PRODUCT / FEATURE": 1
+  },
   "repo_meta": {
-    "Protin": {
-      "pushed_at": "2026-08-22T05:09:54Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Protin"
-    },
     "wadrobe": {
-      "pushed_at": "2026-08-21T10:54:49Z",
+      "pushed_at": "2026-08-24T08:23:00Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/wadrobe"
+    },
+    "Protin": {
+      "pushed_at": "2026-08-24T08:22:44Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Protin"
     },
     "AFL_predict": {
       "pushed_at": "2026-08-13T09:32:38Z",
@@ -81,6 +134,6 @@
       "url": "https://github.com/EdwardH-jedi/league_togo"
     }
   },
-  "state": "QUIET",
-  "state_meaning": "few public commits in this window"
+  "state": "BUILDING",
+  "state_meaning": "steady public commits in the window"
 }

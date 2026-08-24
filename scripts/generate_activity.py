@@ -181,7 +181,10 @@ def recent_commits(repo_name: str, since: dt.datetime):
             f"/repos/{parse.quote(USERNAME)}/{parse.quote(repo_name)}/commits?{query}"
         )
     except (HTTPError, URLError, TimeoutError, json.JSONDecodeError):
-        return []
+        # Propagate: an empty list here is indistinguishable from a genuinely
+        # quiet repository, and swallowing it lets a transient outage publish a
+        # false QUIET. main() catches this and leaves the last good signal.
+        raise
 
     commits = []
     for raw in payload:
@@ -303,111 +306,32 @@ def split_svg_text(text: str, width: int = 54):
     return lines[:2]
 
 
-def render_activity_svg(commits, summary, latest_items, source: str, generated: str, now_utc: dt.datetime):
-    chart_x0, chart_x1 = 180, 735
-    chart_w = chart_x1 - chart_x0
-    chart_y0, lane_gap = 112, 56
-    since = now_utc - dt.timedelta(days=WINDOW_DAYS)
-    today = now_utc.date()
+def render_signal_strip(summary, commits, source: str, generated: str) -> str:
+    """One-line signal strip: state, meaning, window, and where it came from.
 
-    lane_parts = []
-    top_repos = summary["top_repos"][:MAX_REPOS]
-    by_repo = defaultdict(list)
-    for item in commits:
-        by_repo[item["repo"]].append(item)
-
-    for idx, repo in enumerate(top_repos):
-        y = chart_y0 + idx * lane_gap
-        lane_parts.append(f'<text x="42" y="{y+4}" class="m" fill="#e8e8e3" font-size="12">{escape(repo)}</text>')
-        lane_parts.append(f'<text x="151" y="{y+4}" text-anchor="end" class="m" fill="#8b9498" font-size="10">{len(by_repo[repo])}</text>')
-        lane_parts.append(f'<line x1="{chart_x0}" y1="{y}" x2="{chart_x1}" y2="{y}" stroke="#273034"/>')
-
-        repo_items = sorted(by_repo[repo], key=lambda item: parse_date(item["date"]) or since)
-        for c_idx, item in enumerate(repo_items):
-            when = parse_date(item["date"]) or since
-            # Whole-day resolution: identical output for repeated runs on the
-            # same day, so the workflow's diff gate actually holds.
-            days_ago = (today - when.date()).days
-            fraction = (WINDOW_DAYS - min(max(days_ago, 0), WINDOW_DAYS)) / WINDOW_DAYS
-            x = chart_x0 + fraction * chart_w
-            cls = "dot hot" if c_idx == len(repo_items) - 1 else "dot"
-            lane_parts.append(
-                f'<circle cx="{x:.1f}" cy="{y}" r="4.2" class="{cls}"><title>{escape(item["display_date"])} · {escape(item["summary"])}</title></circle>'
-            )
-
-    if not top_repos:
-        lane_parts.append('<text x="42" y="150" class="m" fill="#8e999c" font-size="12">No public commit activity was available in the 30-day window.</text>')
-
-    latest_parts = []
-    for idx, item in enumerate(latest_items[:MAX_LATEST]):
-        y = 118 + idx * 96
-        latest_parts.append(f'<text x="790" y="{y}" class="m" fill="#78d0c8" font-size="10">{escape(item_display_date(item))}</text>')
-        latest_parts.append(f'<text x="866" y="{y}" class="m" fill="#f1efe8" font-size="12">{escape(item["repo"])}</text>')
-        latest_parts.append(f'<text x="1158" y="{y}" text-anchor="end" class="m" fill="#8b9498" font-size="9">{escape(item.get("category", "ENGINEERING"))}</text>')
-        lines = split_svg_text(item["summary"], 43)
-        latest_parts.append(f'<text x="790" y="{y+24}" class="m" fill="#9aa5a8" font-size="10">{escape(lines[0])}</text>')
-        if len(lines) > 1:
-            latest_parts.append(f'<text x="790" y="{y+41}" class="m" fill="#9aa5a8" font-size="10">{escape(lines[1])}</text>')
-        if idx < MAX_LATEST - 1:
-            latest_parts.append(f'<line x1="790" y1="{y+62}" x2="1158" y2="{y+62}" stroke="#232a2d"/>')
-
-    if not latest_parts:
-        latest_parts.append('<text x="790" y="140" class="m" fill="#8e999c" font-size="11">No public-safe latest signal.</text>')
-
-    # The plate sizes to its content. A fixed height left a large void on a
-    # quiet window, which read as neglect rather than as a small signal.
-    lanes_bottom = chart_y0 + max(len(top_repos) - 1, 0) * lane_gap + 40
-    latest_bottom = 118 + max(len(latest_items[:MAX_LATEST]) - 1, 0) * 96 + 78
-    content_bottom = max(lanes_bottom, latest_bottom, 200)
-    rule_y = content_bottom + 16
-    footer_y = rule_y + 30
-    height = footer_y + 30
-    divider_bottom = content_bottom
-    tick_bottom = content_bottom
-
-    tick_parts = []
-    for days_ago, label in ((30, "30D AGO"), (20, "20D"), (10, "10D"), (0, "NOW")):
-        fraction = (WINDOW_DAYS - days_ago) / WINDOW_DAYS
-        x = chart_x0 + fraction * chart_w
-        tick_parts.append(f'<line x1="{x:.1f}" y1="104" x2="{x:.1f}" y2="{tick_bottom}" stroke="#171d1f"/>')
-        tick_parts.append(f'<text x="{x:.1f}" y="70" text-anchor="middle" class="m" fill="#8b9498" font-size="9">{label}</text>')
-
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{height}" viewBox="0 0 1200 {height}" role="img" aria-labelledby="title desc">
-  <title id="title">Edward Hwang live public engineering signal</title>
-  <desc id="desc">Thirty-day public GitHub activity timeline and latest meaningful public work.</desc>
-  <style>
-    .m{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}
-    .dot{{fill:#7b878a;opacity:.72}}
-    .hot{{fill:#78d0c8;animation:pulse 2.8s ease-in-out infinite}}
-    @keyframes pulse{{0%,100%{{opacity:.42}}50%{{opacity:1}}}}
-    @media (prefers-reduced-motion:reduce){{.hot{{animation:none;opacity:1}}}}
-  </style>
-  <rect width="1200" height="{height}" rx="10" fill="#0a0d0e"/>
-  <path d="M38 62H1162M38 {rule_y}H1162" stroke="#30383b"/>
-  <line x1="760" y1="104" x2="760" y2="{divider_bottom}" stroke="#30383b"/>
-  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">LIVE ENGINEERING SIGNAL / LAST 30 DAYS</text>
-  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">STATE / {escape(summary["state"])} &#183; {escape(source)}</text>
-  <text x="38" y="52" class="m" fill="#8b9498" font-size="9" letter-spacing="1.2">{escape(summary["state_meaning"].upper())}</text>
-  <text x="42" y="92" class="m" fill="#8b9498" font-size="9" letter-spacing="1.4">REPOSITORY</text>
-  <text x="790" y="92" class="m" fill="#8b9498" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
-  {''.join(tick_parts)}
-  {''.join(lane_parts)}
-  {''.join(latest_parts)}
-  <text x="38" y="{footer_y}" class="m" fill="#8b9498" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
-  <circle cx="1152" cy="{footer_y - 3}" r="4" fill="#78d0c8" class="hot"/>
+    Replaces the full-height timeline plate. The same numbers, at a size that
+    matches how much they actually tell a reader.
+    """
+    repos = len(summary["repo_counts"])
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 68" width="540" height="68" role="img" aria-label="Public engineering signal: state {escape(summary["state"])}, {len(commits)} commits across {repos} public repositories in the last 30 days. Private repositories are excluded.">
+  <title>Public engineering signal</title>
+  <style>.m{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}</style>
+  <rect width="540" height="68" rx="6" fill="#0a0d0e"/>
+  <rect x="14" y="15" width="3" height="38" rx="1.5" fill="#78d0c8"/>
+  <text class="m" x="30" y="28" font-size="9" letter-spacing="1.4" fill="#8b9498">PUBLIC SIGNAL / LAST {WINDOW_DAYS} DAYS</text>
+  <text class="m" x="30" y="46" font-size="11" letter-spacing="1.2" fill="#f1efe8">{escape(summary["state"])}</text>
+  <text class="m" x="30" y="60" font-size="9" letter-spacing="0.6" fill="#8b9498">{escape(summary["state_meaning"])}</text>
+  <text class="m" x="526" y="28" text-anchor="end" font-size="9" letter-spacing="1.1" fill="#78d0c8">{len(commits)} COMMITS / {repos} REPOS</text>
+  <text class="m" x="526" y="60" text-anchor="end" font-size="8" letter-spacing="1" fill="#8b9498">{escape(source)} · {escape(generated)}</text>
 </svg>
 '''
 
 
 def stable_generated_at(core_payload: dict, now_local: dt.datetime):
-    # The rendered day is included: dot positions are day-relative, so a new day
-    # legitimately changes the plate even when the commit set has not. Without
-    # this the fingerprint would claim nothing changed while the SVG had.
-    canonical = json.dumps(
-        {**core_payload, "rendered_on": now_local.date().isoformat()},
-        sort_keys=True,
-        separators=(",", ":"),
-    )
+    # No day-relative geometry remains in the strip, so the date is deliberately
+    # not part of the fingerprint: an unchanged commit set must produce an
+    # unchanged file and therefore no commit.
+    canonical = json.dumps(core_payload, sort_keys=True, separators=(",", ":"))
     fingerprint = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
     previous = {}
     path = DATA / "activity.json"
@@ -466,8 +390,8 @@ def main():
     }
     fingerprint, generated = stable_generated_at(core_payload, now_local)
 
-    (ASSETS / "activity.svg").write_text(
-        render_activity_svg(commits, summary, latest_items, source, generated, now_utc),
+    (ASSETS / "signal-strip.svg").write_text(
+        render_signal_strip(summary, commits, source, generated),
         encoding="utf-8",
     )
     (DATA / "activity.json").write_text(
