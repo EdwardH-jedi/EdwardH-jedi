@@ -73,10 +73,6 @@ def item_display_date(item: dict) -> str:
     return clean(str(item.get("display_date") or item.get("date") or "—"), 16).upper()
 
 
-def plural_changes(count: int) -> str:
-    return f"{count} change" if count == 1 else f"{count} changes"
-
-
 def classify(message: str) -> str:
     lowered = f" {message.lower()} "
     for category, needles in CATEGORY_RULES:
@@ -152,6 +148,31 @@ def public_repositories():
     return result
 
 
+# Edward commits under two GitHub accounts. The signal counts commits authored
+# by either, and nobody else's — a collaborator's commit on one of these
+# repositories is not evidence of Edward's activity.
+OWNED_AUTHOR_LOGINS = frozenset(
+    login.strip().lower()
+    for login in os.environ.get(
+        "PROFILE_AUTHOR_LOGINS", "EdwardH-jedi,edwardhwang1223-crypto"
+    ).split(",")
+    if login.strip()
+)
+
+
+def authored_by_owner(raw: dict) -> bool:
+    """True when GitHub attributes the commit to one of the owner's accounts.
+
+    Commits with no linked account are excluded: without a login there is no
+    way to tell the owner's work from a contributor's.
+    """
+    author = raw.get("author")
+    if not isinstance(author, dict):
+        return False
+    login = author.get("login")
+    return isinstance(login, str) and login.lower() in OWNED_AUTHOR_LOGINS
+
+
 def recent_commits(repo_name: str, since: dt.datetime):
     since_iso = since.astimezone(dt.timezone.utc).isoformat().replace("+00:00", "Z")
     query = parse.urlencode({"since": since_iso, "per_page": MAX_COMMITS_PER_REPO})
@@ -164,6 +185,8 @@ def recent_commits(repo_name: str, since: dt.datetime):
 
     commits = []
     for raw in payload:
+        if not authored_by_owner(raw):
+            continue
         commit = raw.get("commit", {})
         message = (commit.get("message") or "").splitlines()[0]
         if not meaningful(message):
@@ -209,6 +232,30 @@ def collect_public_activity(now_utc: dt.datetime):
     return commits, repo_meta
 
 
+# Engineering state, derived only from owned public commits in the window.
+#
+# The thresholds are deliberate and deterministic — no model, and no inference
+# about what Edward is "doing". The signal reports only what it can observe:
+# commits authored by the owner on their own public repositories. It says
+# nothing about private work, because it cannot see any.
+STATE_RULES = (
+    # (minimum commits in window, state, one-line meaning)
+    (12, "SHIPPING", "sustained public commit activity across repositories"),
+    (6, "BUILDING", "steady public commits in the window"),
+    (3, "FIXING", "a few focused public changes"),
+    (1, "QUIET", "few public commits in this window"),
+    (0, "QUIET", "no public commits in this window"),
+)
+
+
+def engineering_state(commit_count: int) -> tuple[str, str]:
+    """Map a commit count to a state and its explanation. Purely deterministic."""
+    for threshold, state, meaning in STATE_RULES:
+        if commit_count >= threshold:
+            return state, meaning
+    return "QUIET", "no public commits in the window"
+
+
 def summarize(commits, now_local: dt.datetime):
     repo_counts = Counter(item["repo"] for item in commits)
     category_counts = Counter(item["category"] for item in commits)
@@ -230,6 +277,9 @@ def summarize(commits, now_local: dt.datetime):
         "weekly_repo_counts": weekly_repo_counts,
         "weekly_category_counts": weekly_category_counts,
         "top_repos": [name for name, _ in repo_counts.most_common(MAX_REPOS)],
+        "state": engineering_state(len(commits))[0],
+        "state_meaning": engineering_state(len(commits))[1],
+        "commit_total": len(commits),
     }
 
 
@@ -258,6 +308,7 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     chart_w = chart_x1 - chart_x0
     chart_y0, lane_gap = 112, 56
     since = now_utc - dt.timedelta(days=WINDOW_DAYS)
+    today = now_utc.date()
 
     lane_parts = []
     top_repos = summary["top_repos"][:MAX_REPOS]
@@ -268,14 +319,16 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     for idx, repo in enumerate(top_repos):
         y = chart_y0 + idx * lane_gap
         lane_parts.append(f'<text x="42" y="{y+4}" class="m" fill="#e8e8e3" font-size="12">{escape(repo)}</text>')
-        lane_parts.append(f'<text x="151" y="{y+4}" text-anchor="end" class="m" fill="#657174" font-size="10">{len(by_repo[repo])}</text>')
+        lane_parts.append(f'<text x="151" y="{y+4}" text-anchor="end" class="m" fill="#8b9498" font-size="10">{len(by_repo[repo])}</text>')
         lane_parts.append(f'<line x1="{chart_x0}" y1="{y}" x2="{chart_x1}" y2="{y}" stroke="#273034"/>')
 
         repo_items = sorted(by_repo[repo], key=lambda item: parse_date(item["date"]) or since)
         for c_idx, item in enumerate(repo_items):
             when = parse_date(item["date"]) or since
-            fraction = (when - since).total_seconds() / max((now_utc - since).total_seconds(), 1)
-            fraction = max(0.0, min(1.0, fraction))
+            # Whole-day resolution: identical output for repeated runs on the
+            # same day, so the workflow's diff gate actually holds.
+            days_ago = (today - when.date()).days
+            fraction = (WINDOW_DAYS - min(max(days_ago, 0), WINDOW_DAYS)) / WINDOW_DAYS
             x = chart_x0 + fraction * chart_w
             cls = "dot hot" if c_idx == len(repo_items) - 1 else "dot"
             lane_parts.append(
@@ -290,7 +343,7 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
         y = 118 + idx * 96
         latest_parts.append(f'<text x="790" y="{y}" class="m" fill="#78d0c8" font-size="10">{escape(item_display_date(item))}</text>')
         latest_parts.append(f'<text x="866" y="{y}" class="m" fill="#f1efe8" font-size="12">{escape(item["repo"])}</text>')
-        latest_parts.append(f'<text x="1158" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="9">{escape(item.get("category", "ENGINEERING"))}</text>')
+        latest_parts.append(f'<text x="1158" y="{y}" text-anchor="end" class="m" fill="#8b9498" font-size="9">{escape(item.get("category", "ENGINEERING"))}</text>')
         lines = split_svg_text(item["summary"], 43)
         latest_parts.append(f'<text x="790" y="{y+24}" class="m" fill="#9aa5a8" font-size="10">{escape(lines[0])}</text>')
         if len(lines) > 1:
@@ -301,14 +354,25 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     if not latest_parts:
         latest_parts.append('<text x="790" y="140" class="m" fill="#8e999c" font-size="11">No public-safe latest signal.</text>')
 
+    # The plate sizes to its content. A fixed height left a large void on a
+    # quiet window, which read as neglect rather than as a small signal.
+    lanes_bottom = chart_y0 + max(len(top_repos) - 1, 0) * lane_gap + 40
+    latest_bottom = 118 + max(len(latest_items[:MAX_LATEST]) - 1, 0) * 96 + 78
+    content_bottom = max(lanes_bottom, latest_bottom, 200)
+    rule_y = content_bottom + 16
+    footer_y = rule_y + 30
+    height = footer_y + 30
+    divider_bottom = content_bottom
+    tick_bottom = content_bottom
+
     tick_parts = []
     for days_ago, label in ((30, "30D AGO"), (20, "20D"), (10, "10D"), (0, "NOW")):
         fraction = (WINDOW_DAYS - days_ago) / WINDOW_DAYS
         x = chart_x0 + fraction * chart_w
-        tick_parts.append(f'<line x1="{x:.1f}" y1="82" x2="{x:.1f}" y2="390" stroke="#171d1f"/>')
-        tick_parts.append(f'<text x="{x:.1f}" y="70" text-anchor="middle" class="m" fill="#5f6b6e" font-size="9">{label}</text>')
+        tick_parts.append(f'<line x1="{x:.1f}" y1="104" x2="{x:.1f}" y2="{tick_bottom}" stroke="#171d1f"/>')
+        tick_parts.append(f'<text x="{x:.1f}" y="70" text-anchor="middle" class="m" fill="#8b9498" font-size="9">{label}</text>')
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{height}" viewBox="0 0 1200 {height}" role="img" aria-labelledby="title desc">
   <title id="title">Edward Hwang live public engineering signal</title>
   <desc id="desc">Thirty-day public GitHub activity timeline and latest meaningful public work.</desc>
   <style>
@@ -318,120 +382,32 @@ def render_activity_svg(commits, summary, latest_items, source: str, generated: 
     @keyframes pulse{{0%,100%{{opacity:.42}}50%{{opacity:1}}}}
     @media (prefers-reduced-motion:reduce){{.hot{{animation:none;opacity:1}}}}
   </style>
-  <rect width="1200" height="470" rx="10" fill="#0a0d0e"/>
-  <path d="M38 54H1162M38 410H1162" stroke="#30383b"/>
-  <line x1="760" y1="72" x2="760" y2="390" stroke="#30383b"/>
+  <rect width="1200" height="{height}" rx="10" fill="#0a0d0e"/>
+  <path d="M38 62H1162M38 {rule_y}H1162" stroke="#30383b"/>
+  <line x1="760" y1="104" x2="760" y2="{divider_bottom}" stroke="#30383b"/>
   <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">LIVE ENGINEERING SIGNAL / LAST 30 DAYS</text>
-  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">SOURCE / {escape(source)}</text>
-  <text x="42" y="74" class="m" fill="#657174" font-size="9" letter-spacing="1.4">PUBLIC REPOSITORY ACTIVITY</text>
-  <text x="790" y="74" class="m" fill="#657174" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
+  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">STATE / {escape(summary["state"])} &#183; {escape(source)}</text>
+  <text x="38" y="52" class="m" fill="#8b9498" font-size="9" letter-spacing="1.2">{escape(summary["state_meaning"].upper())}</text>
+  <text x="42" y="92" class="m" fill="#8b9498" font-size="9" letter-spacing="1.4">REPOSITORY</text>
+  <text x="790" y="92" class="m" fill="#8b9498" font-size="9" letter-spacing="1.4">LATEST MEANINGFUL WORK</text>
   {''.join(tick_parts)}
   {''.join(lane_parts)}
   {''.join(latest_parts)}
-  <text x="38" y="440" class="m" fill="#657174" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
-  <circle cx="1152" cy="437" r="4" fill="#78d0c8" class="hot"/>
-</svg>
-'''
-
-
-def render_weekly_svg(summary, latest_items, source: str, generated: str, now_local: dt.datetime):
-    weekly = summary["weekly"]
-    week_num = now_local.isocalendar().week
-    has_weekly = bool(weekly)
-
-    if has_weekly:
-        category_counts = summary["weekly_category_counts"]
-        repo_counts = summary["weekly_repo_counts"]
-        left_header = "FOCUS AREAS"
-        middle_header = "ACTIVE REPOSITORIES"
-        focus_footer = category_counts.most_common(1)[0][0] if category_counts else "ENGINEERING"
-    else:
-        category_counts = summary["category_counts"]
-        repo_counts = summary["repo_counts"]
-        left_header = "30-DAY CONTEXT"
-        middle_header = "RECENT REPOSITORIES"
-        focus_footer = "NO PUBLIC CHANGE THIS WEEK"
-
-    top_categories = category_counts.most_common(3)
-    top_repos = repo_counts.most_common(4)
-
-    max_category = max([count for _, count in top_categories], default=1)
-    category_parts = []
-    if top_categories:
-        for idx, (category, count) in enumerate(top_categories):
-            y = 150 + idx * 58
-            line_w = 290 * (count / max_category)
-            category_parts.extend([
-                f'<text x="58" y="{y}" class="m" fill="#dfe2de" font-size="11">{escape(category)}</text>',
-                f'<text x="420" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="10">{count}</text>',
-                f'<line x1="58" y1="{y+18}" x2="420" y2="{y+18}" stroke="#20282b" stroke-width="4"/>',
-                f'<line x1="58" y1="{y+18}" x2="{58+line_w:.1f}" y2="{y+18}" stroke="#78d0c8" stroke-width="4"/>',
-            ])
-    else:
-        category_parts.append('<text x="58" y="160" class="m" fill="#8e999c" font-size="11">No public activity in the 30-day window.</text>')
-
-    repo_parts = []
-    if top_repos:
-        for idx, (repo, count) in enumerate(top_repos):
-            y = 149 + idx * 42
-            repo_parts.extend([
-                f'<text x="528" y="{y}" class="m" fill="#f1efe8" font-size="11">{escape(repo)}</text>',
-                f'<text x="828" y="{y}" text-anchor="end" class="m" fill="#657174" font-size="10">{escape(plural_changes(count))}</text>',
-            ])
-            if idx < len(top_repos) - 1:
-                repo_parts.append(f'<line x1="528" y1="{y+15}" x2="828" y2="{y+15}" stroke="#20282b"/>')
-    else:
-        repo_parts.append('<text x="528" y="160" class="m" fill="#8e999c" font-size="11">No recent public repositories.</text>')
-
-    latest = latest_items[0] if latest_items else None
-    if latest:
-        latest_lines = split_svg_text(latest["summary"], 37)
-        second_line = f'<text x="900" y="197" class="m" fill="#f1efe8" font-size="12">{escape(latest_lines[1])}</text>' if len(latest_lines) > 1 else ""
-        latest_block = f'''
-    <text x="900" y="145" class="m" fill="#78d0c8" font-size="10">{escape(item_display_date(latest))} / {escape(latest["repo"])}</text>
-    <text x="900" y="177" class="m" fill="#f1efe8" font-size="12">{escape(latest_lines[0])}</text>
-    {second_line}
-    <text x="900" y="232" class="m" fill="#657174" font-size="9">{escape(latest.get("category", "ENGINEERING"))}</text>
-'''
-    else:
-        latest_block = '<text x="900" y="165" class="m" fill="#8e999c" font-size="11">No public-safe signal yet.</text>'
-
-    if not has_weekly:
-        empty_week_note = '<text x="58" y="285" class="m" fill="#8e999c" font-size="10">NO PUBLIC REPOSITORY CHANGES RECORDED SINCE MONDAY · CONTEXT BELOW USES THE LAST 30 DAYS.</text>'
-    else:
-        empty_week_note = ""
-
-    active_repos = len(summary["weekly_repo_counts"])
-
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="title desc">
-  <title id="title">Edward Hwang weekly engineering focus</title>
-  <desc id="desc">Current week public engineering focus derived from public repository activity.</desc>
-  <style>.m{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}</style>
-  <rect width="1200" height="350" rx="10" fill="#0a0d0e"/>
-  <path d="M38 54H1162M38 304H1162" stroke="#30383b"/>
-  <line x1="468" y1="84" x2="468" y2="270" stroke="#30383b"/>
-  <line x1="862" y1="84" x2="862" y2="270" stroke="#30383b"/>
-  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">WEEK / {week_num:02d} · ENGINEERING FOCUS</text>
-  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">PUBLIC SIGNAL / {escape(source)}</text>
-  <text x="58" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">{left_header}</text>
-  {''.join(category_parts)}
-  <text x="528" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">{middle_header}</text>
-  {''.join(repo_parts)}
-  <text x="900" y="92" class="m" fill="#657174" font-size="9" letter-spacing="1.4">LATEST SIGNAL</text>
-  {latest_block}
-  {empty_week_note}
-  <text x="58" y="330" class="m" fill="#78d0c8" font-size="11">{len(weekly):02d}</text>
-  <text x="88" y="330" class="m" fill="#657174" font-size="9">PUBLIC CHANGES THIS WEEK</text>
-  <text x="330" y="330" class="m" fill="#78d0c8" font-size="11">{active_repos:02d}</text>
-  <text x="360" y="330" class="m" fill="#657174" font-size="9">ACTIVE REPOS THIS WEEK</text>
-  <text x="548" y="330" class="m" fill="#78d0c8" font-size="10">{escape(focus_footer)}</text>
-  <text x="1162" y="330" text-anchor="end" class="m" fill="#657174" font-size="9">UPDATED {escape(generated)}</text>
+  <text x="38" y="{footer_y}" class="m" fill="#8b9498" font-size="9" letter-spacing="1.05">UPDATED {escape(generated)} · DOTS = PUBLIC COMMITS ON OWNED PUBLIC REPOSITORIES · PRIVATE REPOSITORIES ARE EXCLUDED.</text>
+  <circle cx="1152" cy="{footer_y - 3}" r="4" fill="#78d0c8" class="hot"/>
 </svg>
 '''
 
 
 def stable_generated_at(core_payload: dict, now_local: dt.datetime):
-    canonical = json.dumps(core_payload, sort_keys=True, separators=(",", ":"))
+    # The rendered day is included: dot positions are day-relative, so a new day
+    # legitimately changes the plate even when the commit set has not. Without
+    # this the fingerprint would claim nothing changed while the SVG had.
+    canonical = json.dumps(
+        {**core_payload, "rendered_on": now_local.date().isoformat()},
+        sort_keys=True,
+        separators=(",", ":"),
+    )
     fingerprint = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
     previous = {}
     path = DATA / "activity.json"
@@ -457,8 +433,13 @@ def main():
 
     try:
         commits, repo_meta = collect_public_activity(now_utc)
-    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError):
-        commits, repo_meta = [], {}
+    except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as error:
+        # Fail closed. An empty result from a transient GitHub failure is
+        # indistinguishable from a genuinely quiet window, and writing it would
+        # publish a fabricated QUIET state and commit it to main. Leave the last
+        # good signal in place instead.
+        print(f"GitHub request failed ({error}); leaving the existing signal untouched.")
+        return 1
 
     summary = summarize(commits, now_local)
     brain_items = load_brain_items()
@@ -480,6 +461,8 @@ def main():
         "weekly_repo_counts": dict(summary["weekly_repo_counts"]),
         "weekly_category_counts": dict(summary["weekly_category_counts"]),
         "repo_meta": repo_meta,
+        "state": summary["state"],
+        "state_meaning": summary["state_meaning"],
     }
     fingerprint, generated = stable_generated_at(core_payload, now_local)
 
@@ -487,19 +470,16 @@ def main():
         render_activity_svg(commits, summary, latest_items, source, generated, now_utc),
         encoding="utf-8",
     )
-    (ASSETS / "weekly-focus.svg").write_text(
-        render_weekly_svg(summary, latest_items, source, generated, now_local),
-        encoding="utf-8",
-    )
     (DATA / "activity.json").write_text(
         json.dumps({"generated_at": generated, "fingerprint": fingerprint, **core_payload}, indent=2) + "\n",
         encoding="utf-8",
     )
     print(
-        f"Rendered {len(commits)} public commit signal(s), "
-        f"{len(summary['repo_counts'])} active repo(s), source={source}."
+        f"Rendered {len(commits)} public commit signal(s) over {WINDOW_DAYS} days, "
+        f"{len(summary['repo_counts'])} active repo(s), state={summary['state']}, source={source}."
     )
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

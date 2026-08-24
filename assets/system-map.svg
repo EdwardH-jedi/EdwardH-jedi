@@ -1,71 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
-  <title id="title">Edward Hwang engineering system map</title>
-  <desc id="desc">Evidence-based map connecting engineering domains to selected public, local and academic projects.</desc>
-  <style>
-    .m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-    .s{font-family:Inter,Arial,Helvetica,sans-serif}
-    .flow{stroke-dasharray:3 8;animation:flow 9s linear infinite}
-    .pulse{animation:pulse 3s ease-in-out infinite}
-    @keyframes flow{to{stroke-dashoffset:-44}}
-    @keyframes pulse{0%,100%{opacity:.42}50%{opacity:1}}
-    @media (prefers-reduced-motion:reduce){.flow,.pulse{animation:none}}
-  </style>
-  <rect width="1200" height="470" rx="10" fill="#0a0d0e"/>
-  <path d="M38 54H1162M38 430H1162" stroke="#30383b"/>
-  <text x="38" y="34" class="m" fill="#778286" font-size="12" letter-spacing="2">ENGINEERING MAP / EVIDENCE-BASED CONNECTIONS</text>
-  <text x="1162" y="34" text-anchor="end" class="m" fill="#78d0c8" font-size="10">IMPLEMENTED · LOCAL · ACADEMIC · BUILDING</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460"
+     role="img" aria-label="System map: six systems Edward builds, with their type, surface and current state.">
+  <title>System map — six active systems</title>
+  <desc>BYTE, a native macOS organism, local build. Wardrobe, a local-first product, public. AFL Predict, a research system, public. Protin, a full-stack platform, public. Developer Hub, a portfolio surface, private build. GitHub Brain, a local intelligence layer, local build.</desc>
 
-  <g fill="none" stroke="#354044" stroke-width="1.2" class="flow">
-    <path d="M600 205L315 112M600 205L315 294M600 205L885 112M600 205L885 294M600 205L600 344"/>
-    <path d="M244 112H88M244 112H88V150"/>
-    <path d="M244 294H88M244 294H88V332"/>
-    <path d="M956 112H1112M956 112H1112V150"/>
-    <path d="M956 294H1112M956 294H1112V332"/>
-    <path d="M600 374H470M600 374H730"/>
-  </g>
+  <defs>
+    <style>
+      .plate  { fill: #0d1117; }
+      .rule   { stroke: #21262d; stroke-width: 1; }
+      .spine  { stroke: #30363d; stroke-width: 1; }
+      .label  { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+                font-size: 11px; letter-spacing: 0.14em; fill: #8b9498; }
+      .name   { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+                font-size: 17px; letter-spacing: 0.06em; fill: #e6edf3; }
+      .type   { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+                font-size: 11px; letter-spacing: 0.10em; fill: #8b949e; }
+      .state  { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+                font-size: 11px; letter-spacing: 0.12em; fill: #7ee2d0; }
+      .quiet  { fill: #8b9498; }
+      .node   { fill: none; stroke: #7ee2d0; stroke-width: 1.2; }
+      .nodeq  { fill: none; stroke: #484f58; stroke-width: 1.2; }
+      .head   { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, monospace;
+                font-size: 11px; letter-spacing: 0.18em; fill: #8b9498; }
+    </style>
+  </defs>
 
-  <circle cx="600" cy="205" r="63" fill="#101517" stroke="#78d0c8" stroke-width="1.5"/>
-  <circle cx="600" cy="205" r="72" fill="none" stroke="#263033" class="pulse"/>
-  <text x="600" y="197" text-anchor="middle" class="s" fill="#f1efe8" font-size="21" font-weight="700">EDWARD</text>
-  <text x="600" y="220" text-anchor="middle" class="m" fill="#8d989b" font-size="10" letter-spacing="1.2">ENGINEERING SYSTEM</text>
+  <rect class="plate" width="1200" height="460" rx="6"/>
 
-  <g class="m">
-    <rect x="244" y="78" width="142" height="68" rx="6" fill="#101517" stroke="#3b464a"/>
-    <text x="315" y="105" text-anchor="middle" fill="#78d0c8" font-size="11">BACKEND</text>
-    <text x="315" y="126" text-anchor="middle" fill="#dfe2de" font-size="10">API / DATA / DB</text>
+  <!-- header -->
+  <text class="head" x="44" y="42">SYSTEM MAP / SIX SYSTEMS / STATE FROM REPOSITORY EVIDENCE</text>
+  <line class="rule" x1="44" y1="62" x2="1156" y2="62"/>
 
-    <rect x="244" y="260" width="142" height="68" rx="6" fill="#101517" stroke="#3b464a"/>
-    <text x="315" y="287" text-anchor="middle" fill="#78d0c8" font-size="11">MOBILE</text>
-    <text x="315" y="308" text-anchor="middle" fill="#dfe2de" font-size="10">LOCAL-FIRST / iOS</text>
+  <!-- column headings -->
+  <text class="label" x="44"  y="90">SYSTEM</text>
+  <text class="label" x="360" y="90">TYPE</text>
+  <text class="label" x="700" y="90">SURFACE</text>
+  <text class="label" x="940" y="90">STATE</text>
+  <line class="rule" x1="44" y1="104" x2="1156" y2="104"/>
 
-    <rect x="814" y="78" width="142" height="68" rx="6" fill="#101517" stroke="#3b464a"/>
-    <text x="885" y="105" text-anchor="middle" fill="#78d0c8" font-size="11">ML / DATA</text>
-    <text x="885" y="126" text-anchor="middle" fill="#dfe2de" font-size="10">MODEL / EVALUATION</text>
+  <!-- vertical spine linking the systems -->
+  <line class="spine" x1="52" y1="132" x2="52" y2="424"/>
 
-    <rect x="814" y="260" width="142" height="68" rx="6" fill="#101517" stroke="#3b464a"/>
-    <text x="885" y="287" text-anchor="middle" fill="#78d0c8" font-size="11">PRODUCT</text>
-    <text x="885" y="308" text-anchor="middle" fill="#dfe2de" font-size="10">INTERFACE / 3D</text>
+  <!-- 1 BYTE -->
+  <line class="spine" x1="52" y1="140" x2="66" y2="140"/>
+  <circle class="nodeq" cx="52" cy="140" r="3.5"/>
+  <text class="name"  x="76"  y="145">BYTE</text>
+  <text class="type"  x="360" y="145">NATIVE MACOS ORGANISM</text>
+  <text class="type"  x="700" y="145">LOCAL BUILD</text>
+  <text class="state quiet" x="940" y="145">UNPUBLISHED</text>
+  <line class="rule" x1="76" y1="166" x2="1156" y2="166"/>
 
-    <rect x="529" y="332" width="142" height="68" rx="6" fill="#101517" stroke="#3b464a"/>
-    <text x="600" y="359" text-anchor="middle" fill="#78d0c8" font-size="11">SYSTEMS</text>
-    <text x="600" y="380" text-anchor="middle" fill="#dfe2de" font-size="10">LOCAL AI / AUTOMATION</text>
+  <!-- 2 WARDROBE -->
+  <line class="spine" x1="52" y1="196" x2="66" y2="196"/>
+  <circle class="node" cx="52" cy="196" r="3.5"/>
+  <text class="name"  x="76"  y="201">WARDROBE</text>
+  <text class="type"  x="360" y="201">LOCAL-FIRST PRODUCT</text>
+  <text class="type"  x="700" y="201">PUBLIC SOURCE</text>
+  <text class="state" x="940" y="201">BUILDING</text>
+  <line class="rule" x1="76" y1="222" x2="1156" y2="222"/>
 
-    <text x="48" y="115" fill="#e4e6e2" font-size="11">PROTIN · PUBLIC</text>
-    <text x="48" y="153" fill="#e4e6e2" font-size="11">AFL_predict · PUBLIC</text>
+  <!-- 3 AFL PREDICT -->
+  <line class="spine" x1="52" y1="252" x2="66" y2="252"/>
+  <circle class="node" cx="52" cy="252" r="3.5"/>
+  <text class="name"  x="76"  y="257">AFL PREDICT</text>
+  <text class="type"  x="360" y="257">RESEARCH SYSTEM</text>
+  <text class="type"  x="700" y="257">PUBLIC SOURCE</text>
+  <text class="state" x="940" y="257">VERIFYING</text>
+  <line class="rule" x1="76" y1="278" x2="1156" y2="278"/>
 
-    <text x="48" y="297" fill="#e4e6e2" font-size="11">WALKROO · LOCAL</text>
-    <text x="48" y="335" fill="#e4e6e2" font-size="11">WARDROBE · PUBLIC</text>
+  <!-- 4 PROTIN -->
+  <line class="spine" x1="52" y1="308" x2="66" y2="308"/>
+  <circle class="node" cx="52" cy="308" r="3.5"/>
+  <text class="name"  x="76"  y="313">PROTIN</text>
+  <text class="type"  x="360" y="313">FULL-STACK PLATFORM</text>
+  <text class="type"  x="700" y="313">PUBLIC SOURCE</text>
+  <text class="state" x="940" y="313">ACTIVE</text>
+  <line class="rule" x1="76" y1="334" x2="1156" y2="334"/>
 
-    <text x="1152" y="115" text-anchor="end" fill="#e4e6e2" font-size="11">AFL_predict · PUBLIC</text>
-    <text x="1152" y="153" text-anchor="end" fill="#e4e6e2" font-size="11">PANSEGAI · ACADEMIC</text>
+  <!-- 5 DEVELOPER HUB -->
+  <line class="spine" x1="52" y1="364" x2="66" y2="364"/>
+  <circle class="nodeq" cx="52" cy="364" r="3.5"/>
+  <text class="name"  x="76"  y="369">DEVELOPER HUB</text>
+  <text class="type"  x="360" y="369">PORTFOLIO SURFACE</text>
+  <text class="type"  x="700" y="369">PRIVATE BUILD</text>
+  <text class="state quiet" x="940" y="369">UNPUBLISHED</text>
+  <line class="rule" x1="76" y1="390" x2="1156" y2="390"/>
 
-    <text x="1152" y="297" text-anchor="end" fill="#e4e6e2" font-size="11">WARDROBE · PUBLIC</text>
-    <text x="1152" y="335" text-anchor="end" fill="#e4e6e2" font-size="11">DEVELOPER HUB · PRIVATE BUILD</text>
-
-    <text x="438" y="413" text-anchor="middle" fill="#e4e6e2" font-size="10">GITHUB PROFILE AUTOMATION</text>
-    <text x="762" y="413" text-anchor="middle" fill="#e4e6e2" font-size="10">GITHUB BRAIN · BUILDING</text>
-  </g>
-
-  <circle cx="600" cy="344" r="4" fill="#78d0c8" class="pulse"/>
-  <text x="38" y="455" class="m" fill="#657174" font-size="9" letter-spacing="1.1">CONNECTIONS REPRESENT IMPLEMENTED OR EXPLICITLY SCOPED WORK — NEVER SELF-RATED PROFICIENCY.</text>
+  <!-- 6 GITHUB BRAIN -->
+  <line class="spine" x1="52" y1="420" x2="66" y2="420"/>
+  <circle class="nodeq" cx="52" cy="420" r="3.5"/>
+  <text class="name"  x="76"  y="425">GITHUB BRAIN</text>
+  <text class="type"  x="360" y="425">LOCAL INTELLIGENCE LAYER</text>
+  <text class="type"  x="700" y="425">LOCAL BUILD</text>
+  <text class="state quiet" x="940" y="425">UNPUBLISHED</text>
 </svg>

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22 17:02 AEST",
-  "fingerprint": "bf3fd9ddf42a3e16cee7cdd4375cdba509c15a0bd2437905306ed93f0d44f497",
+  "generated_at": "2026-08-24 14:55 AEST",
+  "fingerprint": "32206837ba6477e11fa768fcfef4e9e359fcc88a377b47339aa9a484cca0b3bc",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -80,5 +80,7 @@
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/league_togo"
     }
-  }
+  },
+  "state": "QUIET",
+  "state_meaning": "few public commits in this window"
 }
