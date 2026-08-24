@@ -1,0 +1,8 @@
+# Python bytecode from running the signal generator locally
+__pycache__/
+*.py[cod]
+
+# Local override of the Brain evidence contract (the example file is committed)
+data/brain.json
+
+.DS_Store
