@@ -33,7 +33,23 @@ recruiter cannot open is worse than no link.
 
 ---
 
-### `03 / SELECTED SYSTEMS`
+### `03 / PROJECT MOTION`
+
+<p align="center">
+  <img src="./assets/motion-protin.svg" width="270" alt="Protin: two figures either side of a court line pass a ball between them, and the match is logged. Peer sports — find an opponent, play, record the result. Public source, active." />
+  <img src="./assets/motion-afl.svg" width="270" alt="AFL Predict: a ball crosses the centre line between two sides while a confidence bar fills, then the prediction is marked against the result. Backtested on past seasons, not live. Verifying." />
+  <img src="./assets/motion-wardrobe.svg" width="270" alt="Wardrobe: one of three garments lifts off an archive rail and settles into an outfit frame, where a fit check confirms it. Public source, building." />
+</p>
+
+One loop per public project, showing what the thing actually does — a pass
+completed, a prediction scored, an outfit composed. Each tile still reads with
+animation switched off: it settles on the finished state rather than the setup.
+The evidence for these projects is in the table below; these are here so you can
+tell them apart in three seconds.
+
+---
+
+### `04 / SELECTED SYSTEMS`
 
 | System | Type | Evidence you can check | State |
 |---|---|---|---|
@@ -56,7 +72,7 @@ so it is listed for context rather than as personal evidence.
 
 ---
 
-### `04 / ENGINEERING LANDSCAPE`
+### `05 / ENGINEERING LANDSCAPE`
 
 ```text
 NATIVE SYSTEMS   Swift · macOS menu-bar apps · local-first state · XCTest
@@ -73,23 +89,27 @@ touched once are not listed.
 
 ---
 
-### `05 / SIGNAL`
+### `06 / SYSTEMS`
 
 <p align="center">
-  <img src="./assets/activity.svg" width="100%" alt="Public engineering signal: state QUIET — few public commits in the last 30 days across Protin and Wardrobe. Private repositories are excluded." />
+  <img src="./assets/signal-strip.svg" width="100%" alt="Public engineering signal strip: the current state, its meaning, and the commit and repository counts behind it over the last 30 days. Private repositories are excluded." />
 </p>
 
-Generated daily by [a workflow in this repository](.github/workflows/profile-activity.yml)
-from owned **public** commits in a 30-day window. The state is a fixed threshold on
-commit count — `SHIPPING` ≥ 12, `BUILDING` ≥ 6, `FIXING` ≥ 3, otherwise `QUIET`. No
-model decides it.
+`PROFILE SIGNAL` · `PUBLIC` — generated daily by [a workflow in this repository](.github/workflows/profile-activity.yml)
+from commits I authored on my own public repositories in a 30-day window. The
+state is a fixed threshold on commit count — `SHIPPING` ≥ 12, `BUILDING` ≥ 6,
+`FIXING` ≥ 3, otherwise `QUIET`. No model decides it, and `QUIET` is a real
+state: most weeks the work is in private repositories a public signal cannot see.
 
-`QUIET` is a real state, not a failure: most weeks the work is in private
-repositories, and a public signal should not pretend to see them.
+`GITHUB BRAIN` · `LOCAL / WIP` — a local index over my own repositories: SQLite,
+local embeddings, and retrieval gated by an explicit per-repository policy, so
+private source can never reach a public answer. Answers cite the file and commit
+they came from. It runs on my machine only — there is nothing here to run, and
+it is not a hosted service.
 
 ---
 
-### `06 / DEVELOPER HUB`
+### `07 / DEVELOPER HUB`
 
 GitHub holds the engineering evidence — source, architecture, tests, commits.
 The **Edward Developer Hub** holds the case studies: why each system exists, what was
