@@ -1,60 +1,32 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Edward Hwang — ML systems and shipped software, Sydney">
+  <img src="assets/banner-light.svg" alt="Edward Hwang — I build ML systems and measure them. Protin, AFL Predict, The Archive.">
 </picture>
 
-Final-year Computer Science at the University of Sydney. I build ML systems and measure them — then ship the ones that hold up.
+Final-year Computer Science at the University of Sydney, graduating December 2026. Backend and ML systems, with the measurements attached.
 
-`Sydney, AU` · [Email](mailto:edwardhwang1223@gmail.com) · [LinkedIn](https://linkedin.com/in/YOUR-HANDLE) · Open to graduate software engineering roles from December 2026
+`Sydney, AU` · [Email](mailto:edwardhwang1223@gmail.com) · [LinkedIn](https://linkedin.com/in/YOUR-HANDLE) · Open to graduate software engineering roles
+
+---
+
+## Public work
+
+| Project | What it is | Evidence | Status |
+|---|---|---|---|
+| [**Protin**](https://github.com/EdwardH-jedi/Protin) | Peer sports matchmaking — find opponents, issue challenges, book courts, track a ranking and honour system | Expo · FastAPI · SQLAlchemy · PostgreSQL · Redis · Docker · pytest | Active |
+| [**AFL Predict**](https://github.com/EdwardH-jedi/AFL_predict) | Paper-trading research system — scheduled ingestion, temporal features, calibrated ensemble, walk-forward backtesting | 13 feature extractors · 6 model types · CLV tracking. **No live betting, no claimed edge.** | Backtested |
+| [**The Archive**](https://github.com/EdwardH-jedi/wadrobe) | Local-first wardrobe — garment archive, outfit composition, scoped proxy-3D, plus an iOS client on the same domain model | 430 tests green. Cutout engine picked by benchmark: Vision subject lifting beat flood fill 18/22 on flat-lay | Active |
+
+Three machines by role behind AFL Predict — a 24/7 Postgres spine, an RTX 5080 training box, a laptop cockpit — with collection scheduled around a 500-call monthly API quota.
 
 ---
 
 ## Now
 
-- **Protin** — matchmaking and ranking flows; latest push 25 Aug.
-- **AFL Predict** — GPU-accelerated Optuna sweeps on the ensemble, odds collection running nightly against a Postgres spine.
-- **The Archive** — 3-way cutout benchmark on the `eval/cutout-bench` branch, and a trimesh procedural mannequin replacing the dummy avatar builder.
-- Pancreas segmentation capstone for an external client. Private repo while the work is in progress.
-
----
-
-## Selected work
-
-### Protin — peer sports matchmaking
-Find opponents by sport, issue challenges, book nearby courts, track results through a ranking and honour system.
-
-| | |
-|---|---|
-| **Scope** | Full-stack mobile: matchmaking, challenges, court booking, ranking and honour system |
-| **Stack** | React Native · Expo · TypeScript · FastAPI · SQLAlchemy · PostgreSQL · Redis · Docker · pytest |
-| **Status** | Active — largest codebase here |
-
-→ [`EdwardH-jedi/Protin`](https://github.com/EdwardH-jedi/Protin)
-
-### AFL Predict — paper-trading research system
-Scheduled ingestion, temporal feature engineering, calibrated ensemble models, walk-forward backtesting, FastAPI service.
-
-| | |
-|---|---|
-| **Evidence** | 13 feature extractors · 6 model types · walk-forward backtest harness · closing-line-value tracking |
-| **Honest limit** | Paper trading only. No live betting, no money placed, no claimed edge. |
-| **Infrastructure** | Three machines by role — a 24/7 Postgres spine, an RTX 5080 training box, a laptop cockpit. Collection scheduled around a 500-call monthly API quota. |
-| **Stack** | Python · XGBoost · SHAP · FastAPI · React · PostgreSQL |
-| **Status** | Backtested, not live |
-
-→ [`EdwardH-jedi/AFL_predict`](https://github.com/EdwardH-jedi/AFL_predict)
-
-### The Archive — local-first wardrobe with a measured vision pipeline
-Browser-persisted garment archive, outfit composition, and a scoped proxy-3D experiment. An iOS client shares the same domain model.
-
-| | |
-|---|---|
-| **Evidence** | 378 frontend tests · 52 backend pytest tests · async `/api/jobs` lifecycle behind 5 named interfaces |
-| **Benchmark** | The cutout engine was chosen by measurement, not preference. Vision on-device subject lifting beat flood fill on flat-lay images, 18 of 22. The failures that remain are fine interior gaps — lace, fringe — which is why YOLOv11-seg stays on the bench instead of in the pipeline. |
-| **Stack** | React · TypeScript · Vite · Three.js · Vitest · FastAPI · trimesh · Swift / SwiftUI |
-| **Status** | Active — web and iOS clients exchange archives via export and import |
-
-→ [`EdwardH-jedi/wadrobe`](https://github.com/EdwardH-jedi/wadrobe)
+- **Protin** — matchmaking and ranking flows.
+- **AFL Predict** — GPU-accelerated Optuna sweeps on the ensemble.
+- **The Archive** — 3-way cutout benchmark on `eval/cutout-bench`; trimesh mannequin replacing the dummy avatar builder.
+- Pancreas segmentation capstone for an external client. Private while in progress.
 
 ---
 
@@ -67,12 +39,9 @@ Browser-persisted garment archive, outfit composition, and a scoped proxy-3D exp
 
 ---
 
-## Also built
+## Elsewhere
 
-- **Sensorway (internship)** — YOLOv8 defect detection for an IoT line, deployed on-site in Hungary.
-- **Pancreas segmentation capstone** — CT and MRI segmentation for an external client, with a University of Sydney team. Private while in progress.
-- **Startup** — grand prize at a Samsung enterprise competition, patent application filed.
-
----
+**Sensorway** — YOLOv8 defect detection for an IoT line, deployed on-site in Hungary.
+**Samsung enterprise competition** — grand prize, patent application filed.
 
 <sub>If a number appears above, it came from a run I can point you at.</sub>
