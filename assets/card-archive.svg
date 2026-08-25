@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 110" width="250" height="110" role="img" aria-labelledby="t d">
+<title id="t">The Archive — 18 of 22 flat-lay cutouts resolved</title>
+<desc id="d">Twenty-two squares; eighteen fill in, four stay outlined.</desc>
+<style>
+@media (prefers-reduced-motion: no-preference){
+.hit{opacity:1;animation:fill 4.5s ease-out infinite}
+@keyframes fill{0%{opacity:0;transform:scale(.6)}6%{opacity:0;transform:scale(.6)}
+14%,100%{opacity:1;transform:scale(1)}}
+.hit{transform-origin:center}
+}
+</style>
+<rect class="hit" style="animation-delay:0.00s" x="15" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.11s" x="35" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.22s" x="55" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.33s" x="75" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.44s" x="95" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.55s" x="115" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.66s" x="135" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.77s" x="155" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.88s" x="175" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:0.99s" x="195" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.10s" x="215" y="34" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.21s" x="15" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.32s" x="35" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.43s" x="55" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.54s" x="75" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.65s" x="95" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.76s" x="115" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect class="hit" style="animation-delay:1.87s" x="135" y="60" width="14" height="14" rx="2" fill="#E0891F"/>
+<rect x="155" y="60" width="14" height="14" rx="2" fill="none" stroke="#A8ADB3" stroke-width="1.2" stroke-dasharray="2.5 2.5"/>
+<rect x="175" y="60" width="14" height="14" rx="2" fill="none" stroke="#A8ADB3" stroke-width="1.2" stroke-dasharray="2.5 2.5"/>
+<rect x="195" y="60" width="14" height="14" rx="2" fill="none" stroke="#A8ADB3" stroke-width="1.2" stroke-dasharray="2.5 2.5"/>
+<rect x="215" y="60" width="14" height="14" rx="2" fill="none" stroke="#A8ADB3" stroke-width="1.2" stroke-dasharray="2.5 2.5"/>
+<path d="M15 92 L235 92" stroke="#A8ADB3" stroke-width="1"/>
+</svg>
