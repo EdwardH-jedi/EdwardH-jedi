@@ -1,153 +1,78 @@
-<p align="center">
-  <img src="./hero.svg" width="100%" alt="Edward Hwang — software systems, AI and product engineering" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" alt="Edward Hwang — ML systems and shipped software, Sydney">
+</picture>
 
-<p align="center">
-  <code>SYDNEY / AU</code> &nbsp;·&nbsp;
-  <a href="mailto:edwardhwang1223@gmail.com"><code>EMAIL</code></a> &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/soon-hyun-hwang-7212a42b7"><code>LINKEDIN</code></a> &nbsp;·&nbsp;
-  <a href="https://github.com/EdwardH-jedi?tab=repositories"><code>REPOSITORIES</code></a>
-</p>
+Final-year Computer Science at the University of Sydney. I build ML systems and measure them — then ship the ones that hold up.
+
+`Sydney, AU` · [Email](mailto:edwardhwang1223@gmail.com) · [LinkedIn](https://linkedin.com/in/YOUR-HANDLE) · Open to graduate software engineering roles from December 2026
 
 ---
 
-### `01 / CONTROL SURFACE`
+## Now
 
-Final-year Computer Science student at the **University of Sydney**. I build backend
-systems, native macOS software, mobile products, and data/ML pipelines — and I keep
-the evidence in the repository rather than in the description.
-
-`TARGET / GRADUATE SOFTWARE ENGINEERING · BACKEND / SYSTEMS · AI-ML INFRASTRUCTURE`
-
----
-
-### `02 / SYSTEM MAP`
-
-<p align="center">
-  <img src="./assets/system-map.svg" width="100%" alt="System map: BYTE (native macOS, unpublished), Wardrobe (local-first, public, building), AFL Predict (research, public, verifying), Protin (full-stack, public, active), Developer Hub (portfolio, private), GitHub Brain (local intelligence, unpublished)." />
-</p>
-
-Six systems, with what each one is and where it can actually be read. `UNPUBLISHED`
-means the source is not on GitHub yet — stated rather than hidden, because a link a
-recruiter cannot open is worse than no link.
+- **Protin** — matchmaking and ranking flows; latest push 25 Aug.
+- **AFL Predict** — GPU-accelerated Optuna sweeps on the ensemble, odds collection running nightly against a Postgres spine.
+- **The Archive** — 3-way cutout benchmark on the `eval/cutout-bench` branch, and a trimesh procedural mannequin replacing the dummy avatar builder.
+- Pancreas segmentation capstone for an external client. Private repo while the work is in progress.
 
 ---
 
-### `03 / PROJECT MOTION`
+## Selected work
 
-<p align="center">
-  <img src="./assets/motion-protin.svg" width="270" alt="Protin: two figures either side of a court line pass a ball between them, and the match is logged. Peer sports — find an opponent, play, record the result. Public source, active." />
-  <img src="./assets/motion-afl.svg" width="270" alt="AFL Predict: a ball crosses the centre line between two sides while a confidence bar fills, then the prediction is marked against the result. Backtested on past seasons, not live. Verifying." />
-  <img src="./assets/motion-wardrobe.svg" width="270" alt="Wardrobe: one of three garments lifts off an archive rail and settles into an outfit frame, where a fit check confirms it. Public source, building." />
-</p>
+### Protin — peer sports matchmaking
+Find opponents by sport, issue challenges, book nearby courts, track results through a ranking and honour system.
 
-One loop per public project, showing what the thing actually does — a pass
-completed, a prediction scored, an outfit composed. Each tile still reads with
-animation switched off: it settles on the finished state rather than the setup.
-The evidence for these projects is in the table below; these are here so you can
-tell them apart in three seconds.
+| | |
+|---|---|
+| **Scope** | Full-stack mobile: matchmaking, challenges, court booking, ranking and honour system |
+| **Stack** | React Native · Expo · TypeScript · FastAPI · SQLAlchemy · PostgreSQL · Redis · Docker · pytest |
+| **Status** | Active — largest codebase here |
 
----
+→ [`EdwardH-jedi/Protin`](https://github.com/EdwardH-jedi/Protin)
 
-### `04 / SELECTED SYSTEMS`
+### AFL Predict — paper-trading research system
+Scheduled ingestion, temporal feature engineering, calibrated ensemble models, walk-forward backtesting, FastAPI service.
 
-| System | Type | Evidence you can check | State |
-|---|---|---|---|
-| [**Protin**](https://github.com/EdwardH-jedi/Protin) | Full-stack mobile platform | 487 files · **82 test files** · Alembic migrations · Docker · CI workflow · React Native/Expo + FastAPI + PostgreSQL + Redis | `ACTIVE` |
-| [**Wardrobe**](https://github.com/EdwardH-jedi/wadrobe) | Local-first product | 204 files · **62 test files** · IndexedDB → localStorage → memory fallback chain · framework-free TS domain layer · FastAPI proxy-3D service | `BUILDING` |
-| [**AFL Predict**](https://github.com/EdwardH-jedi/AFL_predict) | Research system | 303 files · **26 test files** · **8 Alembic migrations** · stage-per-directory pipeline · calibrated ensemble over XGBoost, logistic, Poisson and Elo baselines · documented backtesting method | `VERIFYING` |
-| **BYTE** | Native macOS organism | **5,275 Swift LOC** · 37 source files · **12 test files** · menu-bar app + local companion · no accounts, no telemetry | `LOCAL BUILD` |
-| **Developer Hub** | Portfolio surface | Next.js 16 · zero client components · 20 tests · WCAG AA verified | `PRIVATE BUILD` |
-| **GitHub Brain** | Local intelligence layer | SQLite + local embeddings · policy-gated retrieval · evidence-cited answers | `LOCAL BUILD` |
+| | |
+|---|---|
+| **Evidence** | 13 feature extractors · 6 model types · walk-forward backtest harness · closing-line-value tracking |
+| **Honest limit** | Paper trading only. No live betting, no money placed, no claimed edge. |
+| **Infrastructure** | Three machines by role — a 24/7 Postgres spine, an RTX 5080 training box, a laptop cockpit. Collection scheduled around a 500-call monthly API quota. |
+| **Stack** | Python · XGBoost · SHAP · FastAPI · React · PostgreSQL |
+| **Status** | Backtested, not live |
 
-Counts are files, test files, migrations and lines of code on each repository's
-default branch, read on **2026-08-24** — a snapshot, not a live number, and not a
-performance claim. "Test files" counts files under test directories, including
-fixtures and helpers. AFL Predict reads `VERIFYING` because its own README says
-the tree is not merge-ready; model quality is not claimed here.
+→ [`EdwardH-jedi/AFL_predict`](https://github.com/EdwardH-jedi/AFL_predict)
 
-**PanSegAI** — a University of Sydney team capstone on pancreas MRI segmentation — is
-in progress in a private group repository. The baseline work to date is the team's,
-so it is listed for context rather than as personal evidence.
+### The Archive — local-first wardrobe with a measured vision pipeline
+Browser-persisted garment archive, outfit composition, and a scoped proxy-3D experiment. An iOS client shares the same domain model.
 
----
+| | |
+|---|---|
+| **Evidence** | 378 frontend tests · 52 backend pytest tests · async `/api/jobs` lifecycle behind 5 named interfaces |
+| **Benchmark** | The cutout engine was chosen by measurement, not preference. Vision on-device subject lifting beat flood fill on flat-lay images, 18 of 22. The failures that remain are fine interior gaps — lace, fringe — which is why YOLOv11-seg stays on the bench instead of in the pipeline. |
+| **Stack** | React · TypeScript · Vite · Three.js · Vitest · FastAPI · trimesh · Swift / SwiftUI |
+| **Status** | Active — web and iOS clients exchange archives via export and import |
 
-### `05 / ENGINEERING LANDSCAPE`
-
-```text
-NATIVE SYSTEMS   Swift · macOS menu-bar apps · local-first state · XCTest
-PRODUCT          React Native · Expo · React · TypeScript · Vite · IndexedDB
-BACKEND          Python · FastAPI · SQLAlchemy · Alembic · PostgreSQL · Redis
-AI / DATA        XGBoost · scikit-learn · statsmodels · feature engineering · calibration
-INFRASTRUCTURE   Docker · GitHub Actions · pytest · Vitest · SQLite
-```
-
-Every line except `NATIVE SYSTEMS` is supported by a repository linked above.
-`NATIVE SYSTEMS` rests on BYTE, which is not published yet — listed because it is
-what I am building, not because you can currently check it. Technologies I have
-touched once are not listed.
+→ [`EdwardH-jedi/wadrobe`](https://github.com/EdwardH-jedi/wadrobe)
 
 ---
 
-### `06 / SYSTEMS`
+## Stack
 
-<p align="center">
-  <img src="./assets/signal-strip.svg" width="540" alt="Public engineering signal strip: the current state, its meaning, and the commit and repository counts behind it over the last 30 days. Private repositories are excluded." />
-</p>
-
-`PROFILE SIGNAL` · `PUBLIC` — generated daily by [a workflow in this repository](.github/workflows/profile-activity.yml)
-from commits I authored on my own public repositories in a 30-day window. The
-state is a fixed threshold on commit count — `SHIPPING` ≥ 12, `BUILDING` ≥ 6,
-`FIXING` ≥ 3, otherwise `QUIET`. No model decides it, and `QUIET` is a real
-state: most weeks the work is in private repositories a public signal cannot see.
-
-`GITHUB BRAIN` · `LOCAL / WIP` — the reason this profile can cite a file and a
-commit for each claim. It runs on my machine, not here, and every repository it
-reads carries an explicit policy for what may leave it.
+**Backend** Python · FastAPI · PostgreSQL / pgvector · Redis · Docker
+**Frontend** React · TypeScript · Vite · React Native / Expo · SwiftUI
+**ML** PyTorch · XGBoost · SHAP · YOLO · MONAI
+**Systems** C · Linux / bash · Git
 
 ---
 
-### `07 / DEVELOPER HUB`
+## Also built
 
-GitHub holds the engineering evidence — source, architecture, tests, commits.
-The **Edward Developer Hub** holds the case studies: why each system exists, what was
-hard, and where it still falls short.
+- **Sensorway (internship)** — YOLOv8 defect detection for an IoT line, deployed on-site in Hungary.
+- **Pancreas segmentation capstone** — CT and MRI segmentation for an external client, with a University of Sydney team. Private while in progress.
+- **Startup** — grand prize at a Samsung enterprise competition, patent application filed.
 
-`STATUS / PRIVATE BUILD` — the Hub is not yet published. Until it is, the
-repositories above are the primary record.
+---
 
-<details>
-<summary><b>BACKGROUND — experience, education, earlier work</b></summary>
-
-<br/>
-
-**Computer Vision & Field Deployment Intern — Sensorway**
-`DEC 2025 — FEB 2026 · ON-SITE / ECOPRO, HUNGARY`
-
-- Deployed and configured approximately **750 smart sensors** across an industrial site.
-- Worked across PID middleware, SQL database layers, Dockerised services, and a real-time monitoring interface.
-- Validated sensor → middleware → database flow and diagnosed connectivity and data-quality issues during live rollout.
-- Reproduced and triaged REST API defects and supported computer-vision anomaly-detection validation.
-
-**Research Lab Intern — Seoul National University, Materials Science & Engineering**
-`JUN 2021 — AUG 2021 · SEOUL`
-
-- Supported structured data collection, analysis, experimental documentation, and collaborative interpretation.
-
-**University of Sydney** — Bachelor of Advanced Computing, Computer Science · `2022 — 2026 EXPECTED`
-
-Relevant study: systems programming, algorithms and data structures, databases, AI,
-computer vision, software engineering, object-oriented programming.
-
-**St Johnsbury Academy Jeju** — High School Diploma · `2017 — 2022`
-
-**Ara Company — CEO & Co-founder** · `2020 — 2022`
-Led product conceptualisation and team coordination, filed a patent application, and won the
-Grand Prize at the 2020 Samsung Enterprise Competition / Startup Support Program.
-
-**Contactless Coffee Machine — Embedded Systems Capstone** · `2021 — 2022`
-Touchless hardware/software prototype using Arduino C, motion sensors, and ultrasonic sensing.
-
-*This section is career history rather than repository evidence.*
-
-</details>
+<sub>If a number appears above, it came from a run I can point you at.</sub>
