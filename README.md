@@ -11,11 +11,28 @@ Final-year Computer Science at the University of Sydney, graduating December 202
 
 ## Public work
 
-| Project | What it is | Evidence | Status |
-|---|---|---|---|
-| [**Protin**](https://github.com/EdwardH-jedi/Protin) | Peer sports matchmaking — find opponents, issue challenges, book courts, track a ranking and honour system | Expo · FastAPI · SQLAlchemy · PostgreSQL · Redis · Docker · pytest | Active |
-| [**AFL Predict**](https://github.com/EdwardH-jedi/AFL_predict) | Paper-trading research system — scheduled ingestion, temporal features, calibrated ensemble, walk-forward backtesting | 13 feature extractors · 6 model types · CLV tracking. **No live betting, no claimed edge.** | Backtested |
-| [**The Archive**](https://github.com/EdwardH-jedi/wadrobe) | Local-first wardrobe — garment archive, outfit composition, scoped proxy-3D, plus an iOS client on the same domain model | 430 tests green. Cutout engine picked by benchmark: Vision subject lifting beat flood fill 18/22 on flat-lay | Active |
+<table>
+<tr>
+<td width="33%" valign="top">
+<img src="assets/card-protin.svg" alt="Two players matched, then ranked" width="100%">
+<p><a href="https://github.com/EdwardH-jedi/Protin"><b>Protin</b></a><br>
+<sub>Peer sports matchmaking. Find opponents, issue challenges, book courts, track a ranking and honour system.</sub></p>
+<p><sub>Expo · FastAPI · PostgreSQL · Redis · Docker · pytest<br><b>Active</b></sub></p>
+</td>
+<td width="33%" valign="top">
+<img src="assets/card-afl-predict.svg" alt="A calibration curve traced against the ideal diagonal" width="100%">
+<p><a href="https://github.com/EdwardH-jedi/AFL_predict"><b>AFL Predict</b></a><br>
+<sub>Paper-trading research system. Scheduled ingestion, temporal features, calibrated ensemble, walk-forward backtesting.</sub></p>
+<p><sub>13 feature extractors · 6 model types · CLV tracking<br><b>Backtested — no live betting, no claimed edge</b></sub></p>
+</td>
+<td width="33%" valign="top">
+<img src="assets/card-archive.svg" alt="Eighteen of twenty-two flat-lay cutouts resolved" width="100%">
+<p><a href="https://github.com/EdwardH-jedi/wadrobe"><b>The Archive</b></a><br>
+<sub>Local-first wardrobe. Garment archive, outfit composition, scoped proxy-3D, plus an iOS client on the same domain model.</sub></p>
+<p><sub>430 tests green · cutout engine picked by benchmark, 18/22 on flat-lay<br><b>Active</b></sub></p>
+</td>
+</tr>
+</table>
 
 Three machines by role behind AFL Predict — a 24/7 Postgres spine, an RTX 5080 training box, a laptop cockpit — with collection scheduled around a 500-call monthly API quota.
 
