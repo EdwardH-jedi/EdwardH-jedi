@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 110" width="250" height="110" role="img" aria-labelledby="t d">
+<title id="t">AFL Predict — a calibration curve traced against the ideal diagonal</title>
+<desc id="d">A prediction curve draws itself alongside a dashed ideal line.</desc>
+<style>
+@media (prefers-reduced-motion: no-preference){
+.curve{stroke-dasharray:230;stroke-dashoffset:230;animation:trace 4.5s ease-in-out infinite}
+.dot{opacity:0;animation:show 4.5s ease-out infinite}
+.dot:nth-of-type(2){animation-delay:.35s}
+.dot:nth-of-type(3){animation-delay:.7s}
+.dot:nth-of-type(4){animation-delay:1.05s}
+.dot:nth-of-type(5){animation-delay:1.4s}
+@keyframes trace{0%,8%{stroke-dashoffset:230}60%,100%{stroke-dashoffset:0}}
+@keyframes show{0%,12%{opacity:0}40%,100%{opacity:1}}
+}
+</style>
+<path d="M28 92 L28 18" stroke="#A8ADB3" stroke-width="1"/>
+<path d="M28 92 L226 92" stroke="#A8ADB3" stroke-width="1"/>
+<path d="M28 92 L222 22" stroke="#A8ADB3" stroke-width="1.2" stroke-dasharray="4 4" fill="none"/>
+<path class="curve" d="M28 92 L76 78 L124 56 L172 38 L222 22" stroke="#E0891F" stroke-width="2"
+ fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle class="dot" cx="28" cy="92" r="3" fill="#E0891F"/>
+<circle class="dot" cx="76" cy="78" r="3" fill="#E0891F"/>
+<circle class="dot" cx="124" cy="56" r="3" fill="#E0891F"/>
+<circle class="dot" cx="172" cy="38" r="3" fill="#E0891F"/>
+<circle class="dot" cx="222" cy="22" r="3" fill="#E0891F"/>
+</svg>
