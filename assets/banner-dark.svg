@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 252" width="880" height="252" role="img" aria-labelledby="bt bd" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<title id="bt">Edward Hwang — I build ML systems and measure them</title>
+<desc id="bd">Profile banner listing three public projects: Protin, AFL Predict and The Archive, with location, availability and focus.</desc>
+<rect width="880" height="252" rx="10" fill="#0B0C0E"/>
+<rect x="0.5" y="0.5" width="879" height="251" rx="9.5" fill="none" stroke="#23262C"/>
+<text x="32" y="38" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" letter-spacing="2.4" fill="#4A5058">PROFILE &#183; EDWARDH-JEDI &#183; 2026</text>
+<text x="32" y="92" font-size="40" font-weight="600" letter-spacing="-0.8" fill="#E6E8EA">Edward Hwang</text>
+<text x="32" y="122" font-size="16.5" fill="#E6E8EA">I build ML systems and measure them.</text>
+<text x="32" y="146" font-size="12.5" fill="#8A9099">Final-year Computer Science &#183; University of Sydney</text>
+<g stroke="#8A9099" stroke-width="1.4" fill="none" stroke-linecap="round">
+<circle cx="548" cy="94" r="6"/>
+<path d="M548 100 L548 117"/>
+<path d="M539 108 L557 108"/>
+<path d="M548 117 L541 131"/>
+<path d="M548 117 L555 131"/>
+</g>
+<rect x="575" y="118" width="9" height="14" rx="1.5" fill="#4A5058"/>
+<rect x="589" y="110" width="9" height="22" rx="1.5" fill="#8A9099"/>
+<rect x="603" y="100" width="9" height="32" rx="1.5" fill="#E8952F"/>
+<path d="M530 132 L620 132" stroke="#23262C" stroke-width="1"/>
+<path d="M652 30 L652 158" stroke="#23262C" stroke-width="1"/>
+<text x="676" y="46" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="1.8" fill="#4A5058">LOCATION</text>
+<text x="676" y="66" font-size="13" fill="#E6E8EA">Sydney, AU</text>
+<text x="676" y="92" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="1.8" fill="#4A5058">AVAILABLE</text>
+<text x="676" y="112" font-size="13" fill="#E6E8EA">Graduate roles, Dec 2026</text>
+<text x="676" y="138" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="1.8" fill="#4A5058">FOCUS</text>
+<text x="676" y="158" font-size="13" fill="#E6E8EA">Backend  ·  ML systems</text>
+<path d="M0 178 L880 178" stroke="#23262C" stroke-width="1"/>
+<rect x="1" y="178" width="878" height="73" rx="0" fill="#101215"/>
+<path d="M0 178 L880 178" stroke="#23262C" stroke-width="1"/>
+<text x="32" y="203" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="1.6" fill="#E8952F">FS-01</text>
+<text x="32" y="222" font-size="14" font-weight="600" fill="#E6E8EA">Protin</text>
+<text x="32" y="239" font-size="11" fill="#8A9099">Full-stack mobile  ·  Expo + FastAPI</text>
+<path d="M287 194 L287 236" stroke="#23262C" stroke-width="1"/>
+<text x="315" y="203" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="1.6" fill="#E8952F">AIML-01</text>
+<text x="315" y="222" font-size="14" font-weight="600" fill="#E6E8EA">AFL Predict</text>
+<text x="315" y="239" font-size="11" fill="#8A9099">Paper trading only  ·  no live betting</text>
+<path d="M570 194 L570 236" stroke="#23262C" stroke-width="1"/>
+<text x="598" y="203" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="9.5" letter-spacing="1.6" fill="#E8952F">APP-01</text>
+<text x="598" y="222" font-size="14" font-weight="600" fill="#E6E8EA">The Archive</text>
+<text x="598" y="239" font-size="11" fill="#8A9099">430 tests green  ·  cutout benched 18/22</text>
+</svg>
