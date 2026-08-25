@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 110" width="250" height="110" role="img" aria-labelledby="t d">
+<title id="t">Protin — two players matched, then ranked</title>
+<desc id="d">Two stick figures connect and a three-bar ranking rises.</desc>
+<style>
+@media (prefers-reduced-motion: no-preference){
+.arc{stroke-dasharray:120;stroke-dashoffset:120;animation:draw 4.5s ease-in-out infinite}
+.pulse{animation:pop 4.5s ease-in-out infinite}
+.rank rect{transform-origin:center bottom;animation:rise 4.5s ease-out infinite}
+.rank rect:nth-child(2){animation-delay:.15s}
+.rank rect:nth-child(3){animation-delay:.3s}
+@keyframes draw{0%,10%{stroke-dashoffset:120}45%,100%{stroke-dashoffset:0}}
+@keyframes pop{0%,40%{r:0}55%{r:5}70%,100%{r:3.5}}
+@keyframes rise{0%,55%{transform:scaleY(0)}80%,100%{transform:scaleY(1)}}
+}
+</style>
+<g stroke="#7D858C" stroke-width="1.5" fill="none" stroke-linecap="round">
+<circle cx="52.0" cy="60.0" r="6.0"/><path d="M52.0 67.0 L52.0 82.0"/><path d="M43.0 73.0 L61.0 73.0"/><path d="M52.0 82.0 L45.0 94.0"/><path d="M52.0 82.0 L59.0 94.0"/>
+<circle cx="198.0" cy="60.0" r="6.0"/><path d="M198.0 67.0 L198.0 82.0"/><path d="M189.0 73.0 L207.0 73.0"/><path d="M198.0 82.0 L191.0 94.0"/><path d="M198.0 82.0 L205.0 94.0"/>
+</g>
+<path class="arc" d="M52 44 Q125 8 198 44" stroke="#E0891F" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<circle class="pulse" cx="125" cy="26" r="3.5" fill="#E0891F"/>
+<g class="rank" fill="#A8ADB3">
+<rect x="112" y="84" width="8" height="10" rx="1.5"/>
+<rect x="123" y="78" width="8" height="16" rx="1.5"/>
+<rect x="134" y="70" width="8" height="24" rx="1.5"/>
+</g>
+<path d="M40 96 L210 96" stroke="#A8ADB3" stroke-width="1"/>
+</svg>
