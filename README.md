@@ -5,7 +5,7 @@
 
 Final-year Computer Science at the University of Sydney, graduating December 2026. Backend and ML systems, with the measurements attached.
 
-`Sydney, AU` · [Email](mailto:edwardhwang1223@gmail.com) · [LinkedIn](https://linkedin.com/in/YOUR-HANDLE) · Open to graduate software engineering roles
+`Sydney, AU` · [Email](mailto:edwardhwang1223@gmail.com) · [LinkedIn](https://linkedin.com/in/soon-hyun-hwang-7212a42b7) · Open to graduate software engineering roles
 
 ---
 
