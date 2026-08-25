@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 68" width="540" height="68" role="img" aria-label="Public engineering signal: state BUILDING, 6 commits across 2 public repositories in the last 30 days. Private repositories are excluded.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 68" width="540" height="68" role="img" aria-label="Public engineering signal: state SHIPPING, 16 commits across 3 public repositories in the last 30 days. Private repositories are excluded.">
   <title>Public engineering signal</title>
   <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}</style>
   <rect width="540" height="68" rx="6" fill="#0a0d0e"/>
   <rect x="14" y="15" width="3" height="38" rx="1.5" fill="#78d0c8"/>
   <text class="m" x="30" y="28" font-size="9" letter-spacing="1.4" fill="#8b9498">PUBLIC SIGNAL / LAST 30 DAYS</text>
-  <text class="m" x="30" y="46" font-size="11" letter-spacing="1.2" fill="#f1efe8">BUILDING</text>
-  <text class="m" x="30" y="60" font-size="9" letter-spacing="0.6" fill="#8b9498">steady public commits in the window</text>
-  <text class="m" x="526" y="28" text-anchor="end" font-size="9" letter-spacing="1.1" fill="#78d0c8">6 COMMITS / 2 REPOS</text>
-  <text class="m" x="526" y="60" text-anchor="end" font-size="8" letter-spacing="1" fill="#8b9498">PUBLIC GITHUB · 2026-08-24 19:56 AEST</text>
+  <text class="m" x="30" y="46" font-size="11" letter-spacing="1.2" fill="#f1efe8">SHIPPING</text>
+  <text class="m" x="30" y="60" font-size="9" letter-spacing="0.6" fill="#8b9498">sustained public commit activity across repositories</text>
+  <text class="m" x="526" y="28" text-anchor="end" font-size="9" letter-spacing="1.1" fill="#78d0c8">16 COMMITS / 3 REPOS</text>
+  <text class="m" x="526" y="60" text-anchor="end" font-size="8" letter-spacing="1" fill="#8b9498">PUBLIC GITHUB · 2026-08-26 06:47 AEST</text>
 </svg>
