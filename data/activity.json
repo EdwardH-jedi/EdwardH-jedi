@@ -1,10 +1,19 @@
 {
-  "generated_at": "2026-08-26 06:47 AEST",
-  "fingerprint": "32740caaf16cf631f304e9b0306e897cc0d19d96b62d704047017bf11eae820a",
+  "generated_at": "2026-08-27 09:34 AEST",
+  "fingerprint": "bbeed7948e967fba96b7ad256c65c48b569af48fee9e74ac8707255e45bea659",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "Sportsgang",
+      "summary": "docs: record App Store approval and review outcome",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-26T07:16:53Z",
+      "display_date": "26 AUG",
+      "sha": "f85960a48b",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/f85960a48b7ceeb1af92c0327fee67ce3e609a6c"
+    },
     {
       "repo": "AFL_predict",
       "summary": "Note that pre-fix operator DBs carry inverted-sign CLV rows",
@@ -33,40 +42,40 @@
       "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/36d166969d169f8a06248f00191672a1c2f2ddf5"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "docs: qualify tournaments as feature-flagged",
       "category": "PRODUCT / FEATURE",
       "date": "2026-08-25T10:09:53Z",
       "display_date": "25 AUG",
       "sha": "1e32fb4c2a",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/1e32fb4c2a8c95809a58834a8943afe1a58dcdc1"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/1e32fb4c2a8c95809a58834a8943afe1a58dcdc1"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "docs: recruiter-facing README overview and portfolio facts",
       "category": "DOCS / EVIDENCE",
       "date": "2026-08-25T10:06:59Z",
       "display_date": "25 AUG",
       "sha": "36d44a55dc",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/36d44a55dc94d1cf8edbc511253f5fdba618fffd"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/36d44a55dc94d1cf8edbc511253f5fdba618fffd"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "fix(infra): build the API image from the repository root context",
       "category": "SYSTEMS / OPS",
       "date": "2026-08-25T10:06:59Z",
       "display_date": "25 AUG",
       "sha": "8befba44b8",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/8befba44b8533eb80e10dfd98640ef9e0a6fcc8b"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/8befba44b8533eb80e10dfd98640ef9e0a6fcc8b"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "fix: make the validation suite green again",
       "category": "FIX / RELIABILITY",
       "date": "2026-08-25T10:06:50Z",
       "display_date": "25 AUG",
       "sha": "b7d0940af7",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/b7d0940af7e008f9c4928a915f5e0a02018e5729"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/b7d0940af7e008f9c4928a915f5e0a02018e5729"
     },
     {
       "repo": "AFL_predict",
@@ -105,13 +114,13 @@
       "url": "https://github.com/EdwardH-jedi/wadrobe/commit/703983a746793c93ce3aeae7dee5ebfd424fdd13"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "docs: discovery filters by sport, not by location",
       "category": "DOCS / EVIDENCE",
       "date": "2026-08-24T08:22:43Z",
       "display_date": "24 AUG",
       "sha": "416ed775dc",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/416ed775dcfbc8efdfc79e3aac1a7dae484c0e5e"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/416ed775dcfbc8efdfc79e3aac1a7dae484c0e5e"
     },
     {
       "repo": "wadrobe",
@@ -123,34 +132,34 @@
       "url": "https://github.com/EdwardH-jedi/wadrobe/commit/081569faf95c2c57b99cbc17d290cbfa09b86979"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "docs: describe the product the repository actually implements",
       "category": "PRODUCT / FEATURE",
       "date": "2026-08-24T08:08:02Z",
       "display_date": "24 AUG",
       "sha": "31ed6bdc70",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/31ed6bdc70bd03f810e0db3621f96b9c4ba21e35"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/31ed6bdc70bd03f810e0db3621f96b9c4ba21e35"
     },
     {
-      "repo": "Protin",
+      "repo": "Sportsgang",
       "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
       "category": "TEST / QUALITY",
       "date": "2026-08-14T10:36:13Z",
       "display_date": "14 AUG",
       "sha": "6c4fa8e829",
-      "url": "https://github.com/EdwardH-jedi/Protin/commit/6c4fa8e82940e81e6902d2374771091157b7ff5f"
-    },
-    {
-      "repo": "wadrobe",
-      "summary": "push everything",
-      "category": "ENGINEERING",
-      "date": "2026-07-27T05:55:05Z",
-      "display_date": "27 JUL",
-      "sha": "319b67304c",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/319b67304c6a29a9427080c6765cb278a48a0116"
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/6c4fa8e82940e81e6902d2374771091157b7ff5f"
     }
   ],
   "latest": [
+    {
+      "repo": "Sportsgang",
+      "summary": "docs: record App Store approval and review outcome",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-08-26T07:16:53Z",
+      "display_date": "26 AUG",
+      "sha": "f85960a48b",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/f85960a48b7ceeb1af92c0327fee67ce3e609a6c"
+    },
     {
       "repo": "AFL_predict",
       "summary": "Note that pre-fix operator DBs carry inverted-sign CLV rows",
@@ -168,53 +177,44 @@
       "display_date": "25 AUG",
       "sha": "b4d965c20b",
       "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/b4d965c20bef1c5777233d22e4dcb32905714b7f"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "Fix CLV sign inversion in settle_results; add backtest-summary contract test",
-      "category": "TEST / QUALITY",
-      "date": "2026-08-25T10:10:13Z",
-      "display_date": "25 AUG",
-      "sha": "36d166969d",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/36d166969d169f8a06248f00191672a1c2f2ddf5"
     }
   ],
   "repo_counts": {
+    "Sportsgang": 8,
     "AFL_predict": 6,
-    "Protin": 7,
-    "wadrobe": 3
+    "wadrobe": 2
   },
   "category_counts": {
+    "DOCS / EVIDENCE": 5,
     "FIX / RELIABILITY": 2,
-    "ENGINEERING": 3,
+    "ENGINEERING": 2,
     "TEST / QUALITY": 3,
     "PRODUCT / FEATURE": 3,
-    "DOCS / EVIDENCE": 4,
     "SYSTEMS / OPS": 1
   },
   "weekly_repo_counts": {
+    "Sportsgang": 7,
     "AFL_predict": 6,
-    "Protin": 6,
     "wadrobe": 2
   },
   "weekly_category_counts": {
+    "DOCS / EVIDENCE": 5,
     "FIX / RELIABILITY": 2,
     "ENGINEERING": 2,
     "TEST / QUALITY": 2,
     "PRODUCT / FEATURE": 3,
-    "DOCS / EVIDENCE": 4,
     "SYSTEMS / OPS": 1
   },
   "repo_meta": {
+    "Sportsgang": {
+      "pushed_at": "2026-08-26T07:16:53Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang"
+    },
     "AFL_predict": {
       "pushed_at": "2026-08-25T10:11:47Z",
       "language": "Python",
       "url": "https://github.com/EdwardH-jedi/AFL_predict"
-    },
-    "Protin": {
-      "pushed_at": "2026-08-25T10:09:55Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Protin"
     },
     "wadrobe": {
       "pushed_at": "2026-08-24T08:23:00Z",
