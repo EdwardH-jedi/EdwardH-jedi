@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27 09:34 AEST",
-  "fingerprint": "bbeed7948e967fba96b7ad256c65c48b569af48fee9e74ac8707255e45bea659",
+  "generated_at": "2026-08-31 08:45 AEST",
+  "fingerprint": "aee81f3e44ee51b9fe55d6a6e42ae98fb8787f2184995b9d0753549aaff8ca54",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -192,19 +192,8 @@
     "PRODUCT / FEATURE": 3,
     "SYSTEMS / OPS": 1
   },
-  "weekly_repo_counts": {
-    "Sportsgang": 7,
-    "AFL_predict": 6,
-    "wadrobe": 2
-  },
-  "weekly_category_counts": {
-    "DOCS / EVIDENCE": 5,
-    "FIX / RELIABILITY": 2,
-    "ENGINEERING": 2,
-    "TEST / QUALITY": 2,
-    "PRODUCT / FEATURE": 3,
-    "SYSTEMS / OPS": 1
-  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
     "Sportsgang": {
       "pushed_at": "2026-08-26T07:16:53Z",
