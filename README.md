@@ -35,24 +35,33 @@ I use AI as part of the engineering workflow, not as the final authority: agents
 <tr>
 <td width="33%" valign="top">
 <img src="assets/card-protin.svg" alt="Two players matched, then ranked" width="100%">
-<p><a href="https://github.com/EdwardH-jedi/Protin"><b>Protin</b></a><br>
+<p><a href="https://github.com/EdwardH-jedi/Sportsgang"><b>Protin / SportsGang</b></a><br>
 <sub>Full-stack mobile product for peer sports matchmaking. Async API, explicit booking state machine, authentication, live messaging, ranking and venue workflows.</sub></p>
-<p><sub>Expo · FastAPI · PostgreSQL · Redis · Docker<br><b>1,367 automated tests across API + mobile</b></sub></p>
+<p><sub>Expo · FastAPI · PostgreSQL · Redis · Docker<br><b>SportsGang v1.0 — App Store approval, May 2026</b><br>
+<a href="https://github.com/EdwardH-jedi/Sportsgang/blob/main/docs/PORTFOLIO_FACTS.md">Release history and technical decisions</a></sub></p>
 </td>
 <td width="33%" valign="top">
 <img src="assets/card-afl-predict.svg" alt="A calibration curve traced against the ideal diagonal" width="100%">
 <p><a href="https://github.com/EdwardH-jedi/AFL_predict"><b>AFL Predict</b></a><br>
 <sub>Applied ML research system for AFL prediction. Temporal features, calibrated models, walk-forward evaluation and paper-trading analytics.</sub></p>
-<p><sub>13 feature extractors · 6 model types · CLV tracking<br><b>Evaluation-first — no live betting</b></sub></p>
+<p><sub>Temporal features · Model calibration · CLV tracking<br><b>Research pipeline; predictive advantage not established</b><br>
+<a href="https://github.com/EdwardH-jedi/AFL_predict/blob/main/docs/PORTFOLIO_FACTS.md">Evaluation methods and limitations</a></sub></p>
 </td>
 <td width="33%" valign="top">
 <img src="assets/card-archive.svg" alt="Wardrobe archive interface" width="100%">
 <p><a href="https://github.com/EdwardH-jedi/wadrobe"><b>Wardrobe</b></a><br>
 <sub>Local-first fashion product. Browser-persisted garment archive, outfit composition, image-processing experiments and scoped proxy-3D.</sub></p>
-<p><sub>React · TypeScript · IndexedDB · Three.js<br><b>Active</b></sub></p>
+<p><sub>React · TypeScript · IndexedDB · Three.js<br><b>Local archive · Optional vision API · Experimental proxy 3D</b></sub></p>
 </td>
 </tr>
 </table>
+
+**Also explore:** [SoonPerMario — Edward's Career Quest](https://github.com/EdwardH-jedi/soonpermario),
+a playable résumé built with HTML5 Canvas and vanilla JavaScript.
+
+The project READMEs link to setup instructions, verification, and known limitations.
+App Store approval is a historical release outcome, not a claim about current
+service availability or active-user numbers.
 
 ---
 
