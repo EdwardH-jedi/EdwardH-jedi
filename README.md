@@ -56,6 +56,13 @@ I use AI as part of the engineering workflow, not as the final authority: agents
 </tr>
 </table>
 
+**[Edward's World](https://github.com/EdwardH-jedi/Edward_world)** — the three
+projects above, and SoonPerMario below, rebuilt as places you can walk into and
+use rather than cards you read. An interactive portfolio rendered as an
+explorable pixel world, with a plain accessible index for anyone who would
+rather read. Next.js 16 · TypeScript · procedural pixel art.
+**Live: [edwards-world.vercel.app](https://edwards-world.vercel.app)**
+
 **Also explore:** [SoonPerMario — Edward's Career Quest](https://github.com/EdwardH-jedi/soonpermario),
 a playable résumé built with HTML5 Canvas and vanilla JavaScript.
 
