@@ -1,10 +1,316 @@
 {
-  "generated_at": "2026-09-10 08:34 AEST",
-  "fingerprint": "4751cde0cfaa01759149ad47eeecd76386fff0c6aa24e99f5922e3db45bbfc9b",
+  "generated_at": "2026-09-11 08:36 AEST",
+  "fingerprint": "c2aa082b750268355c9659f5ee1c50d15a96a0620d4a001705e94acc4d15d356",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "Edward_world",
+      "summary": "docs: record the final production deployment",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-09-10T12:54:18Z",
+      "display_date": "10 SEP",
+      "sha": "b3419649dd",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/b3419649dde14c6e8393680172664805f557c9d7"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix: tune tennis feel and basketball bank shots",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-10T12:04:53Z",
+      "display_date": "10 SEP",
+      "sha": "2b34ba9f84",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/2b34ba9f84ecbe0fb16b196a367b2b6a74ae446b"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs: record SPORTSGANG integration candidate",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-10T10:26:18Z",
+      "display_date": "10 SEP",
+      "sha": "cfc849a0d6",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cfc849a0d6b8e56f5560947afeed02fee6c727a7"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "merge: integrate reviewed SPORTSGANG polish",
+      "category": "ENGINEERING",
+      "date": "2026-09-10T10:10:09Z",
+      "display_date": "10 SEP",
+      "sha": "1882710a5c",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1882710a5c103ca25ad1bfd57dce66b6862b35cd"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs: record final predeploy audit blockers",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-09-10T09:58:39Z",
+      "display_date": "10 SEP",
+      "sha": "8b59e3f7ba",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/8b59e3f7bac383f0dd8984e9cdcbdae046dd506b"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(qa): the contact frames, and tidying this pass left",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T18:00:38Z",
+      "display_date": "10 SEP",
+      "sha": "34d0f658c8",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/34d0f658c8e1bf4ebe7ceac78f50fa1c7205efa4"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(qa): the second pass, its evidence and the corrected verdict",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T17:53:29Z",
+      "display_date": "10 SEP",
+      "sha": "a0a13b96c1",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a0a13b96c1210cff58f7cc6f3847d9f01b24d7a4"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix(tennis): spark ALEX's return where the strings met it",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T17:33:10Z",
+      "display_date": "10 SEP",
+      "sha": "a385ce9f14",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a385ce9f14b04248d3ebf0d1ac45db527884f8b4"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(qa): what the second review corrected; production build at HEAD",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T16:55:07Z",
+      "display_date": "10 SEP",
+      "sha": "aab5c395ed",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/aab5c395ed6afe3ffa705ce5ba850be84a281602"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(qa): the independent review, its evidence and the verdict",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T16:53:33Z",
+      "display_date": "10 SEP",
+      "sha": "957aabc60a",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/957aabc60ae30aedf7256573dd95cce19b6e25d2"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix: a conceded hole is not a nought, and the name box says why",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T16:41:12Z",
+      "display_date": "10 SEP",
+      "sha": "220386e68b",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/220386e68bcad595d2131dc82ba3fd33005de830"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix(tennis): serve the ball on the frame the racket reaches it",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T16:17:49Z",
+      "display_date": "10 SEP",
+      "sha": "32c11d24ee",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/32c11d24ee32604edb80e4d8046af4cad90ad7ca"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs: correct the trust boundary; measure the board on mobile",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T15:50:30Z",
+      "display_date": "10 SEP",
+      "sha": "97c4944995",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/97c494499524827e60a86fab871d743167064028"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix: three things found by looking at it, and the handoff",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T15:43:17Z",
+      "display_date": "10 SEP",
+      "sha": "ca51fe27b8",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/ca51fe27b89fe65aa8b6a77d22f15df5d834d7d1"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: a way out of the world, at the right-hand end of it",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T15:26:47Z",
+      "display_date": "10 SEP",
+      "sha": "25f0b664b2",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/25f0b664b25b690f9d71750dc8d815e264f4fd0d"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: ask before publishing, and show the board that results",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T15:20:37Z",
+      "display_date": "10 SEP",
+      "sha": "6301009da2",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/6301009da2be2b75109f16fc411d9ad076299599"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: a public golf board that says what it is",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T15:16:14Z",
+      "display_date": "10 SEP",
+      "sha": "28ae9f8b60",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/28ae9f8b600bcfff3bf46cecd73ce6d9261e12cd"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix: settle the shared-file requests the sports could not make",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T15:09:59Z",
+      "display_date": "10 SEP",
+      "sha": "9ac2acd915",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/9ac2acd9155b9103afd1e4d8b748d7f248faaaeb"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "merge: session C \u2014 the basketball and running's controls",
+      "category": "ENGINEERING",
+      "date": "2026-09-09T15:08:22Z",
+      "display_date": "10 SEP",
+      "sha": "e349b35b3e",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/e349b35b3e26a61c3e63e4e317e2a2b6d4b9a3e4"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "merge: session B \u2014 one hole of golf",
+      "category": "ENGINEERING",
+      "date": "2026-09-09T15:07:16Z",
+      "display_date": "10 SEP",
+      "sha": "447f2e36c7",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/447f2e36c7446053782813fbc4b765d8ac71a079"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "merge: session A \u2014 tennis contact sync and five swings",
+      "category": "ENGINEERING",
+      "date": "2026-09-09T15:06:57Z",
+      "display_date": "10 SEP",
+      "sha": "17d5f40f4d",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/17d5f40f4ded5e8c0941f21d44a1ded7a2b37525"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(golf): correct the suite size in the handoff",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T14:57:57Z",
+      "display_date": "10 SEP",
+      "sha": "1488c08a57",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1488c08a576fbe8992c329e5a374968367ed0264"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(golf): run reduced motion as a pair, and flag the stale rules version",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T14:57:23Z",
+      "display_date": "10 SEP",
+      "sha": "1f13cecce6",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1f13cecce62150f4bca7f7a71a6cf0e043e1cf39"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs(golf): hand over the hole with its evidence",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-09T14:51:16Z",
+      "display_date": "10 SEP",
+      "sha": "65e8d9d0c0",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/65e8d9d0c083c753d6bc2e2c103d422f90884637"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(tennis): tie the racket, the physics and the ball to one contact event",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T14:35:23Z",
+      "display_date": "10 SEP",
+      "sha": "a53f950f34",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a53f950f34939897e6b398fdf39a0dd9c9de6f8f"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix: report the spurt as held, not as working",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T14:23:34Z",
+      "display_date": "10 SEP",
+      "sha": "9a0a4c88a3",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/9a0a4c88a3df8246fa68282a22aa9dc867d59c57"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(golf): play the hole on screen, on the SportsGang clock",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T14:15:48Z",
+      "display_date": "10 SEP",
+      "sha": "6d69998d52",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/6d69998d52e3d1f64bbc436637e61ac04e0c05dd"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix: keep the running pad on screen on a phone",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T14:14:56Z",
+      "display_date": "10 SEP",
+      "sha": "3419570846",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/34195708462ac5caa1961018f70d360beecb240f"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(golf): draw the swing as a body turning, not an arm rotating",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T14:10:25Z",
+      "display_date": "10 SEP",
+      "sha": "e8380797c8",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/e8380797c89e3cf64a64af60cd660e86eade9548"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix(golf): bounce the ball in play, not only in the estimate",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T14:05:02Z",
+      "display_date": "10 SEP",
+      "sha": "fa6618f30f",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/fa6618f30f3ec07349e76dfaf7db3ee31cde64ef"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(golf): simulate one hole instead of one drive",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T14:02:19Z",
+      "display_date": "10 SEP",
+      "sha": "485a1ff174",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/485a1ff174e0544dee116999127ea3913c599d8c"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: give running an input that means something",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T13:55:31Z",
+      "display_date": "09 SEP",
+      "sha": "efd65b43e2",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/efd65b43e24291db83985cf2ee9275945b6378e0"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: make the basketball look like a basketball",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-09T13:55:10Z",
+      "display_date": "09 SEP",
+      "sha": "077b37d769",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/077b37d769e70e77f57d2b1144412264c58795b1"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: fix the SportsGang input and clock the parallel sports need",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-09T13:33:30Z",
+      "display_date": "09 SEP",
+      "sha": "cdd593d601",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cdd593d6018fefbc0e3cbb6038bba9eda302a677"
+    },
     {
       "repo": "Edward_world",
       "summary": "docs: describe Edward's House as built",
@@ -112,312 +418,6 @@
       "display_date": "31 AUG",
       "sha": "ec8ff6eb7d",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/ec8ff6eb7d741a2ebd87dd490b11ea93259e1ca1"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: four small pieces of world atmosphere",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-31T04:00:09Z",
-      "display_date": "31 AUG",
-      "sha": "11fae659cd",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/11fae659cd445abf98058be8034e84c2b53469d7"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: wire the visitor counter, and give it somewhere durable to live",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-31T03:57:53Z",
-      "display_date": "31 AUG",
-      "sha": "86506e45b8",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/86506e45b864db0afbaa3fca84d0edc97fa2aaab"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "chore: checkpoint QA-passing Edward's World state",
-      "category": "ENGINEERING",
-      "date": "2026-08-31T03:49:29Z",
-      "display_date": "31 AUG",
-      "sha": "30dc7cae47",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/30dc7cae4794f82c55893efc022c0898e231de01"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: match the venue Edward's head to the world's, not just his coat",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-08-29T12:38:50Z",
-      "display_date": "29 AUG",
-      "sha": "2c93c19923",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/2c93c1992330657b916951fc4f17e321cd90a2ee"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: Phase 13 browser QA complete, all four sports played",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-29T12:32:27Z",
-      "display_date": "29 AUG",
-      "sha": "c25621f8b1",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/c25621f8b10567e206f365610a78e3808734b788"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: three defects found by playing SportsGang, not by reading it",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-08-29T12:32:06Z",
-      "display_date": "29 AUG",
-      "sha": "d0e7d01c02",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d0e7d01c0223afbf6ee882b20e753decc82954ad"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: inset the golf tee so the ball starts inside the frame",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-08-29T12:14:06Z",
-      "display_date": "29 AUG",
-      "sha": "095bb8a5f6",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/095bb8a5f62b467b523627984712871352c63404"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 13, SportsGang's RANK beat and golf camera follow",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-29T12:12:28Z",
-      "display_date": "29 AUG",
-      "sha": "9ac7793f5c",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/9ac7793f5c36266115b9771925544a2a5d135d95"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "test: play every sport to the end, repeatedly",
-      "category": "TEST / QUALITY",
-      "date": "2026-08-29T12:07:49Z",
-      "display_date": "29 AUG",
-      "sha": "5ff4527049",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/5ff45270492e79818864b75f126b01a790bfca0a"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: give SportsGang the RANK beat it kept promising",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-29T12:00:42Z",
-      "display_date": "29 AUG",
-      "sha": "05a2b874f6",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/05a2b874f68d7440e5ea3dbda49aab4a9156db65"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: an anonymous join counter, and a Sydney motif for later",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-28T10:31:27Z",
-      "display_date": "28 AUG",
-      "sha": "c10d8ae635",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/c10d8ae6353ae06afe6dc059d7d725b58f57ac18"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 12, the monument intro as a real interaction",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-08-28T10:25:50Z",
-      "display_date": "28 AUG",
-      "sha": "9eec5b378b",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/9eec5b378b28892ac1a21dce17d014d830286214"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: make the monument intro a real interaction",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-08-28T10:25:14Z",
-      "display_date": "28 AUG",
-      "sha": "6dcd50e9f9",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/6dcd50e9f9cd5333fa34ef4d5716d2df47ece6cd"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: keep the name gate alive when a skip button has focus",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-08-28T10:04:53Z",
-      "display_date": "28 AUG",
-      "sha": "301dc2a592",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/301dc2a592e0361d4ba82de9181acfebda404ab0"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 11, the V4 intro revision",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-28T10:02:11Z",
-      "display_date": "28 AUG",
-      "sha": "354ca6a4ef",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/354ca6a4efc6b950a54523443a9ee64d64eda8e8"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: implement the V4 intro \u2014 camera shift and typing gate",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-28T10:01:03Z",
-      "display_date": "28 AUG",
-      "sha": "5c57f54acb",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/5c57f54acb6cde393657306d1a41ebaaa9a10369"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: complete post-implementation QA pass",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-08-28T08:45:02Z",
-      "display_date": "28 AUG",
-      "sha": "e5e9ab91f9",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/e5e9ab91f988410506da7eecf0d3df09a49c0dc6"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 10 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T07:02:14Z",
-      "display_date": "27 AUG",
-      "sha": "a4a71f5fcf",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a4a71f5fcff0d9417fe5b5491ee431f1e3427135"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: release pass, and make the world reachable without a keyboard",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T07:02:14Z",
-      "display_date": "27 AUG",
-      "sha": "007a6bf3fe",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/007a6bf3fe1530c54a7d3c0f1beda3df559c3e84"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 9 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:56:40Z",
-      "display_date": "27 AUG",
-      "sha": "c45a4a9fed",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/c45a4a9fed2b9b56e244e047a8d503c834082fa8"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: give TOMODACHI something to say, and somewhere to wander",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T06:56:40Z",
-      "display_date": "27 AUG",
-      "sha": "dc6160ecff",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/dc6160ecff3734a502641d9c200764ef651f8c9c"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 8 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:54:45Z",
-      "display_date": "27 AUG",
-      "sha": "747e8fc01f",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/747e8fc01f4dfa6ea65db925076385f08948ef17"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: the six-second opening ritual",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T06:54:45Z",
-      "display_date": "27 AUG",
-      "sha": "6ca3ad2121",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/6ca3ad2121c72abbac93432dfec53ec27d1dcbee"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 7 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:49:38Z",
-      "display_date": "27 AUG",
-      "sha": "9f1de65bc1",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/9f1de65bc1209bd7d6bcdaac16cb93481e032037"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: title screen over the real world",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T06:49:38Z",
-      "display_date": "27 AUG",
-      "sha": "3f4ebf4903",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/3f4ebf4903a3d5797e36e660d3f460b9f3ac7797"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 6 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:46:58Z",
-      "display_date": "27 AUG",
-      "sha": "a73bbef6da",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a73bbef6dacdeaf913e063b2094173cbc95eeecf"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: finish Index mode as the recruiter's fast path",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T06:46:58Z",
-      "display_date": "27 AUG",
-      "sha": "1120cbee42",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1120cbee42f938021523ee6fb38f881b54b1377b"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 5 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:44:38Z",
-      "display_date": "27 AUG",
-      "sha": "1c2240e043",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1c2240e043e4ae4078923d8e2d0a2ec9d347b6b5"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: Edward's House as a room you walk around",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T06:44:38Z",
-      "display_date": "27 AUG",
-      "sha": "37586cc569",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/37586cc5697581486bc9504dae91b25ec7a89adf"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 4 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:40:01Z",
-      "display_date": "27 AUG",
-      "sha": "15dc39c72a",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/15dc39c72aff42bad72bf3401f8aa18ab9e04fee"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: Arcade with a playable Soonpermario segment",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-27T06:40:01Z",
-      "display_date": "27 AUG",
-      "sha": "786ed03947",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/786ed039471e2719a4bba4cc1b753406943d7d64"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 3 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:13:03Z",
-      "display_date": "27 AUG",
-      "sha": "3e2b1c4bd1",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/3e2b1c4bd1c632c913f1cae2b862174451f3a5af"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: AFL Lab as an interactive research pipeline",
-      "category": "ARCHITECTURE",
-      "date": "2026-08-27T06:13:03Z",
-      "display_date": "27 AUG",
-      "sha": "782bf96a3e",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/782bf96a3e000a357c8dbc74bbc4ad80490dc367"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 2 commit hash in the roadmap",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-27T06:07:16Z",
-      "display_date": "27 AUG",
-      "sha": "be86ec3a7c",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/be86ec3a7c5c65a293edc6b8215ad6209f881807"
     },
     {
       "repo": "Sportsgang",
@@ -567,30 +567,30 @@
   "latest": [
     {
       "repo": "Edward_world",
-      "summary": "docs: describe Edward's House as built",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-09-09T12:40:34Z",
-      "display_date": "09 SEP",
-      "sha": "4c75644589",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/4c7564458951b18dda70dd3e2c549dcd7f939a08"
+      "summary": "docs: record the final production deployment",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-09-10T12:54:18Z",
+      "display_date": "10 SEP",
+      "sha": "b3419649dd",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/b3419649dde14c6e8393680172664805f557c9d7"
     },
     {
       "repo": "Edward_world",
-      "summary": "release: publish Edward's World v1.0",
-      "category": "ENGINEERING",
-      "date": "2026-09-09T12:34:10Z",
-      "display_date": "09 SEP",
-      "sha": "fc375206dc",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/fc375206dc42500b0394c0d00f3359422bd02a6c"
+      "summary": "fix: tune tennis feel and basketball bank shots",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-10T12:04:53Z",
+      "display_date": "10 SEP",
+      "sha": "2b34ba9f84",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/2b34ba9f84ecbe0fb16b196a367b2b6a74ae446b"
     },
     {
-      "repo": "Sportsgang",
-      "summary": "Show release evidence and verify the booking flow on PostgreSQL (#4)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-09-09T08:15:43Z",
-      "display_date": "09 SEP",
-      "sha": "3df3cdb86d",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/3df3cdb86d4bbe9408f529d307fb7650872541af"
+      "repo": "Edward_world",
+      "summary": "docs: record SPORTSGANG integration candidate",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-09-10T10:26:18Z",
+      "display_date": "10 SEP",
+      "sha": "cfc849a0d6",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cfc849a0d6b8e56f5560947afeed02fee6c727a7"
     }
   ],
   "repo_counts": {
@@ -601,30 +601,31 @@
     "AFL_predict": 7
   },
   "category_counts": {
-    "DOCS / EVIDENCE": 22,
-    "ENGINEERING": 5,
-    "PRODUCT / FEATURE": 18,
-    "TEST / QUALITY": 5,
-    "FIX / RELIABILITY": 8,
     "SYSTEMS / OPS": 3,
-    "ARCHITECTURE": 1
+    "FIX / RELIABILITY": 13,
+    "DOCS / EVIDENCE": 19,
+    "ENGINEERING": 8,
+    "PRODUCT / FEATURE": 15,
+    "TEST / QUALITY": 4
   },
   "weekly_repo_counts": {
-    "Edward_world": 2,
+    "Edward_world": 36,
     "Sportsgang": 1,
     "wadrobe": 3,
     "soonpermario": 1,
     "AFL_predict": 1
   },
   "weekly_category_counts": {
-    "DOCS / EVIDENCE": 4,
-    "ENGINEERING": 2,
-    "PRODUCT / FEATURE": 1,
+    "SYSTEMS / OPS": 2,
+    "FIX / RELIABILITY": 10,
+    "DOCS / EVIDENCE": 13,
+    "ENGINEERING": 6,
+    "PRODUCT / FEATURE": 10,
     "TEST / QUALITY": 1
   },
   "repo_meta": {
     "Edward_world": {
-      "pushed_at": "2026-09-09T12:40:35Z",
+      "pushed_at": "2026-09-10T12:54:19Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Edward_world"
     },
