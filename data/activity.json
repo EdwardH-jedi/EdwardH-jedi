@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11 08:36 AEST",
-  "fingerprint": "c2aa082b750268355c9659f5ee1c50d15a96a0620d4a001705e94acc4d15d356",
+  "generated_at": "2026-09-14 08:25 AEST",
+  "fingerprint": "a67dea157e26b2af1d79c87fad95959707b54bf1f9fad1ba7985c6235b8bee7a",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -553,15 +553,6 @@
       "display_date": "24 AUG",
       "sha": "31ed6bdc70",
       "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/31ed6bdc70bd03f810e0db3621f96b9c4ba21e35"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore: remove resume PDFs, add LICENSE, fix CI workflow and ruff setup",
-      "category": "TEST / QUALITY",
-      "date": "2026-08-14T10:36:13Z",
-      "display_date": "14 AUG",
-      "sha": "6c4fa8e829",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/6c4fa8e82940e81e6902d2374771091157b7ff5f"
     }
   ],
   "latest": [
@@ -595,7 +586,7 @@
   ],
   "repo_counts": {
     "Edward_world": 40,
-    "Sportsgang": 9,
+    "Sportsgang": 8,
     "wadrobe": 5,
     "soonpermario": 1,
     "AFL_predict": 7
@@ -606,23 +597,10 @@
     "DOCS / EVIDENCE": 19,
     "ENGINEERING": 8,
     "PRODUCT / FEATURE": 15,
-    "TEST / QUALITY": 4
+    "TEST / QUALITY": 3
   },
-  "weekly_repo_counts": {
-    "Edward_world": 36,
-    "Sportsgang": 1,
-    "wadrobe": 3,
-    "soonpermario": 1,
-    "AFL_predict": 1
-  },
-  "weekly_category_counts": {
-    "SYSTEMS / OPS": 2,
-    "FIX / RELIABILITY": 10,
-    "DOCS / EVIDENCE": 13,
-    "ENGINEERING": 6,
-    "PRODUCT / FEATURE": 10,
-    "TEST / QUALITY": 1
-  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
     "Edward_world": {
       "pushed_at": "2026-09-10T12:54:19Z",
