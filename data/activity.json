@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14 08:25 AEST",
-  "fingerprint": "a67dea157e26b2af1d79c87fad95959707b54bf1f9fad1ba7985c6235b8bee7a",
+  "generated_at": "2026-09-24 08:57 AEST",
+  "fingerprint": "484e90dae53f2a08e3c3ec143af31cf043c369b8134a258d2370e30a8368e90a",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -339,31 +339,31 @@
       "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/3df3cdb86d4bbe9408f529d307fb7650872541af"
     },
     {
-      "repo": "wadrobe",
+      "repo": "wardrobe",
       "summary": "docs: align handler comments with expanded TypeScript verification",
       "category": "DOCS / EVIDENCE",
       "date": "2026-09-09T08:13:18Z",
       "display_date": "09 SEP",
       "sha": "97e7d7f212",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/97e7d7f2123419901c5f0cfb9bcbd1cb5250b99e"
+      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/97e7d7f2123419901c5f0cfb9bcbd1cb5250b99e"
     },
     {
-      "repo": "wadrobe",
+      "repo": "wardrobe",
       "summary": "docs: align handler comments with expanded TypeScript verification",
       "category": "DOCS / EVIDENCE",
       "date": "2026-09-09T08:13:06Z",
       "display_date": "09 SEP",
       "sha": "22a8b5c443",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/22a8b5c4435bed796b7cb710ea3e51686dcd64fe"
+      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/22a8b5c4435bed796b7cb710ea3e51686dcd64fe"
     },
     {
-      "repo": "soonpermario",
+      "repo": "career-quest",
       "summary": "ci: verify playable resume and clarify local launch instructions (#1)",
       "category": "ENGINEERING",
       "date": "2026-09-09T08:09:56Z",
       "display_date": "09 SEP",
       "sha": "604e73e922",
-      "url": "https://github.com/EdwardH-jedi/soonpermario/commit/604e73e922f1b2bf4014f5af35609ebeda52f88b"
+      "url": "https://github.com/EdwardH-jedi/career-quest/commit/604e73e922f1b2bf4014f5af35609ebeda52f88b"
     },
     {
       "repo": "AFL_predict",
@@ -375,13 +375,13 @@
       "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/c233f42f267b6944cceae44c607eab1f24ff401c"
     },
     {
-      "repo": "wadrobe",
+      "repo": "wardrobe",
       "summary": "docs and ci: document optional modes and check frontend and backend (#2)",
       "category": "DOCS / EVIDENCE",
       "date": "2026-09-09T08:09:18Z",
       "display_date": "09 SEP",
       "sha": "f54e4ac8d9",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/f54e4ac8d9378dae41d7a2f226451de070f4d5a3"
+      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/f54e4ac8d9378dae41d7a2f226451de070f4d5a3"
     },
     {
       "repo": "Edward_world",
@@ -517,42 +517,6 @@
       "display_date": "25 AUG",
       "sha": "a06c931251",
       "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/a06c931251622c436bbbfb63c0494241c44aef3c"
-    },
-    {
-      "repo": "wadrobe",
-      "summary": "docs: normalise the meta description to Wardrobe",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-24T08:22:59Z",
-      "display_date": "24 AUG",
-      "sha": "703983a746",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/703983a746793c93ce3aeae7dee5ebfd424fdd13"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: discovery filters by sport, not by location",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-24T08:22:43Z",
-      "display_date": "24 AUG",
-      "sha": "416ed775dc",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/416ed775dcfbc8efdfc79e3aac1a7dae484c0e5e"
-    },
-    {
-      "repo": "wadrobe",
-      "summary": "docs/ui: use one public product name \u2014 Wardrobe",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-24T08:13:12Z",
-      "display_date": "24 AUG",
-      "sha": "081569faf9",
-      "url": "https://github.com/EdwardH-jedi/wadrobe/commit/081569faf95c2c57b99cbc17d290cbfa09b86979"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: describe the product the repository actually implements",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-24T08:08:02Z",
-      "display_date": "24 AUG",
-      "sha": "31ed6bdc70",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/31ed6bdc70bd03f810e0db3621f96b9c4ba21e35"
     }
   ],
   "latest": [
@@ -586,17 +550,17 @@
   ],
   "repo_counts": {
     "Edward_world": 40,
-    "Sportsgang": 8,
-    "wadrobe": 5,
-    "soonpermario": 1,
+    "Sportsgang": 6,
+    "wardrobe": 3,
+    "career-quest": 1,
     "AFL_predict": 7
   },
   "category_counts": {
     "SYSTEMS / OPS": 3,
     "FIX / RELIABILITY": 13,
-    "DOCS / EVIDENCE": 19,
+    "DOCS / EVIDENCE": 16,
     "ENGINEERING": 8,
-    "PRODUCT / FEATURE": 15,
+    "PRODUCT / FEATURE": 14,
     "TEST / QUALITY": 3
   },
   "weekly_repo_counts": {},
@@ -612,15 +576,15 @@
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Sportsgang"
     },
-    "wadrobe": {
+    "wardrobe": {
       "pushed_at": "2026-09-09T08:13:18Z",
       "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/wadrobe"
+      "url": "https://github.com/EdwardH-jedi/wardrobe"
     },
-    "soonpermario": {
+    "career-quest": {
       "pushed_at": "2026-09-09T08:09:56Z",
       "language": "JavaScript",
-      "url": "https://github.com/EdwardH-jedi/soonpermario"
+      "url": "https://github.com/EdwardH-jedi/career-quest"
     },
     "AFL_predict": {
       "pushed_at": "2026-09-09T08:09:41Z",
