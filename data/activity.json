@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25 09:13 AEST",
-  "fingerprint": "0a1834d8094f717252bb9c4494269d122d1088bdb4895b07d30024a2d6d68c6a",
+  "generated_at": "2026-09-26 09:18 AEST",
+  "fingerprint": "a5c00d374998515b84262178bf4eff66ef2842f18bc7c95afb3b853d110aa9b0",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -418,15 +418,6 @@
       "display_date": "31 AUG",
       "sha": "ec8ff6eb7d",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/ec8ff6eb7d741a2ebd87dd490b11ea93259e1ca1"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: record App Store approval and review outcome",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-26T07:16:53Z",
-      "display_date": "26 AUG",
-      "sha": "f85960a48b",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/f85960a48b7ceeb1af92c0327fee67ce3e609a6c"
     }
   ],
   "latest": [
@@ -460,7 +451,7 @@
   ],
   "repo_counts": {
     "Edward_world": 40,
-    "Sportsgang": 2,
+    "Sportsgang": 1,
     "wardrobe": 3,
     "career-quest": 1,
     "AFL_predict": 1
@@ -468,7 +459,7 @@
   "category_counts": {
     "SYSTEMS / OPS": 2,
     "FIX / RELIABILITY": 11,
-    "DOCS / EVIDENCE": 15,
+    "DOCS / EVIDENCE": 14,
     "ENGINEERING": 6,
     "PRODUCT / FEATURE": 12,
     "TEST / QUALITY": 1
