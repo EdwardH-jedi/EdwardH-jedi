@@ -1,10 +1,73 @@
 {
-  "generated_at": "2026-09-26 09:18 AEST",
-  "fingerprint": "a5c00d374998515b84262178bf4eff66ef2842f18bc7c95afb3b853d110aa9b0",
+  "generated_at": "2026-10-01 09:51 AEST",
+  "fingerprint": "d845c0c211acd6b0468dbf73d49a30b03ea6432eb6bd803f39cb2742d3019eca",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "agent-city",
+      "summary": "fix: id namespace, same-ts ordering, rev merge, remap invalidate (reaudit N01-N07)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-30T10:03:15Z",
+      "display_date": "30 SEP",
+      "sha": "da12be6bdd",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da12be6bdd47c06ccc858e02593675d1fdf25393"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "chore: batch limits, etag scoping, fixtures, docs (audit F14-F18)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-29T18:50:26Z",
+      "display_date": "30 SEP",
+      "sha": "d1a6585596",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/d1a6585596a00f524ffa2daa912b8036349d56b3"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix: event ordering, id namespace, repo normalization (audit F08-F13)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-29T18:42:41Z",
+      "display_date": "30 SEP",
+      "sha": "372c152de0",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/372c152de0ef0aaadefd0364a44ef09f2af71f28"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix: hook safety, full-field redaction, spool durability (audit F01-F07)",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-09-29T18:22:48Z",
+      "display_date": "30 SEP",
+      "sha": "1f4f025e79",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/1f4f025e790142e694214899a5803ca915382a1d"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat: 2D view, docs (Step 5 + wrap-up) \u2014 Phase 0 complete",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-29T11:31:40Z",
+      "display_date": "29 SEP",
+      "sha": "e45a953479",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e45a95347946e69e49d32c2fcc53396766416b96"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat: GitHub sync, collector, hub Host/Origin guard (Step 3-4)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-09-29T11:00:00Z",
+      "display_date": "29 SEP",
+      "sha": "a2183841b9",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/a2183841b94e4e5ef07b26fd000916aa9d691591"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "chore: scaffold + Step 1 schema, status, redaction",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-09-29T09:12:10Z",
+      "display_date": "29 SEP",
+      "sha": "e6aa2a9980",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e6aa2a998023a819451669db1c5c2397d145a659"
+    },
     {
       "repo": "Edward_world",
       "summary": "docs: record the final production deployment",
@@ -382,91 +445,67 @@
       "display_date": "09 SEP",
       "sha": "f54e4ac8d9",
       "url": "https://github.com/EdwardH-jedi/wardrobe/commit/f54e4ac8d9378dae41d7a2f226451de070f4d5a3"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record Phase 14, the feature/content pass",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-31T04:09:29Z",
-      "display_date": "31 AUG",
-      "sha": "1a9685d332",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1a9685d3326d5e4be8c47bee42c88f666dce4b16"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: two things the content pages left behind",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-08-31T04:08:52Z",
-      "display_date": "31 AUG",
-      "sha": "0cf984c85c",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/0cf984c85c10a8ad83c6cd539c124b9232f65bd8"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: build the resume and case-study pages from verified facts only",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-08-31T04:03:42Z",
-      "display_date": "31 AUG",
-      "sha": "ae6680a1c5",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/ae6680a1c5979537ee8f0c2e16b2b36c801658b0"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record the avatar swap contract, and why the code is not changing",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-08-31T04:01:02Z",
-      "display_date": "31 AUG",
-      "sha": "ec8ff6eb7d",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/ec8ff6eb7d741a2ebd87dd490b11ea93259e1ca1"
     }
   ],
   "latest": [
     {
-      "repo": "Edward_world",
-      "summary": "docs: record the final production deployment",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-09-10T12:54:18Z",
-      "display_date": "10 SEP",
-      "sha": "b3419649dd",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/b3419649dde14c6e8393680172664805f557c9d7"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: tune tennis feel and basketball bank shots",
+      "repo": "agent-city",
+      "summary": "fix: id namespace, same-ts ordering, rev merge, remap invalidate (reaudit N01-N07)",
       "category": "FIX / RELIABILITY",
-      "date": "2026-09-10T12:04:53Z",
-      "display_date": "10 SEP",
-      "sha": "2b34ba9f84",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/2b34ba9f84ecbe0fb16b196a367b2b6a74ae446b"
+      "date": "2026-09-30T10:03:15Z",
+      "display_date": "30 SEP",
+      "sha": "da12be6bdd",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da12be6bdd47c06ccc858e02593675d1fdf25393"
     },
     {
-      "repo": "Edward_world",
-      "summary": "docs: record SPORTSGANG integration candidate",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-09-10T10:26:18Z",
-      "display_date": "10 SEP",
-      "sha": "cfc849a0d6",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cfc849a0d6b8e56f5560947afeed02fee6c727a7"
+      "repo": "agent-city",
+      "summary": "chore: batch limits, etag scoping, fixtures, docs (audit F14-F18)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-29T18:50:26Z",
+      "display_date": "30 SEP",
+      "sha": "d1a6585596",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/d1a6585596a00f524ffa2daa912b8036349d56b3"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix: event ordering, id namespace, repo normalization (audit F08-F13)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-09-29T18:42:41Z",
+      "display_date": "30 SEP",
+      "sha": "372c152de0",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/372c152de0ef0aaadefd0364a44ef09f2af71f28"
     }
   ],
   "repo_counts": {
-    "Edward_world": 40,
+    "agent-city": 7,
+    "Edward_world": 36,
     "Sportsgang": 1,
     "wardrobe": 3,
     "career-quest": 1,
     "AFL_predict": 1
   },
   "category_counts": {
-    "SYSTEMS / OPS": 2,
-    "FIX / RELIABILITY": 11,
-    "DOCS / EVIDENCE": 14,
-    "ENGINEERING": 6,
+    "FIX / RELIABILITY": 13,
+    "SYSTEMS / OPS": 4,
     "PRODUCT / FEATURE": 12,
+    "DOCS / EVIDENCE": 13,
+    "ENGINEERING": 6,
     "TEST / QUALITY": 1
   },
-  "weekly_repo_counts": {},
-  "weekly_category_counts": {},
+  "weekly_repo_counts": {
+    "agent-city": 7
+  },
+  "weekly_category_counts": {
+    "FIX / RELIABILITY": 3,
+    "SYSTEMS / OPS": 2,
+    "PRODUCT / FEATURE": 2
+  },
   "repo_meta": {
+    "agent-city": {
+      "pushed_at": "2026-09-30T13:21:52Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/agent-city"
+    },
     "Edward_world": {
       "pushed_at": "2026-09-10T12:54:19Z",
       "language": "TypeScript",
