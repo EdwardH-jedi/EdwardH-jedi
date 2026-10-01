@@ -1,35 +1,23 @@
 # Edward Hwang
 
-**Software engineer building full-stack products, backend systems, and evaluation-first machine learning.**
+I build full-stack products, backend systems, and machine-learning research tools, with an emphasis on testable behaviour and clear evaluation.
 
-Final-year Computer Science student at the University of Sydney · Sydney, Australia · Graduating December 2026  
+Studying Computer Science at the University of Sydney · Sydney, Australia  
 Open to 2027 graduate and junior roles in software engineering, backend, and applied ML.
 
-**[Explore Edward's World →](https://edwards-world.vercel.app)** · [LinkedIn](https://linkedin.com/in/soon-hyun-hwang-7212a42b7) · [Email](mailto:edwardhwang1223@gmail.com)
+**[Portfolio](https://edwards-world.vercel.app/?view=index)** · [Explore Edward's World](https://edwards-world.vercel.app) · [LinkedIn](https://linkedin.com/in/soon-hyun-hwang-7212a42b7) · [Email](mailto:edwardhwang1223@gmail.com)
 
----
+## Selected projects
 
-## Featured work
+### [SportsGang / Protin](https://github.com/EdwardH-jedi/Sportsgang)
 
-### [Edward's World](https://github.com/EdwardH-jedi/Edward_world) — interactive developer portfolio
+A mobile app for discovering sports partners, matching and chatting, arranging sports sessions, and tracking results.
 
-`Next.js 16` · `TypeScript` · `Canvas 2D` · `Vitest`
+**Stack:** React Native / Expo · TypeScript · FastAPI · PostgreSQL · Redis · Docker
 
-Portfolio projects rebuilt as places you can walk into and use: a sports matchmaking product, an ML research lab, a local-first wardrobe, and a playable résumé inside one procedural pixel world. A plain accessible index provides a fast path for reviewers who would rather read than explore.
-
-**Shipped:** live on Vercel · five complete experiences · keyboard and touch support · reduced-motion support · 391 tests across 29 files
-
-[Live demo](https://edwards-world.vercel.app) · [Source](https://github.com/EdwardH-jedi/Edward_world) · [Case study](https://github.com/EdwardH-jedi/Edward_world/blob/main/docs/CASE_STUDY.md) · [Architecture](https://github.com/EdwardH-jedi/Edward_world/blob/main/docs/ARCHITECTURE.md)
-
----
-
-### [Protin / SportsGang](https://github.com/EdwardH-jedi/Sportsgang) — full-stack mobile sports matchmaking
-
-`React Native / Expo` · `FastAPI` · `PostgreSQL` · `Redis` · `Docker`
-
-A mobile product for finding sports partners, matching and messaging, proposing sessions, booking venues, recording results, and maintaining rankings. The backend uses an async service layer, explicit booking state transitions, migrations, background workers, and typed mobile contracts.
-
-**Shipped:** SportsGang v1.0 approved by App Store review on 13 May 2026 · 620 API tests · 747 mobile tests
+- **Engineering focus:** async backend services, an explicit booking state machine, database migrations, a notification worker, and shared mobile/API contracts
+- **Release:** SportsGang v1.0 passed Apple App Review on 13 May 2026. The public App Store listing is linked below; release approval is separate from current backend availability
+- **Evidence:** the repository documents the release process and separates API unit tests, mobile tests, and PostgreSQL/Redis integration checks
 
 <p>
   <img src="https://raw.githubusercontent.com/EdwardH-jedi/Sportsgang/main/docs/release/screenshots/ios/01-discovery-gym-partners.png" width="30%" alt="SportsGang opponent discovery screen">
@@ -37,52 +25,57 @@ A mobile product for finding sports partners, matching and messaging, proposing 
   <img src="https://raw.githubusercontent.com/EdwardH-jedi/Sportsgang/main/docs/release/screenshots/ios/05-propose-session-form.png" width="30%" alt="SportsGang session proposal screen">
 </p>
 
-[Source](https://github.com/EdwardH-jedi/Sportsgang) · [Release evidence](https://github.com/EdwardH-jedi/Sportsgang/blob/main/docs/PORTFOLIO_FACTS.md) · [Verification scope](https://github.com/EdwardH-jedi/Sportsgang/blob/main/docs/VERIFICATION.md)
+[Source](https://github.com/EdwardH-jedi/Sportsgang) · [App Store](https://apps.apple.com/us/app/sportsgang/id6767027447) · [Release evidence](https://github.com/EdwardH-jedi/Sportsgang/blob/main/docs/PORTFOLIO_FACTS.md) · [Verification scope](https://github.com/EdwardH-jedi/Sportsgang/blob/main/docs/VERIFICATION.md)
 
----
+### [AFL Predict](https://github.com/EdwardH-jedi/AFL_predict)
 
-### [AFL Predict](https://github.com/EdwardH-jedi/AFL_predict) — evaluation-first sports ML system
+An AFL match-prediction research system covering data ingestion, temporal features, calibrated models, walk-forward evaluation, and paper-trading analytics.
 
-`Python` · `XGBoost` · `scikit-learn` · `FastAPI` · `SQLAlchemy`
+**Stack:** Python · XGBoost · scikit-learn · FastAPI · SQLAlchemy
 
-A research system for AFL head-to-head prediction with scheduled ingestion, temporal feature engineering, calibrated ensembles, walk-forward evaluation, paper-trading analytics, and explicit readiness gates. The project prioritises leakage controls and reproducible evaluation over headline accuracy.
+- **Engineering focus:** leakage controls, reproducible evaluation, pipeline orchestration, database migrations, and explicit readiness checks
+- **Scope:** paper-trading research only, with no live betting. The repository makes no supported claim that its models outperform bookmaker prices
+- **Evaluation limits:** historical results require external data to reproduce, and the calibrated ensemble used for recommendations has not been evaluated by the backtest runner
 
-**Verified:** 313 tests passing · fresh-database migration chain checked · daily pipeline and readiness gate run end to end  
-**Research status:** preliminary; no claim that the models outperform bookmaker prices
+[Source](https://github.com/EdwardH-jedi/AFL_predict) · [Evaluation evidence and limits](https://github.com/EdwardH-jedi/AFL_predict/blob/main/docs/PORTFOLIO_FACTS.md) · [Backtesting method](https://github.com/EdwardH-jedi/AFL_predict/blob/main/docs/backtesting.md)
 
-[Source](https://github.com/EdwardH-jedi/AFL_predict) · [Evaluation evidence](https://github.com/EdwardH-jedi/AFL_predict/blob/main/docs/PORTFOLIO_FACTS.md) · [Backtesting method](https://github.com/EdwardH-jedi/AFL_predict/blob/main/docs/backtesting.md)
+### [Edward's World](https://github.com/EdwardH-jedi/Edward_world)
 
----
+An interactive portfolio built as a pixel town, with four project experiences and a personal room. **VIEW PROJECTS** opens a reading view directly from the title screen.
 
-### [Wardrobe](https://github.com/EdwardH-jedi/wadrobe) — local-first fashion archive
+**Stack:** Next.js 16 · React · TypeScript · Canvas 2D · anime.js · Vitest
 
-`React` · `TypeScript` · `IndexedDB` · `Three.js` · `FastAPI`
+- **Engineering focus:** procedural art, pure game simulations, separate state and animation layers, browser persistence, and keyboard/touch controls
+- **Scope:** the project experiences are portfolio recreations; their case studies link to the original products and explain the differences
+- **Verification:** a dated deployment report records automated checks and browser testing, including the configuration-dependent golf board
 
-A browser-first wardrobe for recording garments, editing metadata, composing outfits, and saving looks locally. Image preparation, optional vision integrations, and an experimental proxy-3D path are isolated from the default archive so the core product remains usable without cloud services.
+[Live portfolio](https://edwards-world.vercel.app) · [Project index](https://edwards-world.vercel.app/?view=index) · [Source](https://github.com/EdwardH-jedi/Edward_world) · [Architecture](https://github.com/EdwardH-jedi/Edward_world/blob/main/docs/ARCHITECTURE.md) · [Case study](https://github.com/EdwardH-jedi/Edward_world/blob/main/docs/CASE_STUDY.md) · [Recorded verification](https://github.com/EdwardH-jedi/Edward_world/blob/main/docs/predeploy/FINAL_PRODUCTION_DEPLOY.md)
 
-**Built:** persistent local archive with fallbacks · layered outfit composition · saved looks · optional image analysis · scoped GLB preview experiment
+### [Wardrobe](https://github.com/EdwardH-jedi/wardrobe)
 
-[Source](https://github.com/EdwardH-jedi/wadrobe) · [Architecture](https://github.com/EdwardH-jedi/wadrobe/blob/main/docs/ARCHITECTURE.md) · [Feature scope](https://github.com/EdwardH-jedi/wadrobe/blob/main/docs/PROJECT_SCOPE.md)
+A local-first fashion archive for saving garment photos, editing metadata, composing outfits, and keeping looks in the browser.
 
----
+**Stack:** React · TypeScript · Vite · IndexedDB; optional Three.js / FastAPI experiments
+
+- **Engineering focus:** hydration and persistence fallbacks, image-asset storage, and layered outfit composition
+- **Scope:** the default archive works without a backend. Its styling preview is 2.5D, and the separate proxy-3D track is experimental; it does not provide real virtual try-on or sizing
+
+[Source](https://github.com/EdwardH-jedi/wardrobe) · [Architecture](https://github.com/EdwardH-jedi/wardrobe/blob/main/docs/ARCHITECTURE.md) · [Feature scope](https://github.com/EdwardH-jedi/wardrobe/blob/main/docs/PROJECT_SCOPE.md)
 
 ## More work
 
-**[SoonPerMario](https://github.com/EdwardH-jedi/soonpermario)** — a playable résumé built as an HTML5 Canvas platformer with vanilla JavaScript.  
-**Pancreas segmentation capstone** — ML training and experiments for multi-centre medical-image segmentation; private while the university project is in progress.
+- **[Career Quest / SoonPerMario](https://github.com/EdwardH-jedi/career-quest):** a playable résumé built with HTML5 Canvas and vanilla JavaScript, with no build step
+- **Pancreas segmentation capstone:** ML training and experiments for multi-centre medical-image segmentation; the university project remains private while in progress
+- **Sensorway:** worked on a YOLOv8 defect-detection and monitoring system for an IoT production line, including an on-site deployment in Hungary
+- **Samsung enterprise competition:** grand prize; patent application filed by the team
 
 ## Technical focus
 
-**Product engineering** — React, TypeScript, React Native / Expo, Next.js, Vite, SwiftUI  
-**Backend and data** — Python, FastAPI, PostgreSQL, SQLAlchemy, Redis, Docker  
-**ML and computer vision** — PyTorch, MONAI, XGBoost, SHAP, YOLO, evaluation pipelines  
-**Systems and tooling** — C, Linux, bash, Git, CI, automated testing
+- **Product engineering:** React, TypeScript, React Native / Expo, Next.js, Vite, SwiftUI
+- **Backend and data:** Python, FastAPI, PostgreSQL, SQLAlchemy, Redis, Docker
+- **ML and computer vision:** PyTorch, MONAI, XGBoost, SHAP, YOLO, evaluation pipelines
+- **Systems and tooling:** C, Linux, bash, Git, CI, automated testing
 
-## Beyond public repositories
+## How I work
 
-**Sensorway** — worked on a YOLOv8 defect-detection and monitoring system for an IoT production line, including an on-site deployment in Hungary.  
-**Samsung enterprise competition** — grand prize; patent application filed by the team.
-
-## Engineering approach
-
-I use coding agents for implementation support and independent review, but scope, architecture, acceptance criteria, testing, benchmarks, and final judgement remain human-directed. The output is not accepted because a model produced it; it stays only when the product and evidence hold up.
+I use coding agents for implementation support and independent review. I set the scope, architecture, acceptance criteria, and verification approach, and review the results before accepting changes. The project links above include source code, release records, and evaluation limits so that the work can be inspected beyond a demo.
