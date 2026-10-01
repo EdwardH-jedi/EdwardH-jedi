@@ -1,10 +1,64 @@
 {
-  "generated_at": "2026-10-01 09:51 AEST",
-  "fingerprint": "d845c0c211acd6b0468dbf73d49a30b03ea6432eb6bd803f39cb2742d3019eca",
+  "generated_at": "2026-10-02 09:53 AEST",
+  "fingerprint": "3d00c3a9a9ccd18b453749df23796f8b653863ad093abd60805193fd538a7595",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "AFL_predict",
+      "summary": "docs: clarify local review setup, dashboard provenance, and research limits",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:28:07Z",
+      "display_date": "01 OCT",
+      "sha": "4da297ce16",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/4da297ce16ea7645e4206676714790272f55dde4"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "docs: clarify SportsGang setup, release evidence, and service boundaries",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:27:42Z",
+      "display_date": "01 OCT",
+      "sha": "edfb30fe48",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/edfb30fe48eddda76ebc9f347581641f3550ed44"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "docs: clarify developer setup, current scope, and limitations",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:26:55Z",
+      "display_date": "01 OCT",
+      "sha": "e33f2acd93",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e33f2acd931f05a9b8165fee6df80c8c4c39f9e5"
+    },
+    {
+      "repo": "career-quest",
+      "summary": "docs: clarify developer setup, current scope, and limitations",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:26:48Z",
+      "display_date": "01 OCT",
+      "sha": "44cc3cd8d9",
+      "url": "https://github.com/EdwardH-jedi/career-quest/commit/44cc3cd8d922e1df4dd31e7f8b4019577e65cf9a"
+    },
+    {
+      "repo": "wardrobe",
+      "summary": "docs: clarify developer setup, current scope, and limitations",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:26:41Z",
+      "display_date": "01 OCT",
+      "sha": "f09d43fa47",
+      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/f09d43fa476bb35790abc66064ff02f20cc0daee"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs: clarify project scope, setup, and verification evidence",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:26:18Z",
+      "display_date": "01 OCT",
+      "sha": "8c5ad487fc",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/8c5ad487fce481cccf1ca0d0b9504835fb1fc111"
+    },
     {
       "repo": "agent-city",
       "summary": "fix: id namespace, same-ts ordering, rev merge, remap invalidate (reaudit N01-N07)",
@@ -449,87 +503,93 @@
   ],
   "latest": [
     {
-      "repo": "agent-city",
-      "summary": "fix: id namespace, same-ts ordering, rev merge, remap invalidate (reaudit N01-N07)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-30T10:03:15Z",
-      "display_date": "30 SEP",
-      "sha": "da12be6bdd",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da12be6bdd47c06ccc858e02593675d1fdf25393"
+      "repo": "AFL_predict",
+      "summary": "docs: clarify local review setup, dashboard provenance, and research limits",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:28:07Z",
+      "display_date": "01 OCT",
+      "sha": "4da297ce16",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/4da297ce16ea7645e4206676714790272f55dde4"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "docs: clarify SportsGang setup, release evidence, and service boundaries",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:27:42Z",
+      "display_date": "01 OCT",
+      "sha": "edfb30fe48",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/edfb30fe48eddda76ebc9f347581641f3550ed44"
     },
     {
       "repo": "agent-city",
-      "summary": "chore: batch limits, etag scoping, fixtures, docs (audit F14-F18)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-29T18:50:26Z",
-      "display_date": "30 SEP",
-      "sha": "d1a6585596",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/d1a6585596a00f524ffa2daa912b8036349d56b3"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix: event ordering, id namespace, repo normalization (audit F08-F13)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-29T18:42:41Z",
-      "display_date": "30 SEP",
-      "sha": "372c152de0",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/372c152de0ef0aaadefd0364a44ef09f2af71f28"
+      "summary": "docs: clarify developer setup, current scope, and limitations",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-01T02:26:55Z",
+      "display_date": "01 OCT",
+      "sha": "e33f2acd93",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e33f2acd931f05a9b8165fee6df80c8c4c39f9e5"
     }
   ],
   "repo_counts": {
-    "agent-city": 7,
-    "Edward_world": 36,
-    "Sportsgang": 1,
-    "wardrobe": 3,
-    "career-quest": 1,
-    "AFL_predict": 1
+    "AFL_predict": 2,
+    "Sportsgang": 2,
+    "agent-city": 8,
+    "career-quest": 2,
+    "wardrobe": 4,
+    "Edward_world": 37
   },
   "category_counts": {
+    "DOCS / EVIDENCE": 19,
     "FIX / RELIABILITY": 13,
     "SYSTEMS / OPS": 4,
     "PRODUCT / FEATURE": 12,
-    "DOCS / EVIDENCE": 13,
     "ENGINEERING": 6,
     "TEST / QUALITY": 1
   },
   "weekly_repo_counts": {
-    "agent-city": 7
+    "AFL_predict": 1,
+    "Sportsgang": 1,
+    "agent-city": 8,
+    "career-quest": 1,
+    "wardrobe": 1,
+    "Edward_world": 1
   },
   "weekly_category_counts": {
+    "DOCS / EVIDENCE": 6,
     "FIX / RELIABILITY": 3,
     "SYSTEMS / OPS": 2,
     "PRODUCT / FEATURE": 2
   },
   "repo_meta": {
     "agent-city": {
-      "pushed_at": "2026-09-30T13:21:52Z",
+      "pushed_at": "2026-10-01T02:31:57Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
-    "Edward_world": {
-      "pushed_at": "2026-09-10T12:54:19Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Edward_world"
+    "AFL_predict": {
+      "pushed_at": "2026-10-01T02:28:08Z",
+      "language": "Python",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict"
     },
     "Sportsgang": {
-      "pushed_at": "2026-09-09T08:15:43Z",
+      "pushed_at": "2026-10-01T02:27:42Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Sportsgang"
     },
-    "wardrobe": {
-      "pushed_at": "2026-09-09T08:13:18Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/wardrobe"
-    },
     "career-quest": {
-      "pushed_at": "2026-09-09T08:09:56Z",
+      "pushed_at": "2026-10-01T02:26:48Z",
       "language": "JavaScript",
       "url": "https://github.com/EdwardH-jedi/career-quest"
     },
-    "AFL_predict": {
-      "pushed_at": "2026-09-09T08:09:41Z",
-      "language": "Python",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict"
+    "wardrobe": {
+      "pushed_at": "2026-10-01T02:26:41Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/wardrobe"
+    },
+    "Edward_world": {
+      "pushed_at": "2026-10-01T02:26:18Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Edward_world"
     }
   },
   "state": "SHIPPING",
