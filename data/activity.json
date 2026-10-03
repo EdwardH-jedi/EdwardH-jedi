@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02 09:53 AEST",
-  "fingerprint": "3d00c3a9a9ccd18b453749df23796f8b653863ad093abd60805193fd538a7595",
+  "generated_at": "2026-10-04 10:05 AEDT",
+  "fingerprint": "7fdfa61e0874112a00c827510ab25b020efd313c735682907c3d7777f4c6a7d9",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -561,8 +561,13 @@
     "PRODUCT / FEATURE": 2
   },
   "repo_meta": {
+    "Sportsgang": {
+      "pushed_at": "2026-10-03T18:18:59Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang"
+    },
     "agent-city": {
-      "pushed_at": "2026-10-01T02:31:57Z",
+      "pushed_at": "2026-10-03T17:00:02Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
@@ -570,11 +575,6 @@
       "pushed_at": "2026-10-01T02:28:08Z",
       "language": "Python",
       "url": "https://github.com/EdwardH-jedi/AFL_predict"
-    },
-    "Sportsgang": {
-      "pushed_at": "2026-10-01T02:27:42Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang"
     },
     "career-quest": {
       "pushed_at": "2026-10-01T02:26:48Z",
