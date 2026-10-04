@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04 10:05 AEDT",
-  "fingerprint": "7fdfa61e0874112a00c827510ab25b020efd313c735682907c3d7777f4c6a7d9",
+  "generated_at": "2026-10-05 10:11 AEDT",
+  "fingerprint": "51d308ee72bb4bac58327b6ec18ae0900385e4fb52f7ea2ab238b84b7ddf538f",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -546,28 +546,16 @@
     "ENGINEERING": 6,
     "TEST / QUALITY": 1
   },
-  "weekly_repo_counts": {
-    "AFL_predict": 1,
-    "Sportsgang": 1,
-    "agent-city": 8,
-    "career-quest": 1,
-    "wardrobe": 1,
-    "Edward_world": 1
-  },
-  "weekly_category_counts": {
-    "DOCS / EVIDENCE": 6,
-    "FIX / RELIABILITY": 3,
-    "SYSTEMS / OPS": 2,
-    "PRODUCT / FEATURE": 2
-  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
     "Sportsgang": {
-      "pushed_at": "2026-10-03T18:18:59Z",
+      "pushed_at": "2026-10-04T17:31:50Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Sportsgang"
     },
     "agent-city": {
-      "pushed_at": "2026-10-03T17:00:02Z",
+      "pushed_at": "2026-10-04T12:21:50Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
