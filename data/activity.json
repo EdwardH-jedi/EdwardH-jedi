@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-10 11:03 AEDT",
-  "fingerprint": "21b90a63d905cf0e70f397bdf66485e9933b023788805a2dec0722059cf072aa",
+  "generated_at": "2026-10-11 10:34 AEDT",
+  "fingerprint": "56809462dcc2a9ae5925987b9958068df832c293fd48fc61651c126ce4d3e427",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -121,51 +121,6 @@
       "display_date": "29 SEP",
       "sha": "e6aa2a9980",
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/e6aa2a998023a819451669db1c5c2397d145a659"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record the final production deployment",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-09-10T12:54:18Z",
-      "display_date": "10 SEP",
-      "sha": "b3419649dd",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/b3419649dde14c6e8393680172664805f557c9d7"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: tune tennis feel and basketball bank shots",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-10T12:04:53Z",
-      "display_date": "10 SEP",
-      "sha": "2b34ba9f84",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/2b34ba9f84ecbe0fb16b196a367b2b6a74ae446b"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record SPORTSGANG integration candidate",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-09-10T10:26:18Z",
-      "display_date": "10 SEP",
-      "sha": "cfc849a0d6",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cfc849a0d6b8e56f5560947afeed02fee6c727a7"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "merge: integrate reviewed SPORTSGANG polish",
-      "category": "ENGINEERING",
-      "date": "2026-09-10T10:10:09Z",
-      "display_date": "10 SEP",
-      "sha": "1882710a5c",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1882710a5c103ca25ad1bfd57dce66b6862b35cd"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: record final predeploy audit blockers",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-09-10T09:58:39Z",
-      "display_date": "10 SEP",
-      "sha": "8b59e3f7ba",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/8b59e3f7bac383f0dd8984e9cdcbdae046dd506b"
     }
   ],
   "latest": [
@@ -203,14 +158,13 @@
     "agent-city": 8,
     "career-quest": 1,
     "wardrobe": 1,
-    "Edward_world": 6
+    "Edward_world": 1
   },
   "category_counts": {
-    "DOCS / EVIDENCE": 7,
-    "FIX / RELIABILITY": 4,
-    "SYSTEMS / OPS": 4,
-    "PRODUCT / FEATURE": 2,
-    "ENGINEERING": 1
+    "DOCS / EVIDENCE": 6,
+    "FIX / RELIABILITY": 3,
+    "SYSTEMS / OPS": 2,
+    "PRODUCT / FEATURE": 2
   },
   "weekly_repo_counts": {},
   "weekly_category_counts": {},
