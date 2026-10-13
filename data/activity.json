@@ -1,10 +1,19 @@
 {
-  "generated_at": "2026-10-11 10:34 AEDT",
-  "fingerprint": "56809462dcc2a9ae5925987b9958068df832c293fd48fc61651c126ce4d3e427",
+  "generated_at": "2026-10-14 10:44 AEDT",
+  "fingerprint": "395590c20fbd692b38e7d4c53beb3562730505b3bd4058e7fd39274baa9ba1b1",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "chore: project docs + prototype",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-12T04:16:51Z",
+      "display_date": "12 OCT",
+      "sha": "ed83eedf8f",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/ed83eedf8f8931bc21681e1f05a0b86e7dae7a1b"
+    },
     {
       "repo": "AFL_predict",
       "summary": "docs: clarify local review setup, dashboard provenance, and research limits",
@@ -125,6 +134,15 @@
   ],
   "latest": [
     {
+      "repo": "no-wukkas-cafe",
+      "summary": "chore: project docs + prototype",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-12T04:16:51Z",
+      "display_date": "12 OCT",
+      "sha": "ed83eedf8f",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/ed83eedf8f8931bc21681e1f05a0b86e7dae7a1b"
+    },
+    {
       "repo": "AFL_predict",
       "summary": "docs: clarify local review setup, dashboard provenance, and research limits",
       "category": "DOCS / EVIDENCE",
@@ -141,18 +159,10 @@
       "display_date": "01 OCT",
       "sha": "edfb30fe48",
       "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/edfb30fe48eddda76ebc9f347581641f3550ed44"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "docs: clarify developer setup, current scope, and limitations",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:26:55Z",
-      "display_date": "01 OCT",
-      "sha": "e33f2acd93",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e33f2acd931f05a9b8165fee6df80c8c4c39f9e5"
     }
   ],
   "repo_counts": {
+    "no-wukkas-cafe": 1,
     "AFL_predict": 1,
     "Sportsgang": 1,
     "agent-city": 8,
@@ -161,14 +171,23 @@
     "Edward_world": 1
   },
   "category_counts": {
-    "DOCS / EVIDENCE": 6,
+    "DOCS / EVIDENCE": 7,
     "FIX / RELIABILITY": 3,
     "SYSTEMS / OPS": 2,
     "PRODUCT / FEATURE": 2
   },
-  "weekly_repo_counts": {},
-  "weekly_category_counts": {},
+  "weekly_repo_counts": {
+    "no-wukkas-cafe": 1
+  },
+  "weekly_category_counts": {
+    "DOCS / EVIDENCE": 1
+  },
   "repo_meta": {
+    "no-wukkas-cafe": {
+      "pushed_at": "2026-10-13T13:41:34Z",
+      "language": "HTML",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
+    },
     "agent-city": {
       "pushed_at": "2026-10-08T07:29:33Z",
       "language": "TypeScript",
