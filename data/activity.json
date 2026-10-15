@@ -1,369 +1,441 @@
 {
-  "generated_at": "2026-10-15 10:15 AEDT",
-  "fingerprint": "6a731ffefefdeb0bd18e995b25ff68751bd07c50a3477509eab7e55b5a8dad41",
+  "generated_at": "2026-10-16 10:04 AEDT",
+  "fingerprint": "44bc94a64b678435d3a8171611a99786b1614380601d365d52f629b5e7bd7213",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
     {
       "repo": "no-wukkas-cafe",
-      "summary": "chore(voice): render Session A placeholders, clear AWAITING_RENDER",
+      "summary": "docs(todo): phase 1 HUMAN items marked blocked with the reason",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T19:15:21Z",
+      "display_date": "16 OCT",
+      "sha": "320ee3287c",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/320ee3287c4786ce082849119233b7893c5722af"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs(agents): rushView.ts in the src/app list",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T19:14:22Z",
+      "display_date": "16 OCT",
+      "sha": "d381d4ab5d",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/d381d4ab5d3fedf536a5a14720bb3e0fa44b7717"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs(todo): phase 1 \u2014 1A, 1B, 1.E done, 1C on feat/latte-feel awaiting feel-test, e2e green",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T19:12:37Z",
+      "display_date": "16 OCT",
+      "sha": "e56f3bdedf",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e56f3bdedf0141875871abee84e858fa468857cf"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "test(e2e): closed-loop wheel for the practice spec's mouse pour",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T18:47:25Z",
+      "display_date": "16 OCT",
+      "sha": "addb0c4e22",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/addb0c4e22fc809ddfb0a4065c1d4820edd04247"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "test(e2e): replay a recorded perfect pour and pin its score band",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T18:47:25Z",
+      "display_date": "16 OCT",
+      "sha": "85a7551ebf",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/85a7551ebf15876cb9512cfddd0b175ec03b7685"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "test(e2e): week UI screenshots go to test-results unless WEEK_UI_SHOTS says where",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T18:33:33Z",
+      "display_date": "16 OCT",
+      "sha": "29ad2b867e",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/29ad2b867eb0730bad875b6a47e2c9af5e41e5cb"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "test(e2e): the week UI end to end \u2014 shop, a passed Monday, next shift, Day 2 bot, event by key",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T18:30:13Z",
+      "display_date": "16 OCT",
+      "sha": "24e6a89ecf",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/24e6a89ecfadcef42ed272e67834dc6cab2ad9b4"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "fix(rush-hud): keys 1\u20133 stay the jug heights during the pour",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-15T17:53:08Z",
+      "display_date": "16 OCT",
+      "sha": "3f96d4fa41",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/3f96d4fa410fdb09d220b8f06f4b76423ad2a510"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: enter the world in under a second; keep the name gate as a house easter egg (#6)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:41:36Z",
+      "display_date": "16 OCT",
+      "sha": "a535d98a4a",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a535d98a4ac37e25d0ea239183709d4d5d01dff1"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "test(e2e): follow the renamed report and title Settings buttons",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T17:39:37Z",
+      "display_date": "16 OCT",
+      "sha": "51016e1fd9",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/51016e1fd9ee89f5b586b09ecb72e2e9fb4efe65"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(rush-hud): two-hands strip and the jug's carton named on the milk gauge",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:36:33Z",
+      "display_date": "16 OCT",
+      "sha": "241e9809ec",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/241e9809ecc7ca446ad777ef0e668992a8888171"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "fix(rush-hud): event card steps aside while two hands swings the camera",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-15T17:36:33Z",
+      "display_date": "16 OCT",
+      "sha": "22fde9e8e8",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/22fde9e8e8561a8571a258dc5913a3bef7fe8c47"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: ambient life - smoke, lamp glow, bobbing signs, a bird (#4)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:36:28Z",
+      "display_date": "16 OCT",
+      "sha": "d75b002443",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d75b002443572fdc7b286d654cb7261867ba6b08"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: game feel - synthesized SFX, footsteps, pixel dissolve, door open, prompt pop, camera look-ahead (#5)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:35:11Z",
+      "display_date": "16 OCT",
+      "sha": "cee1dd4ad1",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cee1dd4ad1e64f93d4a99ee9afe10ac8a269d765"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: palette accents so the player and interactive places pop (#3)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:33:06Z",
+      "display_date": "16 OCT",
+      "sha": "1c00cdbdbb",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1c00cdbdbbe27950f96a355c13caeb96364e8392"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "fix(ui): settings panel gives focus back only on the title",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-15T17:25:37Z",
+      "display_date": "16 OCT",
+      "sha": "a2aaacfbbf",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/a2aaacfbbf86fb3a47669886a5dae13c6d8e9d15"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(rush-hud): top chips show the shift, served and walk-outs",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:24:28Z",
+      "display_date": "16 OCT",
+      "sha": "bd370cbe5c",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/bd370cbe5c634572f3caba938ed57f31c2e34a8d"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: render the world as a full-bleed game stage on a per-viewport integer unit (#2)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:21:16Z",
+      "display_date": "16 OCT",
+      "sha": "16e9a8d8da",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/16e9a8d8da97c20559e18cb3dd3dfe6d826741d9"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "test(e2e): title menu, keyboard and shop in the week spec",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T17:18:21Z",
+      "display_date": "16 OCT",
+      "sha": "2a774d7a54",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2a774d7a5405c2c3ebd11976d071bed5bdcac990"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(rush-hud): event card with costs, keys 1-3, clear of the cup",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:16:34Z",
+      "display_date": "16 OCT",
+      "sha": "8e49372328",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/8e49372328f11ef1b2e0641792b91a5aee02232a"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(ui): settings panel with a pour sensitivity slider",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:14:54Z",
+      "display_date": "16 OCT",
+      "sha": "7a8fb18772",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/7a8fb18772754a4fe90f2f525cc58332b1459369"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(ui): one shift report with Next shift / Try again",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:12:43Z",
+      "display_date": "16 OCT",
+      "sha": "ad8518f0ce",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/ad8518f0cea38d65383760b359f957bfcad7bf63"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(ui): shift select grid and a caf\u00e9 upgrade shop screen",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T17:00:00Z",
+      "display_date": "16 OCT",
+      "sha": "5a2576d539",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5a2576d539f9006861e5f030271efed7a09d97ec"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(rush-hud): register shows what replay, repeat and questions cost",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T16:57:29Z",
+      "display_date": "16 OCT",
+      "sha": "c6e80dc3b6",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/c6e80dc3b6d2cbab822d10b7e928a1d7053bb947"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(ui): title screen lists every mode with keyboard focus",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T16:55:10Z",
+      "display_date": "16 OCT",
+      "sha": "cd7f3ffa47",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/cd7f3ffa47dbc0f321968e8b4687ffc1f90c4a20"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs(todo): phase 0 done \u2014 main split, styles split, branches listed, e2e green",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T16:54:07Z",
+      "display_date": "16 OCT",
+      "sha": "e8ee6f6480",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e8ee6f6480ba8e19c4f127dbc2361fb9232a21fc"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(rush-hud): docket rail marks misheard fields and shows regulars by name",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T16:53:11Z",
+      "display_date": "16 OCT",
+      "sha": "f266142b0b",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/f266142b0b635ca9a8e19460b5b44b95ffe0b09b"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "refactor(app): move the rush's per-frame view into src/app/rushView.ts",
+      "category": "ARCHITECTURE",
+      "date": "2026-10-15T16:49:04Z",
+      "display_date": "16 OCT",
+      "sha": "5d7ae97bbd",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5d7ae97bbdc7b12dfd79f92bf0016216d42e62d8"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "feat(settings): pourSensitivity setting (default 1.0, 0.5\u20132)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-15T16:38:10Z",
+      "display_date": "16 OCT",
+      "sha": "13f11a36a6",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/13f11a36a63477aab319a5cc5723de75d829364c"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "refactor(ui): title screen and shift report move to src/ui/screens",
+      "category": "ARCHITECTURE",
+      "date": "2026-10-15T16:38:10Z",
+      "display_date": "16 OCT",
+      "sha": "85b5ff3fb9",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/85b5ff3fb9d5c73e4f22b8345c03542139dc7422"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs(agents): src/app wiring and src/ui/styles in the architecture tree",
+      "category": "ARCHITECTURE",
+      "date": "2026-10-15T16:34:43Z",
+      "display_date": "16 OCT",
+      "sha": "fc47916ff8",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/fc47916ff8127daab9528c02388f5ddab41a69ba"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "refactor(ui): split styles.css into src/ui/styles/*",
+      "category": "ARCHITECTURE",
+      "date": "2026-10-15T16:31:48Z",
+      "display_date": "16 OCT",
+      "sha": "f4b3bae9cc",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/f4b3bae9cce16f9b100b161ce1abde7b51887b4d"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "refactor(app): split main.ts into src/app wiring modules",
+      "category": "ARCHITECTURE",
+      "date": "2026-10-15T16:29:39Z",
+      "display_date": "16 OCT",
+      "sha": "f4c185e5ac",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/f4c185e5ac7c84845c44f5ff6a756f81162a98e5"
+    },
+    {
+      "repo": "AFL_predict",
+      "summary": "docs: recruiter-friendly README front; move hedges to Limitations (#7)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T16:28:50Z",
+      "display_date": "16 OCT",
+      "sha": "6b22c630a7",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/6b22c630a751b21d2345744c7124d2b7995753ea"
+    },
+    {
+      "repo": "AFL_predict",
+      "summary": "fix(api): migrate FixtureOut to Pydantic ConfigDict (#2)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-15T16:26:10Z",
+      "display_date": "16 OCT",
+      "sha": "a160249eeb",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/a160249eebc9545b9ca41e455887ee979c8a7a9b"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs(todo): phase 0.1 merged and verified, 0.4 confirmed",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T16:22:06Z",
+      "display_date": "16 OCT",
+      "sha": "dddc2a9ec0",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/dddc2a9ec0b03be08d68e90f993eaeff3f17f138"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs: phased TODO",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T16:03:00Z",
+      "display_date": "16 OCT",
+      "sha": "e55eb32806",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e55eb32806cde979e0f6eb6e0a8e98307c3c498a"
+    },
+    {
+      "repo": "AFL_predict",
+      "summary": "docs(t6): 2026-10-15 validation baseline (#5)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T14:57:49Z",
+      "display_date": "16 OCT",
+      "sha": "ed6bd0d959",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/ed6bd0d95952a34ce50a99927e6d1d259b934695"
+    },
+    {
+      "repo": "AFL_predict",
+      "summary": "docs: record T6 closeout status in README and guard root artifacts (#4)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T14:46:51Z",
+      "display_date": "16 OCT",
+      "sha": "28ec2f4eed",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/28ec2f4eed400e974243acb574e2bce749ca830b"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "fix(latte): address review of pull-through merge",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-15T11:50:09Z",
+      "display_date": "15 OCT",
+      "sha": "5c12a5bc34",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5c12a5bc34ab7492155f114b8dc817ce50b6afb3"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "overnight(p1): thin the pull-through only once the white is laid",
       "category": "ENGINEERING",
-      "date": "2026-10-14T11:33:50Z",
-      "display_date": "14 OCT",
-      "sha": "6c1be7fff8",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/6c1be7fff84ced8be60c01b8631792dc20d1754f"
+      "date": "2026-10-15T11:46:28Z",
+      "display_date": "15 OCT",
+      "sha": "970dd1e85f",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/970dd1e85f2234ae0772e538bcb1a59b6bf65ae9"
     },
     {
       "repo": "no-wukkas-cafe",
-      "summary": "docs(verification): Day 2 first-shift evidence (two hands, stopped shot, Bin it)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-14T07:30:29Z",
-      "display_date": "14 OCT",
-      "sha": "1b9c74b34b",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/1b9c74b34b12c41f473878045885bdabbca77ae8"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(rush): two hands \u2014 steam the milk while a flat white's shot runs; Bin it clear of the cup",
+      "summary": "feat(shop): upgrades bought from the save and applied to the station",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-10-14T07:21:47Z",
-      "display_date": "14 OCT",
-      "sha": "d378642c67",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/d378642c67e9370852ff2c64f750aaf059860486"
+      "date": "2026-10-15T09:08:52Z",
+      "display_date": "15 OCT",
+      "sha": "a47f70126c",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/a47f70126caddd7a9f6ae1c25c38c8001148b887"
     },
     {
       "repo": "no-wukkas-cafe",
-      "summary": "feat(listening): learning mode off by default, subtitles after two repeats, answers readable without audio",
+      "summary": "feat(audio): play generated orders as segment clips with whole-line fallback",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-10-14T06:58:09Z",
-      "display_date": "14 OCT",
-      "sha": "b832bfc6fb",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/b832bfc6fba73b48ad06bb40d16745bbb3728850"
+      "date": "2026-10-15T09:02:09Z",
+      "display_date": "15 OCT",
+      "sha": "dc36c502aa",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/dc36c502aa554bf3679b0971e281e62013b816e6"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(rush): customers react to the drink they got, and Jiwoo says \uc640",
+      "repo": "AFL_predict",
+      "summary": "chore: clean repo root, untrack logs, remove unconnected frontend scaffold, add license (#6)",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-10-14T06:55:58Z",
-      "display_date": "14 OCT",
-      "sha": "4f997eab0d",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/4f997eab0dc7163c05fb941f107db57212e9044f"
+      "date": "2026-10-15T08:55:53Z",
+      "display_date": "15 OCT",
+      "sha": "eeaa5e9d31",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/eeaa5e9d3132aeb1f4c2ab5844e3e6dc960ecbfd"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(rush): pace Day 2 as a first shift: Dazza's long black, more patience, spaced arrivals",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-14T06:53:59Z",
-      "display_date": "14 OCT",
-      "sha": "41c0ae21ed",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/41c0ae21edf82903f97fef39cc55a45c002e7676"
+      "repo": "Sportsgang",
+      "summary": "chore: tidy repo root and remove stale web prototype (#5)",
+      "category": "ENGINEERING",
+      "date": "2026-10-15T08:44:44Z",
+      "display_date": "15 OCT",
+      "sha": "1ac1c68609",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/1ac1c686094f9d960ee1282ac901ea78f3c37fd2"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "test(rush): human-latency bot profiles and a Day 2 pacing report",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-14T06:46:29Z",
-      "display_date": "14 OCT",
-      "sha": "c0a6384fb0",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/c0a6384fb02065a2b7b812e8ed682900b5a828ff"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(latte): report commit hashes, Day 2 button fix, scope notes",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-13T16:19:16Z",
-      "display_date": "14 OCT",
-      "sha": "92572c8380",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/92572c83807196119544b37c024c12b79364c427"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "fix(rush): move Day 2 pour buttons off the cup",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-13T16:18:58Z",
-      "display_date": "14 OCT",
-      "sha": "f180e62fb1",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/f180e62fb118520d516a948e871e222ac23f8784"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(latte): v2 report, before/after evidence; phone layout and cup readout",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-13T16:10:54Z",
-      "display_date": "14 OCT",
-      "sha": "93b5c72392",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/93b5c723928eacc1edd0ab1482bdc66db6362bcc"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(latte): close-up pour view, readable foam, lesson strip, Gaz's four-step demo and practice mode",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T15:39:18Z",
-      "display_date": "14 OCT",
-      "sha": "d70cf7b703",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/d70cf7b703f73c016b49dbbb29560ae9ab258d8f"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(sim): latte coaching, teaching-pace demo player, pour arming and practice state machine",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T14:59:44Z",
-      "display_date": "14 OCT",
-      "sha": "11917ecb67",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/11917ecb67b008e5eb35611190dcdeb3deb3d5f0"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs: next-checkpoint report (audit, casting plan, BGM, bin chicken)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-13T08:44:13Z",
-      "display_date": "13 OCT",
-      "sha": "7663b80e68",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/7663b80e684ae2d721b4fba2bee518a0b0df13f4"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(event): the bin chicken - a rare, gentle white-ibis encounter on Day 2",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T08:31:48Z",
-      "display_date": "13 OCT",
-      "sha": "ce93cef1e9",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/ce93cef1e9d3c8fc44ddb5b5f8c65c436e50eaff"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(audio): caf\u00e9 background music (three original moods), music bus and ducking under speech",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T08:17:28Z",
-      "display_date": "13 OCT",
-      "sha": "a068305e73",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/a068305e73c1d31247f5f473196617e2aaff74f5"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "style: prettier on the voice validation tests",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-13T08:12:38Z",
-      "display_date": "13 OCT",
-      "sha": "b962a04424",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/b962a04424c5a022708c1490d343f353e550a2c0"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(voice): casting plan, audition pipeline and release rules against pitch-shift casting",
-      "category": "ARCHITECTURE",
-      "date": "2026-10-13T08:12:21Z",
-      "display_date": "13 OCT",
-      "sha": "14a7a5fe90",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/14a7a5fe90cde6d890d9260653b42e479e4b3e46"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "fix(audio): resolve Codex audit A1-A10 and gate unlicensed audio out of builds",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-13T08:09:14Z",
-      "display_date": "13 OCT",
-      "sha": "9338436e47",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/9338436e47a1e104682e2b124ae49bb69dd4689f"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(audio-qa): correct the Tara evidence wording, list the report commit, how to try the branch",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-13T04:58:41Z",
-      "display_date": "13 OCT",
-      "sha": "4c809a6c1d",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/4c809a6c1da064eba470c4851ec48028b6a5bab9"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs: audio QA report (base 1e659f9, changes, test results, licensing risks, integration)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-13T04:57:05Z",
-      "display_date": "13 OCT",
-      "sha": "67f6990b66",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/67f6990b66637d0cad133a4434bbc40f9d189451"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "test(audio): voice-on browser smoke tests with playback, sync and interruption evidence",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-13T04:53:31Z",
-      "display_date": "13 OCT",
-      "sha": "e78834637f",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e78834637fdb55d5722e924ac2170bc86e54aea3"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(voice): reproducible, validated, development-only placeholder voice pipeline",
-      "category": "ARCHITECTURE",
-      "date": "2026-10-13T04:40:13Z",
-      "display_date": "13 OCT",
-      "sha": "707ae8445f",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/707ae8445ff3b1ad0d39fe0d5c9a893c9494aa72"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "refactor(rush): move speech and listening helpers out of core/rush.ts (no behaviour change)",
-      "category": "ARCHITECTURE",
-      "date": "2026-10-13T04:23:41Z",
-      "display_date": "13 OCT",
-      "sha": "0e5e166871",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/0e5e1668717f90f21cf852715580ff1689db889c"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "test(listening): every curated order end to end, corrections, aid costs, dialogue and switching",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-13T04:20:57Z",
-      "display_date": "13 OCT",
-      "sha": "3c0d7eb216",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/3c0d7eb216976780a41bef596211dcc9ffbabb2a"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "fix(pos): repaint the register for each new customer; report figures after final build",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-13T03:08:23Z",
-      "display_date": "13 OCT",
-      "sha": "1e659f9195",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/1e659f9195a7b9bd702c4a55dcbd196f6300de99"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs: overnight report (voice, accents, listening, latte, NPCs); roadmap and agent docs",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-13T03:02:15Z",
-      "display_date": "13 OCT",
-      "sha": "47334f4402",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/47334f4402dba932f2fcdeef5705d51b1b309565"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(npc): customers make eye contact, lip-sync to their clips, blink and react; Gaz's eyes lead",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T03:00:02Z",
-      "display_date": "13 OCT",
-      "sha": "010855b295",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/010855b295ddc42469c0d727893a4d6b28187230"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(latte): ghost the jug and arm over the cup so the pattern stays visible while pouring",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T02:48:27Z",
-      "display_date": "13 OCT",
-      "sha": "806492cc56",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/806492cc566a9dc411e2e523abb7aa437ddf0176"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(listening): Day 2 orders are heard, not read: register, replay/repeat/clarify, six voices",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T02:46:22Z",
-      "display_date": "13 OCT",
-      "sha": "566f3c6470",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/566f3c6470069313f0dc82f8b384e7cbf552997d"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(audio): recorded voice lines through Web Audio, with replay, volumes and failure feedback",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-13T02:12:12Z",
-      "display_date": "13 OCT",
-      "sha": "19c3c46349",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/19c3c4634948065d0f48516ea71f5cda8f84ae88"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "fix(dev): run the game on its own strict port so localhost shows the game",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-12T12:08:02Z",
-      "display_date": "12 OCT",
-      "sha": "6b8e0aeb6c",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/6b8e0aeb6c600798b39579120fa6b748d5530f07"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "fix(rush): show the extra-hot range on the ticket; restore cursor on restart",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-12T11:48:35Z",
-      "display_date": "12 OCT",
-      "sha": "e7f69f1017",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e7f69f10173455a9c61a237431d0ce23c0612082"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(rush): playable Day 2 morning rush with customers, tickets and shift report",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-12T11:38:57Z",
-      "display_date": "12 OCT",
-      "sha": "323ee9152b",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/323ee9152bd2b46fc49e46c835160ea9e77b6c27"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(rush): Day 2 morning rush logic: customers, orders, serving, shift results",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-12T09:57:51Z",
-      "display_date": "12 OCT",
-      "sha": "0428b9c980",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/0428b9c98002940dfc6eca189e35e7020865a06b"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(verification): Day 1 trial e2e evidence and run log",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-12T06:47:07Z",
-      "display_date": "12 OCT",
-      "sha": "5b92312186",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5b92312186bce4a90c9e05f6b220b28c40ce4244"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(trial): trackpad-friendly pouring, pause-menu restart, streak reactions",
+      "repo": "wardrobe",
+      "summary": "chore: tidy root, add license, deploy local-first app to GitHub Pages (#3)",
       "category": "SYSTEMS / OPS",
-      "date": "2026-10-12T06:46:21Z",
-      "display_date": "12 OCT",
-      "sha": "1b07d51aee",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/1b07d51aee6e4a122dd86410b636bc3f365d4781"
+      "date": "2026-10-15T08:44:17Z",
+      "display_date": "15 OCT",
+      "sha": "79e51c90d9",
+      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/79e51c90d9feb9024c433d9c6fa584afd8e340e6"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "fix(trial): say \"last go\" only on the last attempt; cover demo replay",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-12T06:13:26Z",
-      "display_date": "12 OCT",
-      "sha": "66461e12c0",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/66461e12c0d402e21ee4259792d32208f0e06685"
+      "repo": "Edward_world",
+      "summary": "ci: add GitHub Actions (lint, typecheck, test, build) and license (#1)",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T08:41:02Z",
+      "display_date": "15 OCT",
+      "sha": "13c7290473",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/13c7290473b58037258b448d7e5959b2ab9a1efd"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(trial): playable Day 1 barista trial with live latte art",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-12T06:06:46Z",
-      "display_date": "12 OCT",
-      "sha": "473ce4e1c5",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/473ce4e1c5bf7472fbf7c564f621e5f961b66b43"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "feat(sim): latte-art pour simulation, scoring and trial director",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-12T04:42:58Z",
-      "display_date": "12 OCT",
-      "sha": "aed6129e93",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/aed6129e9302c0a07dcf12201477265681f9548f"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "chore: project docs + prototype",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-12T04:16:51Z",
-      "display_date": "12 OCT",
-      "sha": "ed83eedf8f",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/ed83eedf8f8931bc21681e1f05a0b86e7dae7a1b"
+      "repo": "AFL_predict",
+      "summary": "ci: gate passing Ruff rules and report full lint debt (#3)",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T07:14:01Z",
+      "display_date": "15 OCT",
+      "sha": "c3bee0ce4d",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/c3bee0ce4da7b7b16436df06668cac14f3f5c89b"
     },
     {
       "repo": "AFL_predict",
@@ -486,97 +558,101 @@
   "latest": [
     {
       "repo": "no-wukkas-cafe",
-      "summary": "chore(voice): render Session A placeholders, clear AWAITING_RENDER",
-      "category": "ENGINEERING",
-      "date": "2026-10-14T11:33:50Z",
-      "display_date": "14 OCT",
-      "sha": "6c1be7fff8",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/6c1be7fff84ced8be60c01b8631792dc20d1754f"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(verification): Day 2 first-shift evidence (two hands, stopped shot, Bin it)",
+      "summary": "docs(todo): phase 1 HUMAN items marked blocked with the reason",
       "category": "DOCS / EVIDENCE",
-      "date": "2026-10-14T07:30:29Z",
-      "display_date": "14 OCT",
-      "sha": "1b9c74b34b",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/1b9c74b34b12c41f473878045885bdabbca77ae8"
+      "date": "2026-10-15T19:15:21Z",
+      "display_date": "16 OCT",
+      "sha": "320ee3287c",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/320ee3287c4786ce082849119233b7893c5722af"
     },
     {
       "repo": "no-wukkas-cafe",
-      "summary": "feat(rush): two hands \u2014 steam the milk while a flat white's shot runs; Bin it clear of the cup",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-14T07:21:47Z",
-      "display_date": "14 OCT",
-      "sha": "d378642c67",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/d378642c67e9370852ff2c64f750aaf059860486"
+      "summary": "docs(agents): rushView.ts in the src/app list",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-15T19:14:22Z",
+      "display_date": "16 OCT",
+      "sha": "d381d4ab5d",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/d381d4ab5d3fedf536a5a14720bb3e0fa44b7717"
+    },
+    {
+      "repo": "no-wukkas-cafe",
+      "summary": "docs(todo): phase 1 \u2014 1A, 1B, 1.E done, 1C on feat/latte-feel awaiting feel-test, e2e green",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-15T19:12:37Z",
+      "display_date": "16 OCT",
+      "sha": "e56f3bdedf",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e56f3bdedf0141875871abee84e858fa468857cf"
     }
   ],
   "repo_counts": {
-    "no-wukkas-cafe": 40,
-    "AFL_predict": 1,
-    "Sportsgang": 1,
+    "no-wukkas-cafe": 34,
+    "Edward_world": 7,
+    "AFL_predict": 7,
+    "Sportsgang": 2,
+    "wardrobe": 2,
     "agent-city": 8,
-    "career-quest": 1,
-    "wardrobe": 1,
-    "Edward_world": 1
+    "career-quest": 1
   },
   "category_counts": {
-    "ENGINEERING": 1,
-    "DOCS / EVIDENCE": 13,
-    "PRODUCT / FEATURE": 18,
-    "TEST / QUALITY": 5,
-    "FIX / RELIABILITY": 10,
-    "ARCHITECTURE": 3,
+    "DOCS / EVIDENCE": 14,
+    "TEST / QUALITY": 9,
+    "FIX / RELIABILITY": 8,
+    "PRODUCT / FEATURE": 20,
+    "ARCHITECTURE": 5,
+    "ENGINEERING": 2,
     "SYSTEMS / OPS": 3
   },
   "weekly_repo_counts": {
-    "no-wukkas-cafe": 40
+    "no-wukkas-cafe": 34,
+    "Edward_world": 6,
+    "AFL_predict": 6,
+    "Sportsgang": 1,
+    "wardrobe": 1
   },
   "weekly_category_counts": {
-    "ENGINEERING": 1,
-    "DOCS / EVIDENCE": 7,
-    "PRODUCT / FEATURE": 16,
-    "TEST / QUALITY": 5,
-    "FIX / RELIABILITY": 7,
-    "ARCHITECTURE": 3,
+    "DOCS / EVIDENCE": 8,
+    "TEST / QUALITY": 9,
+    "FIX / RELIABILITY": 5,
+    "PRODUCT / FEATURE": 18,
+    "ARCHITECTURE": 5,
+    "ENGINEERING": 2,
     "SYSTEMS / OPS": 1
   },
   "repo_meta": {
     "no-wukkas-cafe": {
-      "pushed_at": "2026-10-14T14:06:11Z",
+      "pushed_at": "2026-10-15T19:15:23Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
+    },
+    "Edward_world": {
+      "pushed_at": "2026-10-15T17:41:36Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Edward_world"
+    },
+    "AFL_predict": {
+      "pushed_at": "2026-10-15T16:28:53Z",
+      "language": "Python",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict"
+    },
+    "Sportsgang": {
+      "pushed_at": "2026-10-15T08:44:45Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang"
+    },
+    "wardrobe": {
+      "pushed_at": "2026-10-15T08:44:19Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/wardrobe"
     },
     "agent-city": {
       "pushed_at": "2026-10-08T07:29:33Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
-    "Sportsgang": {
-      "pushed_at": "2026-10-05T04:10:31Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang"
-    },
-    "AFL_predict": {
-      "pushed_at": "2026-10-01T02:28:08Z",
-      "language": "Python",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict"
-    },
     "career-quest": {
       "pushed_at": "2026-10-01T02:26:48Z",
       "language": "JavaScript",
       "url": "https://github.com/EdwardH-jedi/career-quest"
-    },
-    "wardrobe": {
-      "pushed_at": "2026-10-01T02:26:41Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/wardrobe"
-    },
-    "Edward_world": {
-      "pushed_at": "2026-10-01T02:26:18Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Edward_world"
     }
   },
   "state": "SHIPPING",
