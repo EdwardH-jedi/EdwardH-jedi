@@ -1,10 +1,91 @@
 {
-  "generated_at": "2026-10-19 09:26 AEDT",
-  "fingerprint": "22b687093127e077df69d41d741abf3fbbf724c4087bae023c4a0426b7350509",
+  "generated_at": "2026-10-20 10:43 AEDT",
+  "fingerprint": "09dfc087e0f2cd679e70aab5b622e6fcc9ae78d56270da1b490397d74a8e4300",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "Sportsgang",
+      "summary": "docs(todo): tick R2; record #21 rebase and #25's auto-close",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-19T04:06:50Z",
+      "display_date": "19 OCT",
+      "sha": "c11dfa30dc",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/c11dfa30dcceee9550aa8249dd84dc8ebe616454"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "feat(mobile): load the newest chat page first and page back on demand (S13) (#26)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-19T03:59:32Z",
+      "display_date": "19 OCT",
+      "sha": "6e6c94bd7a",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/6e6c94bd7addee8874a018653e9839a96ba8ff41"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "fix(api): keep previous profile photos when a replace fails (S11) (#24)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-19T03:59:27Z",
+      "display_date": "19 OCT",
+      "sha": "d2b2951d40",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/d2b2951d407874b2aa5d12245f4e353b57e81696"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "docs(review): record booking FSM mutation check (28/31 killed) (#19)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-19T03:59:21Z",
+      "display_date": "19 OCT",
+      "sha": "cd3e83d476",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/cd3e83d4762c73973da8391002165649bba8f55e"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "feat(mobile): default a proposed session to the next whole hour and re-check its start at submit (S14) (#27)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-19T03:59:16Z",
+      "display_date": "19 OCT",
+      "sha": "baa449a5f9",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/baa449a5f9c97449b97bcca67f444d25d5af7ea4"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "docs(overnight): Scope 4 re-verification; tick S8/S11-S14 and R6 (R6)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-10-19T02:34:57Z",
+      "display_date": "19 OCT",
+      "sha": "2799e4c753",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/2799e4c7531ebbfcb4584f7aeae063e8a4d1846b"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "test(api): race cancel against complete on a confirmed booking (S9) (#22)",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-19T01:52:36Z",
+      "display_date": "19 OCT",
+      "sha": "c03d01420d",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/c03d01420dd01aee9ee31b90c6422a92cd77bb22"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "chore(mobile): delete the dead OnboardingScreen shell (S15) (#28)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-19T01:52:30Z",
+      "display_date": "19 OCT",
+      "sha": "bc71b352dd",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/bc71b352dde682142d4ff40af6e92cc86313071d"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "chore(api): trace greenlets in coverage; S10 gap was a measurement artifact (S10) (#23)",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-19T01:52:25Z",
+      "display_date": "19 OCT",
+      "sha": "e1d4e8134d",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/e1d4e8134d40d4beed79865a55ba85f9e742cef4"
+    },
     {
       "repo": "Sportsgang",
       "summary": "docs(overnight): note OrbStack start/stop side effects in the 2026-10-19 report",
@@ -774,34 +855,34 @@
   "latest": [
     {
       "repo": "Sportsgang",
-      "summary": "docs(overnight): note OrbStack start/stop side effects in the 2026-10-19 report",
+      "summary": "docs(todo): tick R2; record #21 rebase and #25's auto-close",
       "category": "DOCS / EVIDENCE",
-      "date": "2026-10-18T16:14:40Z",
+      "date": "2026-10-19T04:06:50Z",
       "display_date": "19 OCT",
-      "sha": "e04f3fe904",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/e04f3fe9049f979b128a459523d389e7e0faff9b"
+      "sha": "c11dfa30dc",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/c11dfa30dcceee9550aa8249dd84dc8ebe616454"
     },
     {
       "repo": "Sportsgang",
-      "summary": "docs: Scope 3 overnight report (S16) and todo.md status",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-18T16:13:44Z",
+      "summary": "feat(mobile): load the newest chat page first and page back on demand (S13) (#26)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-10-19T03:59:32Z",
       "display_date": "19 OCT",
-      "sha": "1e2eddbe1e",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/1e2eddbe1ea6124ba7148e885a52dbe6665e8ccf"
+      "sha": "6e6c94bd7a",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/6e6c94bd7addee8874a018653e9839a96ba8ff41"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "chore(todo): M4 done; Status, Gates (every Edward item) and Log for the end of the night; M5 not started",
-      "category": "ENGINEERING",
-      "date": "2026-10-18T15:14:40Z",
+      "repo": "Sportsgang",
+      "summary": "fix(api): keep previous profile photos when a replace fails (S11) (#24)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-19T03:59:27Z",
       "display_date": "19 OCT",
-      "sha": "6bc2b4d39e",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/6bc2b4d39ee6c7185d2bd6f72a90a13979d4cea5"
+      "sha": "d2b2951d40",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/d2b2951d407874b2aa5d12245f4e353b57e81696"
     }
   ],
   "repo_counts": {
-    "Sportsgang": 20,
+    "Sportsgang": 29,
     "no-wukkas-cafe": 31,
     "Edward_world": 16,
     "AFL_predict": 7,
@@ -810,28 +891,28 @@
     "career-quest": 1
   },
   "category_counts": {
-    "DOCS / EVIDENCE": 17,
+    "DOCS / EVIDENCE": 20,
+    "PRODUCT / FEATURE": 16,
+    "FIX / RELIABILITY": 15,
+    "TEST / QUALITY": 18,
     "ENGINEERING": 20,
-    "FIX / RELIABILITY": 14,
-    "TEST / QUALITY": 16,
-    "PRODUCT / FEATURE": 13,
     "SYSTEMS / OPS": 4,
     "ML / EVALUATION": 1
   },
   "weekly_repo_counts": {
-    "Sportsgang": 3,
+    "Sportsgang": 12,
     "no-wukkas-cafe": 17
   },
   "weekly_category_counts": {
-    "DOCS / EVIDENCE": 4,
-    "ENGINEERING": 7,
-    "FIX / RELIABILITY": 2,
-    "TEST / QUALITY": 5,
-    "PRODUCT / FEATURE": 2
+    "DOCS / EVIDENCE": 7,
+    "PRODUCT / FEATURE": 5,
+    "FIX / RELIABILITY": 3,
+    "TEST / QUALITY": 7,
+    "ENGINEERING": 7
   },
   "repo_meta": {
     "Sportsgang": {
-      "pushed_at": "2026-10-18T16:14:42Z",
+      "pushed_at": "2026-10-19T04:07:04Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Sportsgang"
     },
