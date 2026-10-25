@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21 10:11 AEDT",
-  "fingerprint": "06b87f0e5170fa6ef4c83bb5cbbf7fc007b4d6b8331d8789c86479d8d5b27f47",
+  "generated_at": "2026-10-26 09:34 AEDT",
+  "fingerprint": "4b75b5f8f8170691ba660a77e8e8bc4a98e313d084ba3e7c02028b371677126a",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -926,18 +926,8 @@
     "PRODUCT / FEATURE": 14,
     "ML / EVALUATION": 1
   },
-  "weekly_repo_counts": {
-    "no-wukkas-cafe": 34,
-    "Sportsgang": 12
-  },
-  "weekly_category_counts": {
-    "SYSTEMS / OPS": 1,
-    "ENGINEERING": 12,
-    "DOCS / EVIDENCE": 10,
-    "FIX / RELIABILITY": 14,
-    "TEST / QUALITY": 6,
-    "PRODUCT / FEATURE": 3
-  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
     "no-wukkas-cafe": {
       "pushed_at": "2026-10-20T17:18:46Z",
