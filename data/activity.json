@@ -1,10 +1,37 @@
 {
-  "generated_at": "2026-10-26 09:34 AEDT",
-  "fingerprint": "4b75b5f8f8170691ba660a77e8e8bc4a98e313d084ba3e7c02028b371677126a",
+  "generated_at": "2026-10-30 10:57 AEDT",
+  "fingerprint": "5d782778167297960a752d66c6ccf68f5b450c3550fa74ce64dff61802c70360",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "Edward_world",
+      "summary": "fix: refresh portfolio evidence and vulnerable dependencies (#16)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-29T08:09:37Z",
+      "display_date": "29 OCT",
+      "sha": "032f2624e0",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/032f2624e0a7d0515d58375d9ecfc0f6a3e01f14"
+    },
+    {
+      "repo": "Sportsgang",
+      "summary": "test(api): pin booking participant guard and notification recipients (S8) (#21)",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-29T08:09:01Z",
+      "display_date": "29 OCT",
+      "sha": "b5f91ad5eb",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/b5f91ad5ebf2d01941637c1a0bb76f0c93dda2e2"
+    },
+    {
+      "repo": "AFL_predict",
+      "summary": "fix: enforce UTC ordering in temporal leakage guards (#8)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-29T08:07:16Z",
+      "display_date": "29 OCT",
+      "sha": "3c03e97372",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/3c03e973728f54c7cee4e02a274b8f3449573701"
+    },
     {
       "repo": "no-wukkas-cafe",
       "summary": "M7 T7.5: build, build:clean, deploy dry run green; release:tag refuses on origin",
@@ -823,131 +850,84 @@
       "display_date": "30 SEP",
       "sha": "da12be6bdd",
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/da12be6bdd47c06ccc858e02593675d1fdf25393"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "chore: batch limits, etag scoping, fixtures, docs (audit F14-F18)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-29T18:50:26Z",
-      "display_date": "30 SEP",
-      "sha": "d1a6585596",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/d1a6585596a00f524ffa2daa912b8036349d56b3"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix: event ordering, id namespace, repo normalization (audit F08-F13)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-29T18:42:41Z",
-      "display_date": "30 SEP",
-      "sha": "372c152de0",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/372c152de0ef0aaadefd0364a44ef09f2af71f28"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix: hook safety, full-field redaction, spool durability (audit F01-F07)",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-09-29T18:22:48Z",
-      "display_date": "30 SEP",
-      "sha": "1f4f025e79",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/1f4f025e790142e694214899a5803ca915382a1d"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat: 2D view, docs (Step 5 + wrap-up) \u2014 Phase 0 complete",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-09-29T11:31:40Z",
-      "display_date": "29 SEP",
-      "sha": "e45a953479",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e45a95347946e69e49d32c2fcc53396766416b96"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat: GitHub sync, collector, hub Host/Origin guard (Step 3-4)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-09-29T11:00:00Z",
-      "display_date": "29 SEP",
-      "sha": "a2183841b9",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/a2183841b94e4e5ef07b26fd000916aa9d691591"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "chore: scaffold + Step 1 schema, status, redaction",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-09-29T09:12:10Z",
-      "display_date": "29 SEP",
-      "sha": "e6aa2a9980",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e6aa2a998023a819451669db1c5c2397d145a659"
     }
   ],
   "latest": [
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.5: build, build:clean, deploy dry run green; release:tag refuses on origin",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-10-20T17:03:30Z",
-      "display_date": "21 OCT",
-      "sha": "2029744b43",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2029744b432fca13cbd2f4aa804d6e69fcccf124"
+      "repo": "Edward_world",
+      "summary": "fix: refresh portfolio evidence and vulnerable dependencies (#16)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-29T08:09:37Z",
+      "display_date": "29 OCT",
+      "sha": "032f2624e0",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/032f2624e0a7d0515d58375d9ecfc0f6a3e01f14"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.4: MILESTONES.md points at todo.md M1\u2013M7 with a status line each",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T16:59:21Z",
-      "display_date": "21 OCT",
-      "sha": "2057b42930",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2057b42930b7d005cf90f623e4b640b132c1481e"
+      "repo": "Sportsgang",
+      "summary": "test(api): pin booking participant guard and notification recipients (S8) (#21)",
+      "category": "TEST / QUALITY",
+      "date": "2026-10-29T08:09:01Z",
+      "display_date": "29 OCT",
+      "sha": "b5f91ad5eb",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/b5f91ad5ebf2d01941637c1a0bb76f0c93dda2e2"
     },
     {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.3: track the run files, move the two plans to docs/runs/, ignore the hook backup",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-20T16:59:06Z",
-      "display_date": "21 OCT",
-      "sha": "5e5d43190a",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5e5d43190a1a9f351bf646edaa8eb3e1d6ee1f74"
+      "repo": "AFL_predict",
+      "summary": "fix: enforce UTC ordering in temporal leakage guards (#8)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-10-29T08:07:16Z",
+      "display_date": "29 OCT",
+      "sha": "3c03e97372",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/3c03e973728f54c7cee4e02a274b8f3449573701"
     }
   ],
   "repo_counts": {
+    "Edward_world": 17,
+    "Sportsgang": 30,
+    "AFL_predict": 8,
     "no-wukkas-cafe": 34,
-    "Sportsgang": 29,
-    "Edward_world": 16,
-    "AFL_predict": 7,
     "wardrobe": 2,
-    "agent-city": 8,
+    "agent-city": 2,
     "career-quest": 1
   },
   "category_counts": {
-    "SYSTEMS / OPS": 4,
+    "FIX / RELIABILITY": 25,
+    "TEST / QUALITY": 16,
+    "SYSTEMS / OPS": 2,
     "ENGINEERING": 16,
     "DOCS / EVIDENCE": 22,
-    "FIX / RELIABILITY": 25,
-    "TEST / QUALITY": 15,
-    "PRODUCT / FEATURE": 14,
+    "PRODUCT / FEATURE": 12,
     "ML / EVALUATION": 1
   },
-  "weekly_repo_counts": {},
-  "weekly_category_counts": {},
+  "weekly_repo_counts": {
+    "Edward_world": 1,
+    "Sportsgang": 1,
+    "AFL_predict": 1
+  },
+  "weekly_category_counts": {
+    "FIX / RELIABILITY": 2,
+    "TEST / QUALITY": 1
+  },
   "repo_meta": {
+    "Edward_world": {
+      "pushed_at": "2026-10-29T08:09:37Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Edward_world"
+    },
+    "Sportsgang": {
+      "pushed_at": "2026-10-29T08:09:01Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/Sportsgang"
+    },
+    "AFL_predict": {
+      "pushed_at": "2026-10-29T08:07:17Z",
+      "language": "Python",
+      "url": "https://github.com/EdwardH-jedi/AFL_predict"
+    },
     "no-wukkas-cafe": {
       "pushed_at": "2026-10-20T17:18:46Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
-    },
-    "Sportsgang": {
-      "pushed_at": "2026-10-19T04:07:04Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang"
-    },
-    "Edward_world": {
-      "pushed_at": "2026-10-16T15:47:43Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/Edward_world"
-    },
-    "AFL_predict": {
-      "pushed_at": "2026-10-15T16:28:53Z",
-      "language": "Python",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict"
     },
     "wardrobe": {
       "pushed_at": "2026-10-15T08:44:19Z",
