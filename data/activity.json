@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30 10:57 AEDT",
-  "fingerprint": "5d782778167297960a752d66c6ccf68f5b450c3550fa74ce64dff61802c70360",
+  "generated_at": "2026-10-31 10:48 AEDT",
+  "fingerprint": "a18ee0d2c9caa4bca3f556ea7fc6697b92e3936fcbadd33d2a4220a49b65d1ee",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -841,15 +841,6 @@
       "display_date": "01 OCT",
       "sha": "8c5ad487fc",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/8c5ad487fce481cccf1ca0d0b9504835fb1fc111"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix: id namespace, same-ts ordering, rev merge, remap invalidate (reaudit N01-N07)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-09-30T10:03:15Z",
-      "display_date": "30 SEP",
-      "sha": "da12be6bdd",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da12be6bdd47c06ccc858e02593675d1fdf25393"
     }
   ],
   "latest": [
@@ -887,11 +878,11 @@
     "AFL_predict": 8,
     "no-wukkas-cafe": 34,
     "wardrobe": 2,
-    "agent-city": 2,
+    "agent-city": 1,
     "career-quest": 1
   },
   "category_counts": {
-    "FIX / RELIABILITY": 25,
+    "FIX / RELIABILITY": 24,
     "TEST / QUALITY": 16,
     "SYSTEMS / OPS": 2,
     "ENGINEERING": 16,
