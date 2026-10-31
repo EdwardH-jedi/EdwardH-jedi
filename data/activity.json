@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31 10:48 AEDT",
-  "fingerprint": "a18ee0d2c9caa4bca3f556ea7fc6697b92e3936fcbadd33d2a4220a49b65d1ee",
+  "generated_at": "2026-11-01 10:24 AEDT",
+  "fingerprint": "b000031028c6cdd9e39ba6242cc09499bb44c612bed1aa2efaee2f5d2b520f5a",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -787,60 +787,6 @@
       "display_date": "15 OCT",
       "sha": "c3bee0ce4d",
       "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/c3bee0ce4da7b7b16436df06668cac14f3f5c89b"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "docs: clarify local review setup, dashboard provenance, and research limits",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:28:07Z",
-      "display_date": "01 OCT",
-      "sha": "4da297ce16",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/4da297ce16ea7645e4206676714790272f55dde4"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: clarify SportsGang setup, release evidence, and service boundaries",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:27:42Z",
-      "display_date": "01 OCT",
-      "sha": "edfb30fe48",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/edfb30fe48eddda76ebc9f347581641f3550ed44"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "docs: clarify developer setup, current scope, and limitations",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:26:55Z",
-      "display_date": "01 OCT",
-      "sha": "e33f2acd93",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e33f2acd931f05a9b8165fee6df80c8c4c39f9e5"
-    },
-    {
-      "repo": "career-quest",
-      "summary": "docs: clarify developer setup, current scope, and limitations",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:26:48Z",
-      "display_date": "01 OCT",
-      "sha": "44cc3cd8d9",
-      "url": "https://github.com/EdwardH-jedi/career-quest/commit/44cc3cd8d922e1df4dd31e7f8b4019577e65cf9a"
-    },
-    {
-      "repo": "wardrobe",
-      "summary": "docs: clarify developer setup, current scope, and limitations",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:26:41Z",
-      "display_date": "01 OCT",
-      "sha": "f09d43fa47",
-      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/f09d43fa476bb35790abc66064ff02f20cc0daee"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "docs: clarify project scope, setup, and verification evidence",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-01T02:26:18Z",
-      "display_date": "01 OCT",
-      "sha": "8c5ad487fc",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/8c5ad487fce481cccf1ca0d0b9504835fb1fc111"
     }
   ],
   "latest": [
@@ -873,20 +819,18 @@
     }
   ],
   "repo_counts": {
-    "Edward_world": 17,
-    "Sportsgang": 30,
-    "AFL_predict": 8,
+    "Edward_world": 16,
+    "Sportsgang": 29,
+    "AFL_predict": 7,
     "no-wukkas-cafe": 34,
-    "wardrobe": 2,
-    "agent-city": 1,
-    "career-quest": 1
+    "wardrobe": 1
   },
   "category_counts": {
     "FIX / RELIABILITY": 24,
     "TEST / QUALITY": 16,
     "SYSTEMS / OPS": 2,
     "ENGINEERING": 16,
-    "DOCS / EVIDENCE": 22,
+    "DOCS / EVIDENCE": 16,
     "PRODUCT / FEATURE": 12,
     "ML / EVALUATION": 1
   },
