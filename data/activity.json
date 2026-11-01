@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01 10:24 AEDT",
-  "fingerprint": "b000031028c6cdd9e39ba6242cc09499bb44c612bed1aa2efaee2f5d2b520f5a",
+  "generated_at": "2026-11-02 10:36 AEDT",
+  "fingerprint": "76f615b786430b9d8c26ce679447944ec1f3d1f936c012d2f110c97af4c08914",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -834,15 +834,8 @@
     "PRODUCT / FEATURE": 12,
     "ML / EVALUATION": 1
   },
-  "weekly_repo_counts": {
-    "Edward_world": 1,
-    "Sportsgang": 1,
-    "AFL_predict": 1
-  },
-  "weekly_category_counts": {
-    "FIX / RELIABILITY": 2,
-    "TEST / QUALITY": 1
-  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
     "Edward_world": {
       "pushed_at": "2026-10-29T08:09:37Z",
