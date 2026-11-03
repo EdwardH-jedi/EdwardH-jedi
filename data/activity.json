@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02 10:36 AEDT",
-  "fingerprint": "76f615b786430b9d8c26ce679447944ec1f3d1f936c012d2f110c97af4c08914",
+  "generated_at": "2026-11-03 13:19 AEDT",
+  "fingerprint": "71cc62ffa94865b4b1881c68af53a3bef0a17a9b41622855ecc04bba4f6aefa8",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -838,9 +838,14 @@
   "weekly_category_counts": {},
   "repo_meta": {
     "Edward_world": {
-      "pushed_at": "2026-10-29T08:09:37Z",
+      "pushed_at": "2026-11-03T01:31:02Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Edward_world"
+    },
+    "no-wukkas-cafe": {
+      "pushed_at": "2026-11-02T14:38:24Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
     },
     "Sportsgang": {
       "pushed_at": "2026-10-29T08:09:01Z",
@@ -851,11 +856,6 @@
       "pushed_at": "2026-10-29T08:07:17Z",
       "language": "Python",
       "url": "https://github.com/EdwardH-jedi/AFL_predict"
-    },
-    "no-wukkas-cafe": {
-      "pushed_at": "2026-10-20T17:18:46Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
     },
     "wardrobe": {
       "pushed_at": "2026-10-15T08:44:19Z",
