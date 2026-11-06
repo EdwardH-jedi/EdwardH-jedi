@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04 11:37 AEDT",
-  "fingerprint": "da4c0c0493d85a3d2fdf2c7b534acad4752a4bc082cdc1419947e286fc54ba50",
+  "generated_at": "2026-11-06 11:57 AEDT",
+  "fingerprint": "2fb33cc7bfbaea887b1d511cb513b657db2881a17ae58aa2948b562c7cdc9124",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -837,15 +837,15 @@
   "weekly_repo_counts": {},
   "weekly_category_counts": {},
   "repo_meta": {
+    "no-wukkas-cafe": {
+      "pushed_at": "2026-11-05T15:04:53Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
+    },
     "Edward_world": {
       "pushed_at": "2026-11-03T06:30:16Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Edward_world"
-    },
-    "no-wukkas-cafe": {
-      "pushed_at": "2026-11-02T14:38:24Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
     },
     "Sportsgang": {
       "pushed_at": "2026-10-29T08:09:01Z",
