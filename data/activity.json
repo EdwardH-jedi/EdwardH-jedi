@@ -1,126 +1,234 @@
 {
-  "generated_at": "2026-11-11 11:39 AEDT",
-  "fingerprint": "8099eb2989f99844ca4b6700bfbecf119ea875306127de722580df72f7238f0c",
+  "generated_at": "2026-11-12 12:54 AEDT",
+  "fingerprint": "9c334d03e6725101f4c691921e8d3fa87d3b7e4c6e65dbd7549dcfaf4f38d269",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
     {
       "repo": "agent-city",
-      "summary": "fix(test): POSIX-only collector tests are skipped on Windows; path tests use node:path",
+      "summary": "docs(readme): list every open Board P2 as a known limit; D2 knock is the first quiet-hours end after pausing",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-11T13:05:20Z",
+      "display_date": "12 NOV",
+      "sha": "74ee4d1653",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/74ee4d1653b08716a2a19040f987df3cedc04061"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(collector): launchd exporter job passes --home and --project, warns when city-export.mjs is missing",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T12:15:44Z",
+      "display_date": "11 NOV",
+      "sha": "eb5580b7e2",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/eb5580b7e2598625b36fb37e67388b29db75a6ad"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "docs(readme): record five known Board limits (P2s left open by Codex review)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-11T12:11:47Z",
+      "display_date": "11 NOV",
+      "sha": "cf2777c4d7",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cf2777c4d7d63ab4e2535d518690f3ae923620cc"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): Codex P2s on the offline freeze \u2014 stale boundary, gaps between ticks, kept visits, walk start",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T11:56:02Z",
+      "display_date": "11 NOV",
+      "sha": "0855f2bc19",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/0855f2bc1957705f13c97c5550c72ea6b48de30a"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): the whole village stands still while the cockpit is not reporting (07 \u00a77, 08 Q4)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T11:44:13Z",
+      "display_date": "11 NOV",
+      "sha": "2a8a0bde73",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/2a8a0bde732542c5879853750c04f6d1ad7d48c4"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "docs(readme): session visits stand still while the cockpit is not reporting",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-11T11:05:38Z",
+      "display_date": "11 NOV",
+      "sha": "56fa1c23dc",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/56fa1c23dcaeb4120f5a1eda48a9ef3be562297d"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): Codex P2s \u2014 walk starts at the visit, no clock rewind, cockpit stops session visits, no noon knock",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T11:05:32Z",
+      "display_date": "11 NOV",
+      "sha": "6e05e2d234",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6e05e2d23462b75c54f29c8d909382e126bc69f2"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "docs+test: README for D2\u00b7D3\u00b7D4\u00b7D5; no-run-actions covers the session code",
       "category": "TEST / QUALITY",
-      "date": "2026-11-10T19:21:21Z",
+      "date": "2026-11-11T10:54:18Z",
       "display_date": "11 NOV",
-      "sha": "360dfcd369",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/360dfcd369e2af3e81c7dd23a3e8bc474031120e"
+      "sha": "2e9f659fd4",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/2e9f659fd49887ca55934888ac7eccda7fb728ab"
     },
     {
       "repo": "agent-city",
-      "summary": "docs: db:backup known limits (stopped-hub copy has no lock; best-effort name redaction; ACLs)",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-11-10T19:12:42Z",
-      "display_date": "11 NOV",
-      "sha": "9c381f7273",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/9c381f727302561b84a49f30818e932bad4c1dc3"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix(hub): db:backup never deletes what it does not own, leaves the source untouched, keeps names and perms sa\u2026",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T19:02:53Z",
-      "display_date": "11 NOV",
-      "sha": "ec03da5418",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/ec03da541857b134bce5195e4f8efcc8e08c235a"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(hub): db:backup writes a consistent dated copy and prunes to a retention count",
+      "summary": "feat(web): sessions in the village, paused runs listed, 60 s before a knock (08 D2\u00b7D3\u00b7D4)",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-11-10T18:41:32Z",
+      "date": "2026-11-11T10:54:18Z",
       "display_date": "11 NOV",
-      "sha": "55a073d9d0",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/55a073d9d0c74e9f4eb8178cd157d2a7cffff361"
+      "sha": "fb6d4b60d6",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/fb6d4b60d62487b0fb9703a13f194ea0ec5f9da6"
     },
     {
       "repo": "agent-city",
-      "summary": "fix(hub): static serving cannot mask reserved paths, refuses source maps and q=0 HTML",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T18:29:20Z",
-      "display_date": "11 NOV",
-      "sha": "1936139563",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/1936139563d368ea080cf22cd0ab0b59c71d1f71"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(hub): serve the built web UI from the hub on the same port",
+      "summary": "feat(collector): collector:launchd prints launchd jobs for the Mac's resident processes (D7)",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-11-10T18:15:39Z",
+      "date": "2026-11-11T07:35:40Z",
       "display_date": "11 NOV",
-      "sha": "797e93afbc",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/797e93afbc67aa06eb7d52d3b1170623bd32d683"
+      "sha": "cca8ca5b9f",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cca8ca5b9fd8632cef49aed1b79eea9f825a4fea"
     },
     {
       "repo": "agent-city",
-      "summary": "fix: phase is the closed set of Office phases; real GitHub repo names are accepted",
+      "summary": "feat(schema): READY/GOAL_RECORDED is waiting_owner (D1)",
+      "category": "ARCHITECTURE",
+      "date": "2026-11-11T07:28:29Z",
+      "display_date": "11 NOV",
+      "sha": "d507e583cc",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/d507e583cc2d8faa24bd4fdf4dded9b093fb3280"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "review fixes: cover U+3000 whitespace names on Windows too",
       "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T17:53:28Z",
+      "date": "2026-11-11T07:05:17Z",
       "display_date": "11 NOV",
-      "sha": "accf69481a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/accf69481af9f63ea51289bba6f76c88755d370a"
+      "sha": "9b42071fbf",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/9b42071fbf44ed7133a81234e27d99e2f8c787f6"
     },
     {
       "repo": "agent-city",
-      "summary": "fix: run projection rejects leak-shaped strings; equal observed_at is ignored",
+      "summary": "review fixes: EVIDENCE_UNVERIFIED alert keeps winning; only the evidence_verified flag is narrowed",
       "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T17:31:41Z",
+      "date": "2026-11-11T07:02:35Z",
       "display_date": "11 NOV",
-      "sha": "e1bbe3ae66",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e1bbe3ae661d01acccb2675b5585bb0a4a66a0ce"
+      "sha": "0c0b7fb6c0",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/0c0b7fb6c0fbfa6897bfc3c02501b9b55f164de3"
     },
     {
       "repo": "agent-city",
-      "summary": "fix: a HOLD run is a hold even when Office reports its reason as the alert",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T17:00:44Z",
+      "summary": "test(windows): static.test no longer fails in beforeAll without symlink privilege",
+      "category": "TEST / QUALITY",
+      "date": "2026-11-11T06:58:37Z",
       "display_date": "11 NOV",
-      "sha": "6662cdbc35",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6662cdbc35ae26972384f2aa6431cae8d73df177"
+      "sha": "84708abad2",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/84708abad204c60d5732b0c7e281d4bd70a8d5da"
     },
     {
       "repo": "agent-city",
-      "summary": "feat: run projection \u2014 Runs and Needs owner, read-only",
+      "summary": "fix(windows): db:backup fsync EPERM; path and permission tests use native semantics",
+      "category": "TEST / QUALITY",
+      "date": "2026-11-11T06:56:09Z",
+      "display_date": "11 NOV",
+      "sha": "86f10deb18",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/86f10deb1889714d22a0bb173d1e3fe8a86768f4"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): board polish per design doc 07 \u00a713 \u2014 readable at a glance, burn-in shift",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-11-10T16:59:03Z",
+      "date": "2026-11-11T06:53:54Z",
       "display_date": "11 NOV",
-      "sha": "f41c8aba66",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/f41c8aba66a30e007fce4db4bf2d31b32253e84d"
+      "sha": "cc540e8bd9",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cc540e8bd9cc6f27f5dbe8a1a829a30e834586b7"
     },
     {
       "repo": "agent-city",
-      "summary": "review fixes 2: startup log prints a redacted hub origin only",
+      "summary": "fix(runs): show paused for READY/DISPATCH_STOPPED; unverified only wins on finished runs",
       "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T16:06:33Z",
+      "date": "2026-11-11T06:53:15Z",
       "display_date": "11 NOV",
-      "sha": "9ff0b6a8b5",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/9ff0b6a8b53c039f8ad845e949ec6907cdf0b3e3"
+      "sha": "9da9415a97",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/9da9415a977a4e7c0753d2c842695727fd1b07a7"
     },
     {
       "repo": "agent-city",
-      "summary": "review fixes: heartbeat input reflection, hostname redaction, sender loop",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-11-10T15:48:19Z",
-      "display_date": "11 NOV",
-      "sha": "32949e2f49",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/32949e2f49ed90836c711ac23b87b10d04ebe723"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat: machine heartbeat \u2014 cockpit / forge / spine online, stale, offline",
+      "summary": "feat(kiosk): spine board kiosk scripts (print-only install) + README",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-11-10T15:37:11Z",
+      "date": "2026-11-11T06:40:55Z",
       "display_date": "11 NOV",
-      "sha": "87dac3f6f0",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/87dac3f6f0c86c096b05af1a7e8325b086969914"
+      "sha": "a3cdec5e9e",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/a3cdec5e9ea901c9fc0538b4bb40889cc5812ae4"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): forget a lead the frame it reaches home, and on every update",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T06:40:55Z",
+      "display_date": "11 NOV",
+      "sha": "f574beb658",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/f574beb65898b2b10230c72b127a8cee82e062d4"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): long codes wrap inside the HQ column instead of running past its edge",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T06:40:26Z",
+      "display_date": "11 NOV",
+      "sha": "7e755dbd9d",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/7e755dbd9da17394992623ad3531922cae2c64ae"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): 3D campus in the village column (lazy three, fixed panorama, walk to HQ and back)",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T06:40:26Z",
+      "display_date": "11 NOV",
+      "sha": "72613dc584",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/72613dc5849b81c85ab0c1b79d8bdbb401a57910"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): board layout cleanup \u2014 said once, pictures-only buildings, 8-building cap, ?demo=1",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-11T06:18:23Z",
+      "display_date": "11 NOV",
+      "sha": "cca8418d35",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cca8418d35a1ca3626050354292caf484cf05383"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): keep settleUntil in the sound memory on the audible path (typecheck)",
+      "category": "TEST / QUALITY",
+      "date": "2026-11-11T05:47:51Z",
+      "display_date": "11 NOV",
+      "sha": "065b0cca26",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/065b0cca26a0e48ead7e82fcbe3a9f0e1b2a61a8"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "review fixes: no sound on first load or reconnect (settle window), show report text in village card",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-11T05:47:30Z",
+      "display_date": "11 NOV",
+      "sha": "6b799b6124",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6b799b61246ec7c0ecc2981071a45b78b0abe4e2"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): board main screen \u2014 status sentence, HQ queue, project village, now running",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-11T05:42:32Z",
+      "display_date": "11 NOV",
+      "sha": "526d82c0eb",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/526d82c0ebed6f01b4876287530ba3901c533d39"
     },
     {
       "repo": "Edward_world",
@@ -909,34 +1017,34 @@
   "latest": [
     {
       "repo": "agent-city",
-      "summary": "fix(test): POSIX-only collector tests are skipped on Windows; path tests use node:path",
-      "category": "TEST / QUALITY",
-      "date": "2026-11-10T19:21:21Z",
-      "display_date": "11 NOV",
-      "sha": "360dfcd369",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/360dfcd369e2af3e81c7dd23a3e8bc474031120e"
+      "summary": "docs(readme): list every open Board P2 as a known limit; D2 knock is the first quiet-hours end after pausing",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-11T13:05:20Z",
+      "display_date": "12 NOV",
+      "sha": "74ee4d1653",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/74ee4d1653b08716a2a19040f987df3cedc04061"
     },
     {
       "repo": "agent-city",
-      "summary": "docs: db:backup known limits (stopped-hub copy has no lock; best-effort name redaction; ACLs)",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-11-10T19:12:42Z",
-      "display_date": "11 NOV",
-      "sha": "9c381f7273",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/9c381f727302561b84a49f30818e932bad4c1dc3"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix(hub): db:backup never deletes what it does not own, leaves the source untouched, keeps names and perms sa\u2026",
+      "summary": "fix(collector): launchd exporter job passes --home and --project, warns when city-export.mjs is missing",
       "category": "FIX / RELIABILITY",
-      "date": "2026-11-10T19:02:53Z",
+      "date": "2026-11-11T12:15:44Z",
       "display_date": "11 NOV",
-      "sha": "ec03da5418",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/ec03da541857b134bce5195e4f8efcc8e08c235a"
+      "sha": "eb5580b7e2",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/eb5580b7e2598625b36fb37e67388b29db75a6ad"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "docs(readme): record five known Board limits (P2s left open by Codex review)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-11T12:11:47Z",
+      "display_date": "11 NOV",
+      "sha": "cf2777c4d7",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cf2777c4d7d63ab4e2535d518690f3ae923620cc"
     }
   ],
   "repo_counts": {
-    "agent-city": 13,
+    "agent-city": 25,
     "Edward_world": 16,
     "Sportsgang": 29,
     "AFL_predict": 7,
@@ -944,26 +1052,28 @@
     "wardrobe": 1
   },
   "category_counts": {
-    "TEST / QUALITY": 17,
-    "SYSTEMS / OPS": 4,
-    "FIX / RELIABILITY": 30,
-    "PRODUCT / FEATURE": 16,
+    "DOCS / EVIDENCE": 19,
+    "FIX / RELIABILITY": 35,
+    "TEST / QUALITY": 20,
+    "PRODUCT / FEATURE": 18,
+    "ARCHITECTURE": 1,
+    "SYSTEMS / OPS": 2,
     "ENGINEERING": 16,
-    "DOCS / EVIDENCE": 16,
     "ML / EVALUATION": 1
   },
   "weekly_repo_counts": {
-    "agent-city": 13
+    "agent-city": 25
   },
   "weekly_category_counts": {
-    "TEST / QUALITY": 1,
-    "SYSTEMS / OPS": 2,
-    "FIX / RELIABILITY": 6,
-    "PRODUCT / FEATURE": 4
+    "DOCS / EVIDENCE": 3,
+    "FIX / RELIABILITY": 11,
+    "TEST / QUALITY": 4,
+    "PRODUCT / FEATURE": 6,
+    "ARCHITECTURE": 1
   },
   "repo_meta": {
     "agent-city": {
-      "pushed_at": "2026-11-11T00:31:42Z",
+      "pushed_at": "2026-11-11T13:50:34Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
