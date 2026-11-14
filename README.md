@@ -2,7 +2,7 @@
 
 Final-year undergraduate at the **University of Sydney**, studying a **Bachelor of Advanced Computing (Computer Science)**. Seeking **Graduate / Junior Software Engineer roles in Sydney**, with a focus on **Backend, Full-Stack and Applied ML**.
 
-[Portfolio](https://edward-developer-hub.vercel.app) · [Interactive world](https://edwards-world.vercel.app) · [LinkedIn](https://linkedin.com/in/soon-hyun-hwang-7212a42b7) · [Email](mailto:edwardhwang1223@gmail.com)
+[Portfolio](https://edwards-world.vercel.app/?view=index) · [Interactive world](https://edwards-world.vercel.app) · [LinkedIn](https://linkedin.com/in/soon-hyun-hwang-7212a42b7) · [Email](mailto:edwardhwang1223@gmail.com)
 
 ## Selected work
 
