@@ -1,10 +1,46 @@
 {
-  "generated_at": "2026-11-14 11:53 AEDT",
-  "fingerprint": "c6d5e44d0d854344a27427728a900e87cf67bde6578fb375c07398c4ce96c489",
+  "generated_at": "2026-11-15 10:55 AEDT",
+  "fingerprint": "baab124a62ef1b72fee43bc6dd7c5d5da0eb29a8f7ffe27d19cce3b3feabc882",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "Edward_world",
+      "summary": "docs: note the chart overworld in the status record and case study (#25)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-14T07:37:01Z",
+      "display_date": "14 NOV",
+      "sha": "7bb83cbaba",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/7bb83cbaba7db4dedb6b956981054006f729d4ae"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "board: DELEGATED_CONFIG_MISMATCH reads as a sentence and a tag, not \ud655\uc778\uc774 \ud544\uc694\ud569\ub2c8\ub2e4",
+      "category": "ENGINEERING",
+      "date": "2026-11-14T03:58:22Z",
+      "display_date": "14 NOV",
+      "sha": "b27a73155d",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b27a73155d18226c646c0425ad7f8618e0008b40"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "collector: a limit snapshot no line could give holds no slot; the 16 sent tie by key (N1 review)",
+      "category": "ENGINEERING",
+      "date": "2026-11-13T14:43:10Z",
+      "display_date": "14 NOV",
+      "sha": "5f946d678a",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/5f946d678a7f20c8ca3e3f3af13d6db483b9737d"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "collector: cap the rate-limit state at the 64 newest snapshots (M1 re-review P2)",
+      "category": "ENGINEERING",
+      "date": "2026-11-13T14:33:48Z",
+      "display_date": "14 NOV",
+      "sha": "14e914cc86",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/14e914cc86935875deb9e8cf0fdf31f82659300e"
+    },
     {
       "repo": "agent-city",
       "summary": "collector: past the id cap after the backfill, ids before the cutoff go first \u2014 a long scan forgets no more t\u2026",
@@ -231,6 +267,87 @@
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/667dbfb910aa6513256be3c970672389ac285854"
     },
     {
+      "repo": "Edward_world",
+      "summary": "feat(chart): play the town's track on the chart",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T07:02:28Z",
+      "display_date": "13 NOV",
+      "sha": "d3ad6803e1",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d3ad6803e1599594f6f48d4f9571c8c17d95d74e"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "perf(chart): prepare islands while the index is open",
+      "category": "ENGINEERING",
+      "date": "2026-11-13T06:54:52Z",
+      "display_date": "13 NOV",
+      "sha": "2f6b2d729e",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/2f6b2d729eaf776de0b95338518c43731cfb898f"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(chart): make the chart the front door at / (chart overworld phase 5)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T06:48:01Z",
+      "display_date": "13 NOV",
+      "sha": "865dcf9a8a",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/865dcf9a8a02006906005976fb0a6b7a1d69f798"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(chart): touch, reduced motion, focus and a performance pass (chart overworld phase 4)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T02:42:39Z",
+      "display_date": "13 NOV",
+      "sha": "0add9c90f3",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/0add9c90f328f0d7dc06311a8d30b2a659240a73"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix(chart): a held key acts once; cover a project interior from an island",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-13T02:16:41Z",
+      "display_date": "13 NOV",
+      "sha": "87ce8238d8",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/87ce8238d82923bc2d5b9ce985b977d0fd8205bf"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(chart): go ashore \u2014 island scenes, places and interiors (chart overworld phase 3)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T02:10:34Z",
+      "display_date": "13 NOV",
+      "sha": "00e538d019",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/00e538d019e80586c395cfab1003c87b55550f45"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat(chart): bigger landmarks (chart overworld phase 2)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T01:44:40Z",
+      "display_date": "13 NOV",
+      "sha": "026872b3f7",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/026872b3f71591d5f4ea095dbc484efdf20a6eb5"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "fix(chart): keep the bottle toast's eyebrow in small caps; cover bottle pickup",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-13T01:26:04Z",
+      "display_date": "13 NOV",
+      "sha": "7ff5b0e953",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/7ff5b0e953a946d16d4f0c5734deee91e4847c39"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "feat: port the chart overworld to /chart (chart overworld phase 1)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T01:17:21Z",
+      "display_date": "13 NOV",
+      "sha": "d9fc2903d1",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d9fc2903d185c32585368f89d4a8edfc8b7225a4"
+    },
+    {
       "repo": "agent-city",
       "summary": "web: the town fills the column's height (17 F3)",
       "category": "ENGINEERING",
@@ -238,6 +355,15 @@
       "display_date": "13 NOV",
       "sha": "dbf15ae4d4",
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/dbf15ae4d4ff963e4791c5b90a9c511fbf9f2b7d"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "docs: drop the last saved-look references",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-13T00:54:37Z",
+      "display_date": "13 NOV",
+      "sha": "97c9c2ca93",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/97c9c2ca9306e1055b1194cbd1ea18255d7deb8e"
     },
     {
       "repo": "agent-city",
@@ -249,6 +375,24 @@
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9f17f0577700176768b1e57c872a49594ad18af"
     },
     {
+      "repo": "Edward_world",
+      "summary": "docs: add the chart overworld brief and prototype",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-13T00:31:39Z",
+      "display_date": "13 NOV",
+      "sha": "d479543062",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d4795430624d15190107acbd1eaad2ac36b3155e"
+    },
+    {
+      "repo": "Edward_world",
+      "summary": "chore: remove Wardrobe from the portfolio (chart overworld phase 0)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-13T00:31:35Z",
+      "display_date": "13 NOV",
+      "sha": "57f397707c",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/57f397707ca78aeea958ab5abf26472010376f8b"
+    },
+    {
       "repo": "agent-city",
       "summary": "web: top band clock and today's summary (17 F1)",
       "category": "ENGINEERING",
@@ -256,24 +400,6 @@
       "display_date": "13 NOV",
       "sha": "dbcbb88720",
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/dbcbb88720ac8752aa83bbd2d2d395608005e275"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "docs: README, CLAUDE.md/AGENTS.md \u2014 the detail screen, tail memory across D, hideCredentials (16 A3/A4)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-12T15:43:24Z",
-      "display_date": "13 NOV",
-      "sha": "b8e3388112",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b8e33881127fd01358c1cf86c6e64a5004884dae"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: a world rebuilt mid-plaza keeps the camera's view (16 A2)",
-      "category": "ENGINEERING",
-      "date": "2026-11-12T15:37:40Z",
-      "display_date": "13 NOV",
-      "sha": "6cc5ad018f",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6cc5ad018fc417d16595c89de4caac3a32a591bc"
     },
     {
       "repo": "Edward_world",
@@ -931,206 +1057,85 @@
       "display_date": "16 OCT",
       "sha": "897fbd9c17",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/897fbd9c17d3f095d0d4cfc56bdbcb287715b47b"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: enter the world in under a second; keep the name gate as a house easter egg (#6)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-15T17:41:36Z",
-      "display_date": "16 OCT",
-      "sha": "a535d98a4a",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/a535d98a4ac37e25d0ea239183709d4d5d01dff1"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: ambient life - smoke, lamp glow, bobbing signs, a bird (#4)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-15T17:36:28Z",
-      "display_date": "16 OCT",
-      "sha": "d75b002443",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d75b002443572fdc7b286d654cb7261867ba6b08"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: game feel - synthesized SFX, footsteps, pixel dissolve, door open, prompt pop, camera look-ahead (#5)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-15T17:35:11Z",
-      "display_date": "16 OCT",
-      "sha": "cee1dd4ad1",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/cee1dd4ad1e64f93d4a99ee9afe10ac8a269d765"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: palette accents so the player and interactive places pop (#3)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-15T17:33:06Z",
-      "display_date": "16 OCT",
-      "sha": "1c00cdbdbb",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/1c00cdbdbbe27950f96a355c13caeb96364e8392"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "feat: render the world as a full-bleed game stage on a per-viewport integer unit (#2)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-15T17:21:16Z",
-      "display_date": "16 OCT",
-      "sha": "16e9a8d8da",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/16e9a8d8da97c20559e18cb3dd3dfe6d826741d9"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "docs: recruiter-friendly README front; move hedges to Limitations (#7)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-15T16:28:50Z",
-      "display_date": "16 OCT",
-      "sha": "6b22c630a7",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/6b22c630a751b21d2345744c7124d2b7995753ea"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "fix(api): migrate FixtureOut to Pydantic ConfigDict (#2)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-15T16:26:10Z",
-      "display_date": "16 OCT",
-      "sha": "a160249eeb",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/a160249eebc9545b9ca41e455887ee979c8a7a9b"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "docs(t6): 2026-10-15 validation baseline (#5)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-15T14:57:49Z",
-      "display_date": "16 OCT",
-      "sha": "ed6bd0d959",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/ed6bd0d95952a34ce50a99927e6d1d259b934695"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "docs: record T6 closeout status in README and guard root artifacts (#4)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-15T14:46:51Z",
-      "display_date": "16 OCT",
-      "sha": "28ec2f4eed",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/28ec2f4eed400e974243acb574e2bce749ca830b"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "chore: clean repo root, untrack logs, remove unconnected frontend scaffold, add license (#6)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-15T08:55:53Z",
-      "display_date": "15 OCT",
-      "sha": "eeaa5e9d31",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/eeaa5e9d3132aeb1f4c2ab5844e3e6dc960ecbfd"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore: tidy repo root and remove stale web prototype (#5)",
-      "category": "ENGINEERING",
-      "date": "2026-10-15T08:44:44Z",
-      "display_date": "15 OCT",
-      "sha": "1ac1c68609",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/1ac1c686094f9d960ee1282ac901ea78f3c37fd2"
-    },
-    {
-      "repo": "wardrobe",
-      "summary": "chore: tidy root, add license, deploy local-first app to GitHub Pages (#3)",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-10-15T08:44:17Z",
-      "display_date": "15 OCT",
-      "sha": "79e51c90d9",
-      "url": "https://github.com/EdwardH-jedi/wardrobe/commit/79e51c90d9feb9024c433d9c6fa584afd8e340e6"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "ci: add GitHub Actions (lint, typecheck, test, build) and license (#1)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-15T08:41:02Z",
-      "display_date": "15 OCT",
-      "sha": "13c7290473",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/13c7290473b58037258b448d7e5959b2ab9a1efd"
-    },
-    {
-      "repo": "AFL_predict",
-      "summary": "ci: gate passing Ruff rules and report full lint debt (#3)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-15T07:14:01Z",
-      "display_date": "15 OCT",
-      "sha": "c3bee0ce4d",
-      "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/c3bee0ce4da7b7b16436df06668cac14f3f5c89b"
     }
   ],
   "latest": [
     {
-      "repo": "agent-city",
-      "summary": "collector: past the id cap after the backfill, ids before the cutoff go first \u2014 a long scan forgets no more t\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T12:04:38Z",
-      "display_date": "13 NOV",
-      "sha": "cad4e3ea1d",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cad4e3ea1db162a5508445f9d0fbb048f9277e26"
+      "repo": "Edward_world",
+      "summary": "docs: note the chart overworld in the status record and case study (#25)",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-14T07:37:01Z",
+      "display_date": "14 NOV",
+      "sha": "7bb83cbaba",
+      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/7bb83cbaba7db4dedb6b956981054006f729d4ae"
     },
     {
       "repo": "agent-city",
-      "summary": "collector: reviewer break-it \u2014 id forgetting, cut-off tails and the key-cap ack no longer depend on where a s\u2026",
+      "summary": "board: DELEGATED_CONFIG_MISMATCH reads as a sentence and a tag, not \ud655\uc778\uc774 \ud544\uc694\ud569\ub2c8\ub2e4",
       "category": "ENGINEERING",
-      "date": "2026-11-13T11:48:59Z",
-      "display_date": "13 NOV",
-      "sha": "813d1b1267",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/813d1b1267740bca86664370fb306c250f9841a5"
+      "date": "2026-11-14T03:58:22Z",
+      "display_date": "14 NOV",
+      "sha": "b27a73155d",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b27a73155d18226c646c0425ad7f8618e0008b40"
     },
     {
       "repo": "agent-city",
-      "summary": "collector: count Codex rollouts of the old format (event_msg/token_count only, 2026-03 ~ 08) (18 \u00a79.7 U5)",
+      "summary": "collector: a limit snapshot no line could give holds no slot; the 16 sent tie by key (N1 review)",
       "category": "ENGINEERING",
-      "date": "2026-11-13T11:24:34Z",
-      "display_date": "13 NOV",
-      "sha": "6567bbdce9",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6567bbdce99fc10823a20327580dfbf7c39d1742"
+      "date": "2026-11-13T14:43:10Z",
+      "display_date": "14 NOV",
+      "sha": "5f946d678a",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/5f946d678a7f20c8ca3e3f3af13d6db483b9737d"
     }
   ],
   "repo_counts": {
-    "agent-city": 30,
-    "Edward_world": 16,
-    "Sportsgang": 29,
-    "AFL_predict": 7,
-    "no-wukkas-cafe": 34,
-    "wardrobe": 1
+    "Edward_world": 23,
+    "agent-city": 31,
+    "Sportsgang": 28,
+    "AFL_predict": 1,
+    "no-wukkas-cafe": 34
   },
   "category_counts": {
-    "ENGINEERING": 37,
-    "FIX / RELIABILITY": 28,
-    "PRODUCT / FEATURE": 14,
-    "TEST / QUALITY": 17,
     "DOCS / EVIDENCE": 17,
-    "SYSTEMS / OPS": 3,
+    "ENGINEERING": 39,
+    "FIX / RELIABILITY": 29,
+    "PRODUCT / FEATURE": 14,
+    "TEST / QUALITY": 15,
+    "SYSTEMS / OPS": 2,
     "ML / EVALUATION": 1
   },
   "weekly_repo_counts": {
-    "agent-city": 30
+    "Edward_world": 13,
+    "agent-city": 31
   },
   "weekly_category_counts": {
-    "ENGINEERING": 21,
-    "FIX / RELIABILITY": 4,
-    "PRODUCT / FEATURE": 2,
+    "DOCS / EVIDENCE": 4,
+    "ENGINEERING": 24,
+    "FIX / RELIABILITY": 6,
+    "PRODUCT / FEATURE": 8,
     "TEST / QUALITY": 1,
-    "DOCS / EVIDENCE": 1,
     "SYSTEMS / OPS": 1
   },
   "repo_meta": {
-    "agent-city": {
-      "pushed_at": "2026-11-13T14:15:05Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/agent-city"
-    },
     "Edward_world": {
-      "pushed_at": "2026-11-13T07:13:44Z",
+      "pushed_at": "2026-11-14T07:37:02Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/Edward_world"
     },
     "no-wukkas-cafe": {
-      "pushed_at": "2026-11-05T15:04:53Z",
+      "pushed_at": "2026-11-14T07:23:42Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe"
+    },
+    "career-quest": {
+      "pushed_at": "2026-11-14T07:23:39Z",
+      "language": "JavaScript",
+      "url": "https://github.com/EdwardH-jedi/career-quest"
+    },
+    "agent-city": {
+      "pushed_at": "2026-11-14T04:32:17Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/agent-city"
     },
     "Sportsgang": {
       "pushed_at": "2026-10-29T08:09:01Z",
@@ -1146,11 +1151,6 @@
       "pushed_at": "2026-10-15T08:44:19Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/wardrobe"
-    },
-    "career-quest": {
-      "pushed_at": "2026-10-01T02:26:48Z",
-      "language": "JavaScript",
-      "url": "https://github.com/EdwardH-jedi/career-quest"
     }
   },
   "state": "SHIPPING",
