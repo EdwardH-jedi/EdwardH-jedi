@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15 10:55 AEDT",
-  "fingerprint": "baab124a62ef1b72fee43bc6dd7c5d5da0eb29a8f7ffe27d19cce3b3feabc882",
+  "generated_at": "2026-11-16 10:58 AEDT",
+  "fingerprint": "9b00b1f3e0067bcd47c68b1e02e703cb302485784215204fdafa8e3f4d20b6dd",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -922,141 +922,6 @@
       "display_date": "17 OCT",
       "sha": "0a0d554478",
       "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/0a0d55447865e8372a234f1f200f2e2b9f823317"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: add overnight run report for 2026-10-17",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-16T16:23:55Z",
-      "display_date": "17 OCT",
-      "sha": "62a4f85f10",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/62a4f85f1039c7c68b5bd14375994f7045781a3c"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "test: pin the booking state machine with pure unit tests (#10)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-16T16:23:23Z",
-      "display_date": "17 OCT",
-      "sha": "22866fc216",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/22866fc21640769d4c7b2bcb783c229fa72d8273"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore(deps): apply in-range security updates (#9)",
-      "category": "ENGINEERING",
-      "date": "2026-10-16T16:16:03Z",
-      "display_date": "17 OCT",
-      "sha": "faf31534df",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/faf31534dfa183bbd831b1fa228468f0d23a615e"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: lead the README with engineering highlights and a quick start (#8)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-16T16:06:12Z",
-      "display_date": "17 OCT",
-      "sha": "a428ba8139",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/a428ba8139dc3926a2813a6cda1c08b0ccf7dafa"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore: use the SportsGang name in user-facing text (#7)",
-      "category": "ENGINEERING",
-      "date": "2026-10-16T15:58:30Z",
-      "display_date": "17 OCT",
-      "sha": "c18b0026d2",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/c18b0026d2c772162d1c2b7846d8fcb6c785a594"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore: remove the unfinished tournament feature (#6)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-16T15:52:10Z",
-      "display_date": "17 OCT",
-      "sha": "16fb211419",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/16fb21141989a47723938a886f6138e11f8c55f7"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: P0 re-review \u2014 portrait monolith, interior CSS off the first paint, phone chips, F5 re-measure (#15)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T15:47:43Z",
-      "display_date": "17 OCT",
-      "sha": "3db737f405",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/3db737f405a56371002bff25aa066cb85c2edacb"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: interiors on integer grids - backdrops, court unit, arcade/tennis sprites (S7) (#14)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T04:54:44Z",
-      "display_date": "16 OCT",
-      "sha": "0d7c99969a",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/0d7c99969a27381a90473657581d657e0889c295"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "chore: portrait docs, dead-export cleanup, audit triage (#13)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-16T04:33:51Z",
-      "display_date": "16 OCT",
-      "sha": "62a3b27a29",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/62a3b27a2977f8764e03a442f32710377755bf96"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "perf: defer interiors (B1) and keep lib/game browser-free (B2) (#9)",
-      "category": "ENGINEERING",
-      "date": "2026-10-16T04:32:15Z",
-      "display_date": "16 OCT",
-      "sha": "7dd047c951",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/7dd047c95120b97efc1968d4fce8f1ba92565025"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: live pixel unit and bitmap HUD in every interior (S7, B2) (#12)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T04:00:31Z",
-      "display_date": "16 OCT",
-      "sha": "d302fef5f8",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d302fef5f82331d499a77ae93d91f670e7c8f6da"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: reactive reduced motion, idle-free ambient renders, eased camera flips (S1, S2, S5) (#10)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T03:32:36Z",
-      "display_date": "16 OCT",
-      "sha": "33594ace00",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/33594ace0098a64a5fbeb6ce3f776d65bf0112f9"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: P0 review S9, N1, N2, N3 + non-breaking npm audit (#11)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T03:30:33Z",
-      "display_date": "16 OCT",
-      "sha": "27463b9174",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/27463b91748a90282800c6e5d381dcc74dd2fde2"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: pixel-grid world origin, no scale transforms, portrait title layout (S3, S4) (#8)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T03:22:36Z",
-      "display_date": "16 OCT",
-      "sha": "df0d6b79fa",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/df0d6b79fadd6ffe880f12e79b5a9b31030e5d9c"
-    },
-    {
-      "repo": "Edward_world",
-      "summary": "fix: outline-last player sprite, sign backplates, settled-gated inspect (S6, S8) (#7)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-16T03:19:35Z",
-      "display_date": "16 OCT",
-      "sha": "897fbd9c17",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/897fbd9c17d3f095d0d4cfc56bdbcb287715b47b"
     }
   ],
   "latest": [
@@ -1089,33 +954,23 @@
     }
   ],
   "repo_counts": {
-    "Edward_world": 23,
+    "Edward_world": 14,
     "agent-city": 31,
-    "Sportsgang": 28,
+    "Sportsgang": 22,
     "AFL_predict": 1,
     "no-wukkas-cafe": 34
   },
   "category_counts": {
-    "DOCS / EVIDENCE": 17,
-    "ENGINEERING": 39,
-    "FIX / RELIABILITY": 29,
-    "PRODUCT / FEATURE": 14,
-    "TEST / QUALITY": 15,
+    "DOCS / EVIDENCE": 15,
+    "ENGINEERING": 36,
+    "FIX / RELIABILITY": 22,
+    "PRODUCT / FEATURE": 12,
+    "TEST / QUALITY": 14,
     "SYSTEMS / OPS": 2,
     "ML / EVALUATION": 1
   },
-  "weekly_repo_counts": {
-    "Edward_world": 13,
-    "agent-city": 31
-  },
-  "weekly_category_counts": {
-    "DOCS / EVIDENCE": 4,
-    "ENGINEERING": 24,
-    "FIX / RELIABILITY": 6,
-    "PRODUCT / FEATURE": 8,
-    "TEST / QUALITY": 1,
-    "SYSTEMS / OPS": 1
-  },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
     "Edward_world": {
       "pushed_at": "2026-11-14T07:37:02Z",
