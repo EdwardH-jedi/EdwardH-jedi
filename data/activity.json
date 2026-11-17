@@ -1,10 +1,64 @@
 {
-  "generated_at": "2026-11-16 10:58 AEDT",
-  "fingerprint": "9b00b1f3e0067bcd47c68b1e02e703cb302485784215204fdafa8e3f4d20b6dd",
+  "generated_at": "2026-11-17 13:56 AEDT",
+  "fingerprint": "f4c1baee4601e03bfabf245db090916b212578ac6bd34aa5031673fe8c48a52f",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): deliver town model before the next paint",
+      "category": "ML / EVALUATION",
+      "date": "2026-11-15T23:42:23Z",
+      "display_date": "16 NOV",
+      "sha": "7f22111dba",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/7f22111dba10c0c098703d3a2ee5929c61d6fcbd"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "fix(web): keep interior highlight clear of project names",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-15T23:07:37Z",
+      "display_date": "16 NOV",
+      "sha": "c95757bafa",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c95757bafac6b156ec20c11f385718c3866bc360"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): add No Wukkas cafe interior theme",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-15T16:17:13Z",
+      "display_date": "16 NOV",
+      "sha": "cf9d3dfdd7",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cf9d3dfdd77773a235673e776759649c8e9fc0f7"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): tour active interiors with D3 priority and screen keys",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-15T16:11:17Z",
+      "display_date": "16 NOV",
+      "sha": "4f42ee27c6",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/4f42ee27c6c751799994588ced5c03e33bb35804"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): add Station0 subway interior and timestamped faregates",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-15T15:55:37Z",
+      "display_date": "16 NOV",
+      "sha": "38530b6862",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/38530b68621db2e7b058b7578169786aaf8fd12f"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(web): add lazy interior shell with real session occupants",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-15T15:44:25Z",
+      "display_date": "16 NOV",
+      "sha": "091cd07f29",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/091cd07f2983a64439941063c0902d9c2bb6bcf4"
+    },
     {
       "repo": "Edward_world",
       "summary": "docs: note the chart overworld in the status record and case study (#25)",
@@ -249,24 +303,6 @@
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/c87f1149e79de76b0bbd3a8cb6c31431e95f30b3"
     },
     {
-      "repo": "agent-city",
-      "summary": "hub: token usage table, POST /ingest/usage, GET /api/usage (18 \u00a75 U2)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T08:30:11Z",
-      "display_date": "13 NOV",
-      "sha": "e993081c46",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e993081c46b83cdc7d0362bd5011aa7882e5bd02"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: token usage poller (18 \u00a75 U1)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T08:23:22Z",
-      "display_date": "13 NOV",
-      "sha": "667dbfb910",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/667dbfb910aa6513256be3c970672389ac285854"
-    },
-    {
       "repo": "Edward_world",
       "summary": "feat(chart): play the town's track on the chart",
       "category": "PRODUCT / FEATURE",
@@ -348,15 +384,6 @@
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/d9fc2903d185c32585368f89d4a8edfc8b7225a4"
     },
     {
-      "repo": "agent-city",
-      "summary": "web: the town fills the column's height (17 F3)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T01:17:09Z",
-      "display_date": "13 NOV",
-      "sha": "dbf15ae4d4",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/dbf15ae4d4ff963e4791c5b90a9c511fbf9f2b7d"
-    },
-    {
       "repo": "Edward_world",
       "summary": "docs: drop the last saved-look references",
       "category": "DOCS / EVIDENCE",
@@ -364,15 +391,6 @@
       "display_date": "13 NOV",
       "sha": "97c9c2ca93",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/97c9c2ca9306e1055b1194cbd1ea18255d7deb8e"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: finish show \u2014 flags, confetti and a chime (17 F2)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T00:51:31Z",
-      "display_date": "13 NOV",
-      "sha": "c9f17f0577",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9f17f0577700176768b1e57c872a49594ad18af"
     },
     {
       "repo": "Edward_world",
@@ -391,15 +409,6 @@
       "display_date": "13 NOV",
       "sha": "57f397707c",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/57f397707ca78aeea958ab5abf26472010376f8b"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: top band clock and today's summary (17 F1)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T00:11:03Z",
-      "display_date": "13 NOV",
-      "sha": "dbcbb88720",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/dbcbb88720ac8752aa83bbd2d2d395608005e275"
     },
     {
       "repo": "Edward_world",
@@ -868,110 +877,67 @@
       "display_date": "18 OCT",
       "sha": "081eedcaae",
       "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/081eedcaae5bf3fcbac1df4ded3e605989057964"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: correct where #3's PostgreSQL test would have run",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-17T13:10:11Z",
-      "display_date": "18 OCT",
-      "sha": "04be5995fd",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/04be5995fde5b1ef7bb2abbc3dbf68ad77d08201"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: add overnight audit with 2026-10-18 follow-up",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-17T13:08:40Z",
-      "display_date": "18 OCT",
-      "sha": "5c2b7de727",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/5c2b7de72706637c3fe9d9d9ae3ad1b12ea6107d"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "test: drive booking FSM tests through transition_booking (#14)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-17T13:01:53Z",
-      "display_date": "18 OCT",
-      "sha": "b46edc50a0",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/b46edc50a050e01b14802097d46703bf5ebd0647"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "feat(api): add integrity constraints and one-time Google OAuth state (0017) (#13)",
-      "category": "ML / EVALUATION",
-      "date": "2026-10-17T12:49:37Z",
-      "display_date": "17 OCT",
-      "sha": "6761aa580b",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/6761aa580bd79fa22e3beb92d8ecafb25764a278"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: reconcile portfolio facts and stale tournament references (#12)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-17T12:43:52Z",
-      "display_date": "17 OCT",
-      "sha": "43b16e9de3",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/43b16e9de37f7cbf6748b553f8461a08c4e53256"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "fix(deps): pin @expo/package-manager to 1.10.4 and add pytest-cov (#11)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-17T12:36:22Z",
-      "display_date": "17 OCT",
-      "sha": "0a0d554478",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/0a0d55447865e8372a234f1f200f2e2b9f823317"
     }
   ],
   "latest": [
     {
-      "repo": "Edward_world",
-      "summary": "docs: note the chart overworld in the status record and case study (#25)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-11-14T07:37:01Z",
-      "display_date": "14 NOV",
-      "sha": "7bb83cbaba",
-      "url": "https://github.com/EdwardH-jedi/Edward_world/commit/7bb83cbaba7db4dedb6b956981054006f729d4ae"
+      "repo": "agent-city",
+      "summary": "fix(web): deliver town model before the next paint",
+      "category": "ML / EVALUATION",
+      "date": "2026-11-15T23:42:23Z",
+      "display_date": "16 NOV",
+      "sha": "7f22111dba",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/7f22111dba10c0c098703d3a2ee5929c61d6fcbd"
     },
     {
       "repo": "agent-city",
-      "summary": "board: DELEGATED_CONFIG_MISMATCH reads as a sentence and a tag, not \ud655\uc778\uc774 \ud544\uc694\ud569\ub2c8\ub2e4",
-      "category": "ENGINEERING",
-      "date": "2026-11-14T03:58:22Z",
-      "display_date": "14 NOV",
-      "sha": "b27a73155d",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b27a73155d18226c646c0425ad7f8618e0008b40"
+      "summary": "fix(web): keep interior highlight clear of project names",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-15T23:07:37Z",
+      "display_date": "16 NOV",
+      "sha": "c95757bafa",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c95757bafac6b156ec20c11f385718c3866bc360"
     },
     {
       "repo": "agent-city",
-      "summary": "collector: a limit snapshot no line could give holds no slot; the 16 sent tie by key (N1 review)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T14:43:10Z",
-      "display_date": "14 NOV",
-      "sha": "5f946d678a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/5f946d678a7f20c8ca3e3f3af13d6db483b9737d"
+      "summary": "feat(web): add No Wukkas cafe interior theme",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-15T16:17:13Z",
+      "display_date": "16 NOV",
+      "sha": "cf9d3dfdd7",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cf9d3dfdd77773a235673e776759649c8e9fc0f7"
     }
   ],
   "repo_counts": {
+    "agent-city": 32,
     "Edward_world": 14,
-    "agent-city": 31,
-    "Sportsgang": 22,
+    "Sportsgang": 16,
     "AFL_predict": 1,
     "no-wukkas-cafe": 34
   },
   "category_counts": {
-    "DOCS / EVIDENCE": 15,
-    "ENGINEERING": 36,
-    "FIX / RELIABILITY": 22,
-    "PRODUCT / FEATURE": 12,
-    "TEST / QUALITY": 14,
-    "SYSTEMS / OPS": 2,
-    "ML / EVALUATION": 1
+    "ML / EVALUATION": 1,
+    "FIX / RELIABILITY": 23,
+    "PRODUCT / FEATURE": 15,
+    "DOCS / EVIDENCE": 14,
+    "ENGINEERING": 31,
+    "TEST / QUALITY": 11,
+    "SYSTEMS / OPS": 2
   },
-  "weekly_repo_counts": {},
-  "weekly_category_counts": {},
+  "weekly_repo_counts": {
+    "agent-city": 6
+  },
+  "weekly_category_counts": {
+    "ML / EVALUATION": 1,
+    "FIX / RELIABILITY": 1,
+    "PRODUCT / FEATURE": 4
+  },
   "repo_meta": {
+    "agent-city": {
+      "pushed_at": "2026-11-16T00:29:17Z",
+      "language": "TypeScript",
+      "url": "https://github.com/EdwardH-jedi/agent-city"
+    },
     "Edward_world": {
       "pushed_at": "2026-11-14T07:37:02Z",
       "language": "TypeScript",
@@ -986,11 +952,6 @@
       "pushed_at": "2026-11-14T07:23:39Z",
       "language": "JavaScript",
       "url": "https://github.com/EdwardH-jedi/career-quest"
-    },
-    "agent-city": {
-      "pushed_at": "2026-11-14T04:32:17Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/agent-city"
     },
     "Sportsgang": {
       "pushed_at": "2026-10-29T08:09:01Z",
