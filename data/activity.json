@@ -1,10 +1,37 @@
 {
-  "generated_at": "2026-11-17 13:56 AEDT",
-  "fingerprint": "f4c1baee4601e03bfabf245db090916b212578ac6bd34aa5031673fe8c48a52f",
+  "generated_at": "2026-11-18 13:25 AEDT",
+  "fingerprint": "b8fbf0f4d8f1959c665dff13a7e3c5d9669282a33ce57379975f5e354d61c891",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "agent-city",
+      "summary": "docs(rules): describe the CI job and drop the 'no workflow' note",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-11-17T13:59:19Z",
+      "display_date": "18 NOV",
+      "sha": "c9b8f64e5a",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9b8f64e5a5d046e90863c0d2f20f4702364a6d2"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "ci: run the five checks on every PR and main push (ubuntu, read-only, no secrets)",
+      "category": "ENGINEERING",
+      "date": "2026-11-17T13:58:51Z",
+      "display_date": "18 NOV",
+      "sha": "e67012d20a",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e67012d20a4af46a3013018a157d4a6dd378f233"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "test(collector): give the main transcript a birth-time gap before its subagent file",
+      "category": "TEST / QUALITY",
+      "date": "2026-11-17T13:58:16Z",
+      "display_date": "18 NOV",
+      "sha": "b16b698bbf",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b16b698bbfcc1d8744cd2c1aa5ff6d14b9593203"
+    },
     {
       "repo": "agent-city",
       "summary": "fix(web): deliver town model before the next paint",
@@ -274,33 +301,6 @@
       "display_date": "13 NOV",
       "sha": "9f874ba4f9",
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/9f874ba4f9867c979c3654f43e427a04c0469dd7"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "hub: usage fixes from the break-it review",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-13T08:41:10Z",
-      "display_date": "13 NOV",
-      "sha": "5c6d000896",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/5c6d000896d84580d48b23f07758ee369c56a8ca"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: usage fixes from the break-it review",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-13T08:39:16Z",
-      "display_date": "13 NOV",
-      "sha": "c4cbe08fcb",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c4cbe08fcbbf25ed5ea36686438e022756912350"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "hub: send the usage summary to each /ws socket on open",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T08:37:07Z",
-      "display_date": "13 NOV",
-      "sha": "c87f1149e7",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c87f1149e79de76b0bbd3a8cb6c31431e95f30b3"
     },
     {
       "repo": "Edward_world",
@@ -796,145 +796,67 @@
       "display_date": "19 OCT",
       "sha": "2799e4c753",
       "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/2799e4c7531ebbfcb4584f7aeae063e8a4d1846b"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "test(api): race cancel against complete on a confirmed booking (S9) (#22)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-19T01:52:36Z",
-      "display_date": "19 OCT",
-      "sha": "c03d01420d",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/c03d01420dd01aee9ee31b90c6422a92cd77bb22"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore(mobile): delete the dead OnboardingScreen shell (S15) (#28)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-10-19T01:52:30Z",
-      "display_date": "19 OCT",
-      "sha": "bc71b352dd",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/bc71b352dde682142d4ff40af6e92cc86313071d"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore(api): trace greenlets in coverage; S10 gap was a measurement artifact (S10) (#23)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-19T01:52:25Z",
-      "display_date": "19 OCT",
-      "sha": "e1d4e8134d",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/e1d4e8134d40d4beed79865a55ba85f9e742cef4"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs(overnight): note OrbStack start/stop side effects in the 2026-10-19 report",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-18T16:14:40Z",
-      "display_date": "19 OCT",
-      "sha": "e04f3fe904",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/e04f3fe9049f979b128a459523d389e7e0faff9b"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: Scope 3 overnight report (S16) and todo.md status",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-18T16:13:44Z",
-      "display_date": "19 OCT",
-      "sha": "1e2eddbe1e",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/1e2eddbe1ea6124ba7148e885a52dbe6665e8ccf"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs(todo): define Scope 2 (S5 FSM mutation record, S6 image-size, S7 Expo split)",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-18T13:11:16Z",
-      "display_date": "19 OCT",
-      "sha": "d3429a97f5",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/d3429a97f542d0a93ba26ef65c5a807ca0063693"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "test(mobile): pay ProfileScreen's first-render warm-up in beforeAll (#18)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-18T12:57:22Z",
-      "display_date": "18 OCT",
-      "sha": "980834142a",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/980834142a555da31441885984f65da3f0edc34e"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "docs: refresh PORTFOLIO_FACTS test and migration counts (2026-10-18) (#17)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-18T12:57:17Z",
-      "display_date": "18 OCT",
-      "sha": "558f52a07b",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/558f52a07b8ac7afb155885104f8759449a1675e"
-    },
-    {
-      "repo": "Sportsgang",
-      "summary": "chore: ignore coverage/tsbuildinfo output, add todo.md (#16)",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-18T12:57:12Z",
-      "display_date": "18 OCT",
-      "sha": "081eedcaae",
-      "url": "https://github.com/EdwardH-jedi/Sportsgang/commit/081eedcaae5bf3fcbac1df4ded3e605989057964"
     }
   ],
   "latest": [
     {
       "repo": "agent-city",
-      "summary": "fix(web): deliver town model before the next paint",
-      "category": "ML / EVALUATION",
-      "date": "2026-11-15T23:42:23Z",
-      "display_date": "16 NOV",
-      "sha": "7f22111dba",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/7f22111dba10c0c098703d3a2ee5929c61d6fcbd"
+      "summary": "docs(rules): describe the CI job and drop the 'no workflow' note",
+      "category": "SYSTEMS / OPS",
+      "date": "2026-11-17T13:59:19Z",
+      "display_date": "18 NOV",
+      "sha": "c9b8f64e5a",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9b8f64e5a5d046e90863c0d2f20f4702364a6d2"
     },
     {
       "repo": "agent-city",
-      "summary": "fix(web): keep interior highlight clear of project names",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-15T23:07:37Z",
-      "display_date": "16 NOV",
-      "sha": "c95757bafa",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c95757bafac6b156ec20c11f385718c3866bc360"
+      "summary": "ci: run the five checks on every PR and main push (ubuntu, read-only, no secrets)",
+      "category": "ENGINEERING",
+      "date": "2026-11-17T13:58:51Z",
+      "display_date": "18 NOV",
+      "sha": "e67012d20a",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e67012d20a4af46a3013018a157d4a6dd378f233"
     },
     {
       "repo": "agent-city",
-      "summary": "feat(web): add No Wukkas cafe interior theme",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-15T16:17:13Z",
-      "display_date": "16 NOV",
-      "sha": "cf9d3dfdd7",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cf9d3dfdd77773a235673e776759649c8e9fc0f7"
+      "summary": "test(collector): give the main transcript a birth-time gap before its subagent file",
+      "category": "TEST / QUALITY",
+      "date": "2026-11-17T13:58:16Z",
+      "display_date": "18 NOV",
+      "sha": "b16b698bbf",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b16b698bbfcc1d8744cd2c1aa5ff6d14b9593203"
     }
   ],
   "repo_counts": {
     "agent-city": 32,
     "Edward_world": 14,
-    "Sportsgang": 16,
+    "Sportsgang": 7,
     "AFL_predict": 1,
     "no-wukkas-cafe": 34
   },
   "category_counts": {
-    "ML / EVALUATION": 1,
-    "FIX / RELIABILITY": 23,
-    "PRODUCT / FEATURE": 15,
-    "DOCS / EVIDENCE": 14,
+    "SYSTEMS / OPS": 3,
     "ENGINEERING": 31,
-    "TEST / QUALITY": 11,
-    "SYSTEMS / OPS": 2
+    "TEST / QUALITY": 7,
+    "ML / EVALUATION": 1,
+    "FIX / RELIABILITY": 21,
+    "PRODUCT / FEATURE": 14,
+    "DOCS / EVIDENCE": 11
   },
   "weekly_repo_counts": {
-    "agent-city": 6
+    "agent-city": 9
   },
   "weekly_category_counts": {
+    "SYSTEMS / OPS": 1,
+    "ENGINEERING": 1,
+    "TEST / QUALITY": 1,
     "ML / EVALUATION": 1,
     "FIX / RELIABILITY": 1,
     "PRODUCT / FEATURE": 4
   },
   "repo_meta": {
     "agent-city": {
-      "pushed_at": "2026-11-16T00:29:17Z",
+      "pushed_at": "2026-11-17T14:32:34Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
