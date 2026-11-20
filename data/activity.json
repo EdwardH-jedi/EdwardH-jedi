@@ -1,10 +1,28 @@
 {
-  "generated_at": "2026-11-19 12:52 AEDT",
-  "fingerprint": "f549a99b2b2f9fcdf38aabc7541096905411e142a19b0575832bba5d36bb4f66",
+  "generated_at": "2026-11-20 12:46 AEDT",
+  "fingerprint": "ad1bc847787b3e6a0070ba0e3321ee4b4145ccfc3fd0c915248bf1a3e3f5bdc9",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "agent-city",
+      "summary": "fix(launchd): an --office-instance needs an explicit --office-home",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-19T12:34:15Z",
+      "display_date": "19 NOV",
+      "sha": "6248e1b624",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6248e1b6246a1f8f146a30e83ed89eb6626278a0"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(launchd): a second Office state home as its own exporter job (--office-instance)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-19T11:35:07Z",
+      "display_date": "19 NOV",
+      "sha": "da2d2f3afb",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da2d2f3afb440add295697ce590c13f0860ca7b6"
+    },
     {
       "repo": "agent-city",
       "summary": "docs(rules): describe the CI job and drop the 'no workflow' note",
@@ -285,24 +303,6 @@
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/f8c81549e8523ad156984944266ca89d8616a7d3"
     },
     {
-      "repo": "agent-city",
-      "summary": "web: USAGE box under LOG and the top band's \ud1a0\ud070 from usage (18 \u00a75 U3)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T08:52:06Z",
-      "display_date": "13 NOV",
-      "sha": "91d8b23495",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/91d8b2349595335caf0209bf518d4ac32bb4d9ee"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: check the project shape before redaction",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-11-13T08:41:10Z",
-      "display_date": "13 NOV",
-      "sha": "9f874ba4f9",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/9f874ba4f9867c979c3654f43e427a04c0469dd7"
-    },
-    {
       "repo": "Edward_world",
       "summary": "feat(chart): play the town's track on the chart",
       "category": "PRODUCT / FEATURE",
@@ -436,279 +436,27 @@
       "display_date": "29 OCT",
       "sha": "3c03e97372",
       "url": "https://github.com/EdwardH-jedi/AFL_predict/commit/3c03e973728f54c7cee4e02a274b8f3449573701"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.5: build, build:clean, deploy dry run green; release:tag refuses on origin",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-10-20T17:03:30Z",
-      "display_date": "21 OCT",
-      "sha": "2029744b43",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2029744b432fca13cbd2f4aa804d6e69fcccf124"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.4: MILESTONES.md points at todo.md M1\u2013M7 with a status line each",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T16:59:21Z",
-      "display_date": "21 OCT",
-      "sha": "2057b42930",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2057b42930b7d005cf90f623e4b640b132c1481e"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.3: track the run files, move the two plans to docs/runs/, ignore the hook backup",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-20T16:59:06Z",
-      "display_date": "21 OCT",
-      "sha": "5e5d43190a",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5e5d43190a1a9f351bf646edaa8eb3e1d6ee1f74"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.2: balance-hook.md and docs/TODO.md say 599 events, not 509",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-20T16:58:25Z",
-      "display_date": "21 OCT",
-      "sha": "00cb4b37d1",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/00cb4b37d1f68af9ac427271a790822be7b0d534"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M7 T7.1: skipped, branch delete denied in this session; verify fixed",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T16:58:15Z",
-      "display_date": "21 OCT",
-      "sha": "4b0457d0e9",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/4b0457d0e9d6a7a5438dcca43bde851cc3c1f229"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(todo): M7 housekeeping; Q8 answered",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-20T16:50:47Z",
-      "display_date": "21 OCT",
-      "sha": "93ef12a4b9",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/93ef12a4b993f3574182da7d290fecdab35afc49"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(todo): M6 done, gate review fixed, full E2E green; not pushed",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T15:14:00Z",
-      "display_date": "21 OCT",
-      "sha": "665534a297",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/665534a297016b51a793f20ca19e316f7235a8a3"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6: gate fixes F4, T6.5's verify says what Q2 answered",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T14:34:09Z",
-      "display_date": "21 OCT",
-      "sha": "ec434d8c7d",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/ec434d8c7d725a2ddd72fb2dccc5331182b7b19d"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6: gate fixes F3, leaving Gaz's demo stops his narration",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T14:34:09Z",
-      "display_date": "21 OCT",
-      "sha": "9330c78c52",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/9330c78c527e33a4a47a734fcf8319a24d8270c0"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6: gate fixes F1\u2013F2, the sound hold lets go of the hands at both edges",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T14:34:09Z",
-      "display_date": "21 OCT",
-      "sha": "2878eca437",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2878eca43719dbac1d4a0e0d9a3a73c3e3d42969"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "review(m6): independent review of 26beded..badd5f9 (Codex)",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T14:27:52Z",
-      "display_date": "21 OCT",
-      "sha": "9a9262cbc7",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/9a9262cbc77d7517dd1ddafe0697626951de06e7"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6 T6.5: delete the 21 merged branches RUN3_REPORT listed",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T14:13:36Z",
-      "display_date": "21 OCT",
-      "sha": "badd5f949d",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/badd5f949d36440519688cf4b104ab3d806e3c9e"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6 T6.4: delete the nine stale renders; npm run build works in a checkout",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T14:10:05Z",
-      "display_date": "21 OCT",
-      "sha": "c2dfa82c4f",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/c2dfa82c4f319eff117d5e3d08ecec762cde50a5"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6 T6.3: the game holds while the browser has sound stopped",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T14:07:03Z",
-      "display_date": "21 OCT",
-      "sha": "3023a45e4d",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/3023a45e4d60f1a603ce1fa5291c2f29beaea297"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6 T6.2: Day 1 and practice subtitles start with the voice",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T13:59:58Z",
-      "display_date": "21 OCT",
-      "sha": "21aa541ff8",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/21aa541ff8863aa520667e756e7de9a65b2f0666"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M6 T6.1: milk gauge target follows an extra-hot ticket",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T13:48:10Z",
-      "display_date": "21 OCT",
-      "sha": "7376595a28",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/7376595a2895bd99a0eaa394ee3e670fc1801848"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(decisions): Q2\u2013Q5, Q7 answered; agent-office hooks",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-10-20T13:43:30Z",
-      "display_date": "21 OCT",
-      "sha": "26bededc2b",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/26bededc2bf0b363af92c1e972b0f3bd549ed7e4"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(todo): M5 done, gate review fixed, M6 skipped (all Qs open)",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T12:26:38Z",
-      "display_date": "20 OCT",
-      "sha": "87c3f09984",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/87c3f09984bb2bd7a85169d404f36684fc6d77cc"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5: gate fixes F4, the changelog's caption line names the rush",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T11:42:57Z",
-      "display_date": "20 OCT",
-      "sha": "5de40ef622",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/5de40ef622d89f43b80ca024994d4a160747a801"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5: gate fixes F3, devlog counts 599 events, not 509",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T11:42:57Z",
-      "display_date": "20 OCT",
-      "sha": "e857d88924",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/e857d889244baac9771067547df5a31c48e43534"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5: gate fixes F2, the release summary says ready only without errors",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T11:42:42Z",
-      "display_date": "20 OCT",
-      "sha": "b52754cec3",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/b52754cec32cb6bc2ef84badd3c8e2f129fc3480"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5: gate fixes F1, release:tag re-checks its gates after release:check",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T11:42:01Z",
-      "display_date": "20 OCT",
-      "sha": "a852c10c35",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/a852c10c35645239fd063c5def0e4c7956620b5c"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "test(review): gate review of M5 (731274f..a821fae), six red regressions",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-20T11:41:05Z",
-      "display_date": "20 OCT",
-      "sha": "23016d5124",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/23016d5124f2497cba35cabcedafc24235ba9022"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5 T5.6: measure the register under the instruction with a drink on the pass",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T11:27:38Z",
-      "display_date": "20 OCT",
-      "sha": "a821fae06f",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/a821fae06fd94ac6166b8ae06841674d79dc5476"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5 T5.5: week.spec Monday waits on a game-time budget, not the wall clock",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T11:16:12Z",
-      "display_date": "20 OCT",
-      "sha": "49c6844637",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/49c684463724895eeb27c0eceb00e20a4ea60db0"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5 T5.4: npm run release:tag tags v<version> locally after the gates",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T11:06:46Z",
-      "display_date": "20 OCT",
-      "sha": "6fe86dd3a0",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/6fe86dd3a0824f50f351c4545003499a34438337"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5 T5.3: devlog section on what the bots got wrong",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T11:02:12Z",
-      "display_date": "20 OCT",
-      "sha": "36d3398ad0",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/36d3398ad007ca9712c8a2b219bee96ec5fc6ff3"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5 T5.2: CHANGELOG.md for 0.1.0 and a version test",
-      "category": "TEST / QUALITY",
-      "date": "2026-10-20T10:58:37Z",
-      "display_date": "20 OCT",
-      "sha": "2df3e88655",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/2df3e88655c24952861a7d3f20afe1ecb005ea5a"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "M5 T5.1: release:check ends with a per-speaker voice gate summary",
-      "category": "ENGINEERING",
-      "date": "2026-10-20T10:54:43Z",
-      "display_date": "20 OCT",
-      "sha": "0db41bc78b",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/0db41bc78b5d5ea18995d57fc41f6cb709d16d1f"
-    },
-    {
-      "repo": "no-wukkas-cafe",
-      "summary": "docs(todo): M5 released, T5.5/T5.6, M6 decision fixes, acceptance log",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-10-20T10:39:45Z",
-      "display_date": "20 OCT",
-      "sha": "a7b7bb8730",
-      "url": "https://github.com/EdwardH-jedi/no-wukkas-cafe/commit/a7b7bb8730b5441a125b9a106c0216706cee0e6b"
     }
   ],
   "latest": [
+    {
+      "repo": "agent-city",
+      "summary": "fix(launchd): an --office-instance needs an explicit --office-home",
+      "category": "FIX / RELIABILITY",
+      "date": "2026-11-19T12:34:15Z",
+      "display_date": "19 NOV",
+      "sha": "6248e1b624",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6248e1b6246a1f8f146a30e83ed89eb6626278a0"
+    },
+    {
+      "repo": "agent-city",
+      "summary": "feat(launchd): a second Office state home as its own exporter job (--office-instance)",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-19T11:35:07Z",
+      "display_date": "19 NOV",
+      "sha": "da2d2f3afb",
+      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da2d2f3afb440add295697ce590c13f0860ca7b6"
+    },
     {
       "repo": "agent-city",
       "summary": "docs(rules): describe the CI job and drop the 'no workflow' note",
@@ -717,56 +465,37 @@
       "display_date": "18 NOV",
       "sha": "c9b8f64e5a",
       "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9b8f64e5a5d046e90863c0d2f20f4702364a6d2"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "ci: run the five checks on every PR and main push (ubuntu, read-only, no secrets)",
-      "category": "ENGINEERING",
-      "date": "2026-11-17T13:58:51Z",
-      "display_date": "18 NOV",
-      "sha": "e67012d20a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e67012d20a4af46a3013018a157d4a6dd378f233"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "test(collector): give the main transcript a birth-time gap before its subagent file",
-      "category": "TEST / QUALITY",
-      "date": "2026-11-17T13:58:16Z",
-      "display_date": "18 NOV",
-      "sha": "b16b698bbf",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b16b698bbfcc1d8744cd2c1aa5ff6d14b9593203"
     }
   ],
   "repo_counts": {
     "agent-city": 32,
     "Edward_world": 14,
     "Sportsgang": 1,
-    "AFL_predict": 1,
-    "no-wukkas-cafe": 30
+    "AFL_predict": 1
   },
   "category_counts": {
-    "SYSTEMS / OPS": 3,
-    "ENGINEERING": 31,
-    "TEST / QUALITY": 5,
+    "FIX / RELIABILITY": 8,
+    "PRODUCT / FEATURE": 13,
+    "SYSTEMS / OPS": 1,
+    "ENGINEERING": 18,
+    "TEST / QUALITY": 3,
     "ML / EVALUATION": 1,
-    "FIX / RELIABILITY": 18,
-    "PRODUCT / FEATURE": 12,
-    "DOCS / EVIDENCE": 8
+    "DOCS / EVIDENCE": 4
   },
   "weekly_repo_counts": {
-    "agent-city": 9
+    "agent-city": 11
   },
   "weekly_category_counts": {
+    "FIX / RELIABILITY": 2,
+    "PRODUCT / FEATURE": 5,
     "SYSTEMS / OPS": 1,
     "ENGINEERING": 1,
     "TEST / QUALITY": 1,
-    "ML / EVALUATION": 1,
-    "FIX / RELIABILITY": 1,
-    "PRODUCT / FEATURE": 4
+    "ML / EVALUATION": 1
   },
   "repo_meta": {
     "agent-city": {
-      "pushed_at": "2026-11-17T14:32:34Z",
+      "pushed_at": "2026-11-20T00:42:56Z",
       "language": "TypeScript",
       "url": "https://github.com/EdwardH-jedi/agent-city"
     },
