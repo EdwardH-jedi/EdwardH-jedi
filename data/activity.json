@@ -1,10 +1,46 @@
 {
-  "generated_at": "2026-11-20 12:46 AEDT",
-  "fingerprint": "ad1bc847787b3e6a0070ba0e3321ee4b4145ccfc3fd0c915248bf1a3e3f5bdc9",
+  "generated_at": "2026-11-23 11:54 AEDT",
+  "fingerprint": "61bdbea04346f6f29b70795a5d73200627930137abf19082a07c24c6b51ea956",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
   "commits": [
+    {
+      "repo": "SILENCE1-Interactive",
+      "summary": "Ship the visit only: remove the open-window demo link and sources",
+      "category": "ENGINEERING",
+      "date": "2026-11-22T07:19:14Z",
+      "display_date": "22 NOV",
+      "sha": "6721612743",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/67216127436aeff17953fa8e19489b730f71b06b"
+    },
+    {
+      "repo": "SILENCE1-Interactive",
+      "summary": "README: keep only the visit; remove the open-window web demo",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-22T06:57:04Z",
+      "display_date": "22 NOV",
+      "sha": "aba2c49087",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/aba2c4908717fdc2b26ffc63434ea188492a2295"
+    },
+    {
+      "repo": "SILENCE1-Interactive",
+      "summary": "Add README with run links and screenshots",
+      "category": "PRODUCT / FEATURE",
+      "date": "2026-11-22T06:53:29Z",
+      "display_date": "22 NOV",
+      "sha": "4b2b9cf31e",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/4b2b9cf31ec495b2872fa721f25b34f74077bd40"
+    },
+    {
+      "repo": "SILENCE1-Interactive",
+      "summary": "Initial commit: SILENCE1 Interactive Unity project",
+      "category": "ENGINEERING",
+      "date": "2026-11-22T06:53:28Z",
+      "display_date": "22 NOV",
+      "sha": "cc02eb9922",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/cc02eb9922cbf2fb9d405ba0f33274b2a5733fd7"
+    },
     {
       "repo": "agent-city",
       "summary": "fix(launchd): an --office-instance needs an explicit --office-home",
@@ -440,60 +476,57 @@
   ],
   "latest": [
     {
-      "repo": "agent-city",
-      "summary": "fix(launchd): an --office-instance needs an explicit --office-home",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-19T12:34:15Z",
-      "display_date": "19 NOV",
-      "sha": "6248e1b624",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6248e1b6246a1f8f146a30e83ed89eb6626278a0"
+      "repo": "SILENCE1-Interactive",
+      "summary": "Ship the visit only: remove the open-window demo link and sources",
+      "category": "ENGINEERING",
+      "date": "2026-11-22T07:19:14Z",
+      "display_date": "22 NOV",
+      "sha": "6721612743",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/67216127436aeff17953fa8e19489b730f71b06b"
     },
     {
-      "repo": "agent-city",
-      "summary": "feat(launchd): a second Office state home as its own exporter job (--office-instance)",
+      "repo": "SILENCE1-Interactive",
+      "summary": "README: keep only the visit; remove the open-window web demo",
+      "category": "DOCS / EVIDENCE",
+      "date": "2026-11-22T06:57:04Z",
+      "display_date": "22 NOV",
+      "sha": "aba2c49087",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/aba2c4908717fdc2b26ffc63434ea188492a2295"
+    },
+    {
+      "repo": "SILENCE1-Interactive",
+      "summary": "Add README with run links and screenshots",
       "category": "PRODUCT / FEATURE",
-      "date": "2026-11-19T11:35:07Z",
-      "display_date": "19 NOV",
-      "sha": "da2d2f3afb",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da2d2f3afb440add295697ce590c13f0860ca7b6"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "docs(rules): describe the CI job and drop the 'no workflow' note",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-11-17T13:59:19Z",
-      "display_date": "18 NOV",
-      "sha": "c9b8f64e5a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9b8f64e5a5d046e90863c0d2f20f4702364a6d2"
+      "date": "2026-11-22T06:53:29Z",
+      "display_date": "22 NOV",
+      "sha": "4b2b9cf31e",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/4b2b9cf31ec495b2872fa721f25b34f74077bd40"
     }
   ],
   "repo_counts": {
+    "SILENCE1-Interactive": 4,
     "agent-city": 32,
     "Edward_world": 14,
     "Sportsgang": 1,
     "AFL_predict": 1
   },
   "category_counts": {
+    "ENGINEERING": 20,
+    "DOCS / EVIDENCE": 5,
+    "PRODUCT / FEATURE": 14,
     "FIX / RELIABILITY": 8,
-    "PRODUCT / FEATURE": 13,
     "SYSTEMS / OPS": 1,
-    "ENGINEERING": 18,
     "TEST / QUALITY": 3,
-    "ML / EVALUATION": 1,
-    "DOCS / EVIDENCE": 4
-  },
-  "weekly_repo_counts": {
-    "agent-city": 11
-  },
-  "weekly_category_counts": {
-    "FIX / RELIABILITY": 2,
-    "PRODUCT / FEATURE": 5,
-    "SYSTEMS / OPS": 1,
-    "ENGINEERING": 1,
-    "TEST / QUALITY": 1,
     "ML / EVALUATION": 1
   },
+  "weekly_repo_counts": {},
+  "weekly_category_counts": {},
   "repo_meta": {
+    "SILENCE1-Interactive": {
+      "pushed_at": "2026-11-22T07:20:24Z",
+      "language": "C#",
+      "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive"
+    },
     "agent-city": {
       "pushed_at": "2026-11-20T00:42:56Z",
       "language": "TypeScript",
