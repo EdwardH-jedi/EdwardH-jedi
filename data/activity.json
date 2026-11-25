@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-23 11:54 AEDT",
-  "fingerprint": "61bdbea04346f6f29b70795a5d73200627930137abf19082a07c24c6b51ea956",
+  "generated_at": "2026-11-25 14:33 AEDT",
+  "fingerprint": "a729602f6862abb8518db54ffa3de448ebc6b6e6d5c7806150d629ea8cbdd04d",
   "window_days": 30,
   "public_safe": true,
   "source": "PUBLIC GITHUB",
@@ -42,105 +42,6 @@
       "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive/commit/cc02eb9922cbf2fb9d405ba0f33274b2a5733fd7"
     },
     {
-      "repo": "agent-city",
-      "summary": "fix(launchd): an --office-instance needs an explicit --office-home",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-19T12:34:15Z",
-      "display_date": "19 NOV",
-      "sha": "6248e1b624",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6248e1b6246a1f8f146a30e83ed89eb6626278a0"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(launchd): a second Office state home as its own exporter job (--office-instance)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-19T11:35:07Z",
-      "display_date": "19 NOV",
-      "sha": "da2d2f3afb",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/da2d2f3afb440add295697ce590c13f0860ca7b6"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "docs(rules): describe the CI job and drop the 'no workflow' note",
-      "category": "SYSTEMS / OPS",
-      "date": "2026-11-17T13:59:19Z",
-      "display_date": "18 NOV",
-      "sha": "c9b8f64e5a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c9b8f64e5a5d046e90863c0d2f20f4702364a6d2"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "ci: run the five checks on every PR and main push (ubuntu, read-only, no secrets)",
-      "category": "ENGINEERING",
-      "date": "2026-11-17T13:58:51Z",
-      "display_date": "18 NOV",
-      "sha": "e67012d20a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/e67012d20a4af46a3013018a157d4a6dd378f233"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "test(collector): give the main transcript a birth-time gap before its subagent file",
-      "category": "TEST / QUALITY",
-      "date": "2026-11-17T13:58:16Z",
-      "display_date": "18 NOV",
-      "sha": "b16b698bbf",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b16b698bbfcc1d8744cd2c1aa5ff6d14b9593203"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix(web): deliver town model before the next paint",
-      "category": "ML / EVALUATION",
-      "date": "2026-11-15T23:42:23Z",
-      "display_date": "16 NOV",
-      "sha": "7f22111dba",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/7f22111dba10c0c098703d3a2ee5929c61d6fcbd"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "fix(web): keep interior highlight clear of project names",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-15T23:07:37Z",
-      "display_date": "16 NOV",
-      "sha": "c95757bafa",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/c95757bafac6b156ec20c11f385718c3866bc360"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(web): add No Wukkas cafe interior theme",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-15T16:17:13Z",
-      "display_date": "16 NOV",
-      "sha": "cf9d3dfdd7",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cf9d3dfdd77773a235673e776759649c8e9fc0f7"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(web): tour active interiors with D3 priority and screen keys",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-15T16:11:17Z",
-      "display_date": "16 NOV",
-      "sha": "4f42ee27c6",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/4f42ee27c6c751799994588ced5c03e33bb35804"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(web): add Station0 subway interior and timestamped faregates",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-15T15:55:37Z",
-      "display_date": "16 NOV",
-      "sha": "38530b6862",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/38530b68621db2e7b058b7578169786aaf8fd12f"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "feat(web): add lazy interior shell with real session occupants",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-15T15:44:25Z",
-      "display_date": "16 NOV",
-      "sha": "091cd07f29",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/091cd07f2983a64439941063c0902d9c2bb6bcf4"
-    },
-    {
       "repo": "Edward_world",
       "summary": "docs: note the chart overworld in the status record and case study (#25)",
       "category": "DOCS / EVIDENCE",
@@ -148,195 +49,6 @@
       "display_date": "14 NOV",
       "sha": "7bb83cbaba",
       "url": "https://github.com/EdwardH-jedi/Edward_world/commit/7bb83cbaba7db4dedb6b956981054006f729d4ae"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "board: DELEGATED_CONFIG_MISMATCH reads as a sentence and a tag, not \ud655\uc778\uc774 \ud544\uc694\ud569\ub2c8\ub2e4",
-      "category": "ENGINEERING",
-      "date": "2026-11-14T03:58:22Z",
-      "display_date": "14 NOV",
-      "sha": "b27a73155d",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/b27a73155d18226c646c0425ad7f8618e0008b40"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: a limit snapshot no line could give holds no slot; the 16 sent tie by key (N1 review)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T14:43:10Z",
-      "display_date": "14 NOV",
-      "sha": "5f946d678a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/5f946d678a7f20c8ca3e3f3af13d6db483b9737d"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: cap the rate-limit state at the 64 newest snapshots (M1 re-review P2)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T14:33:48Z",
-      "display_date": "14 NOV",
-      "sha": "14e914cc86",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/14e914cc86935875deb9e8cf0fdf31f82659300e"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: past the id cap after the backfill, ids before the cutoff go first \u2014 a long scan forgets no more t\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T12:04:38Z",
-      "display_date": "13 NOV",
-      "sha": "cad4e3ea1d",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/cad4e3ea1db162a5508445f9d0fbb048f9277e26"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: reviewer break-it \u2014 id forgetting, cut-off tails and the key-cap ack no longer depend on where a s\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T11:48:59Z",
-      "display_date": "13 NOV",
-      "sha": "813d1b1267",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/813d1b1267740bca86664370fb306c250f9841a5"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: count Codex rollouts of the old format (event_msg/token_count only, 2026-03 ~ 08) (18 \u00a79.7 U5)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T11:24:34Z",
-      "display_date": "13 NOV",
-      "sha": "6567bbdce9",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6567bbdce99fc10823a20327580dfbf7c39d1742"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: the usage state keys files by a hash of their path \u2014 no path or folder name on disk (18 \u00a79.7 U5 P2\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T11:23:30Z",
-      "display_date": "13 NOV",
-      "sha": "1b776b3a1a",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/1b776b3a1a02238aea24bf27300ae4fd1eb13dc6"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: usage chunks are cut by body bytes; a refused chunk is split, only a lone refused row dropped (18\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T11:22:09Z",
-      "display_date": "13 NOV",
-      "sha": "8178c80e97",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/8178c80e97d787d1c5ae3e406557f6bea3d28622"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: a full file stops before the line instead of dropping it; freed only once the hub has it (18 \u00a79.7\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T11:20:14Z",
-      "display_date": "13 NOV",
-      "sha": "f962076464",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/f96207646421c7183cee15b99e3e1f6705c68bf0"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: every scan reads files oldest-born first, each to its end \u2014 a replay's owner no longer depends on\u2026",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T11:17:43Z",
-      "display_date": "13 NOV",
-      "sha": "696bcb5acb",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/696bcb5acb26fd1cdd86cd6d4945119d3eb87b7f"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: correct the \ub204\uc801 line's layout note \u2014 the 21 px comes from the map or LOG (18 \u00a75.6 U4)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T10:31:14Z",
-      "display_date": "13 NOV",
-      "sha": "6234be0634",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/6234be0634c04ba4713d0a2963e2558b8637aac1"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: the key cap counts only countable days, so a long-history file keeps new days (18 \u00a75.6 U4)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T10:26:18Z",
-      "display_date": "13 NOV",
-      "sha": "725b64315f",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/725b64315f65f0f435d87cbaca4d8026d4821377"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: backfill review fixes \u2014 ends on a cut-off line, oldest-born first, no day folding, own file cap (1\u2026",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-13T10:24:11Z",
-      "display_date": "13 NOV",
-      "sha": "5f52c63a4e",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/5f52c63a4ea0bd424b335cb7eb71ce3f8a03cb13"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: the \ub204\uc801 line never folds \u2014 measured +21 px at 1366\u00d7768, taken from the map (18 \u00a75.6 U4)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T10:15:06Z",
-      "display_date": "13 NOV",
-      "sha": "714c7da5f5",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/714c7da5f5db43772e279f9f588ea88e735433f4"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: USAGE shows the all-time total and its first day (18 \u00a75.6 U4)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T10:04:54Z",
-      "display_date": "13 NOV",
-      "sha": "879dbda841",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/879dbda84139d4902d461e14f905be7440fe85db"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: one-time backfill of every usage log on disk (18 \u00a75.6 U4)",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T10:04:54Z",
-      "display_date": "13 NOV",
-      "sha": "4fc964a063",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/4fc964a063ba8b6c5bf6efac44ae60b3429953ea"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "hub: keep usage rows for good and add the all-time total (18 \u00a75.6 U4)",
-      "category": "PRODUCT / FEATURE",
-      "date": "2026-11-13T10:04:54Z",
-      "display_date": "13 NOV",
-      "sha": "4aba877441",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/4aba877441b22c2e36515cee9ad6c084f0e07d93"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: test the space-in-folder project names",
-      "category": "TEST / QUALITY",
-      "date": "2026-11-13T09:07:58Z",
-      "display_date": "13 NOV",
-      "sha": "acf7c7a4fc",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/acf7c7a4fc7388a8e42d0e05e26af29e1763aeff"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "docs: README describes the usage caps and drop-on-400",
-      "category": "DOCS / EVIDENCE",
-      "date": "2026-11-13T09:07:58Z",
-      "display_date": "13 NOV",
-      "sha": "2ff5002baa",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/2ff5002baab554df61909f86a177c984861295a4"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "collector: bound the usage state; allow spaces in local folder names",
-      "category": "ENGINEERING",
-      "date": "2026-11-13T09:07:01Z",
-      "display_date": "13 NOV",
-      "sha": "fc69c67821",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/fc69c6782159805ae551756d6c0c0fca84652924"
-    },
-    {
-      "repo": "agent-city",
-      "summary": "web: usage fixes from the break-it review",
-      "category": "FIX / RELIABILITY",
-      "date": "2026-11-13T08:58:15Z",
-      "display_date": "13 NOV",
-      "sha": "f8c81549e8",
-      "url": "https://github.com/EdwardH-jedi/agent-city/commit/f8c81549e8523ad156984944266ca89d8616a7d3"
     },
     {
       "repo": "Edward_world",
@@ -505,19 +217,16 @@
   ],
   "repo_counts": {
     "SILENCE1-Interactive": 4,
-    "agent-city": 32,
     "Edward_world": 14,
     "Sportsgang": 1,
     "AFL_predict": 1
   },
   "category_counts": {
-    "ENGINEERING": 20,
-    "DOCS / EVIDENCE": 5,
-    "PRODUCT / FEATURE": 14,
-    "FIX / RELIABILITY": 8,
-    "SYSTEMS / OPS": 1,
-    "TEST / QUALITY": 3,
-    "ML / EVALUATION": 1
+    "ENGINEERING": 3,
+    "DOCS / EVIDENCE": 4,
+    "PRODUCT / FEATURE": 8,
+    "FIX / RELIABILITY": 4,
+    "TEST / QUALITY": 1
   },
   "weekly_repo_counts": {},
   "weekly_category_counts": {},
@@ -526,11 +235,6 @@
       "pushed_at": "2026-11-22T07:20:24Z",
       "language": "C#",
       "url": "https://github.com/EdwardH-jedi/SILENCE1-Interactive"
-    },
-    "agent-city": {
-      "pushed_at": "2026-11-20T00:42:56Z",
-      "language": "TypeScript",
-      "url": "https://github.com/EdwardH-jedi/agent-city"
     },
     "Edward_world": {
       "pushed_at": "2026-11-14T07:37:02Z",
